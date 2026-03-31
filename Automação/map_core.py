@@ -64,7 +64,7 @@ def generate_map(mundo, target_path, mode, entity="tribe", metric="points"):
     """
     mode: 'ranking', 'dominance_k', 'conquests'
     entity: 'tribe', 'player'
-    metric: 'points', 'oda', 'odd', 'ods'
+    metric: 'points', 'oda', 'odd', 'ods', 'xgoal'
     """
     data = TWData(mundo)
     print(f"[{mundo}] Processando {mode} - {entity} - {metric}...")
@@ -94,7 +94,18 @@ def generate_map(mundo, target_path, mode, entity="tribe", metric="points"):
             metric_map = {"oda": "att", "odd": "def", "ods": "sup"}
             mk = metric_map.get(metric, metric)
             
-            if metric != "points":
+            if metric == "xgoal":
+                start_str = CONFIG.get("server_start_dates", {}).get(mundo)
+                if not start_str:
+                    print(f"[{mundo}] Erro: server_start_date não configurado para xGoal")
+                    return
+                start_date = datetime.strptime(start_str, "%Y-%m-%d")
+                dias = (datetime.now() - start_date).days
+                dias = max(dias, 1) # Evitar divisão por zero
+                
+                df_target['val'] = (pd.to_numeric(df_target[3], errors='coerce') - 1) / dias
+                label_metric = "Média de Noblagens por Dia"
+            elif metric != "points":
                 df_kill = data.fetch(f"kill_{mk}.txt")
                 if df_kill.empty: return
                 df_kill = df_kill.copy()
@@ -353,7 +364,8 @@ def generate_map(mundo, target_path, mode, entity="tribe", metric="points"):
     
     # 2ª Linha: Título Principal (Métrica)
     main_tit = f"Ranking por {label_metric}"
-    if mode == 'dominance_k': main_tit = "Dominância do Mundo"
+    if metric == 'xgoal': main_tit = label_metric
+    elif mode == 'dominance_k': main_tit = "Dominância do Mundo"
     elif mode == 'conquests': main_tit = "Conquistas (24h)"
     draw.text((tx, ty), main_tit, fill=(20,20,20), font=get_font(22, True)); ty += 30
     
@@ -368,7 +380,11 @@ def generate_map(mundo, target_path, mode, entity="tribe", metric="points"):
     draw.line([(tx, ty), (1000+legenda_w-15, ty)], fill=(160,160,160), width=1); ty += 20
     
     for r in top_entries:
-        val_str = f"{int(r['val']):,}".replace(',', '.')
+        if metric == "xgoal":
+            val_str = f"{r['val']:.2f} aldeias/dia"
+        else:
+            val_str = f"{int(r['val']):,}".replace(',', '.')
+            
         if mode == 'dominance_k': val_str = f"{r['val']:.2f}%"
         draw.rectangle([tx, ty+3, tx+16, ty+19], fill=tuple(r['color'])+(255,))
         draw.text((tx + 25, ty), f"{r['rank']}. {r['name']} ({val_str})", fill=(0,0,0), font=get_font(18, True))

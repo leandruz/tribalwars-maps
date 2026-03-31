@@ -26,8 +26,8 @@ def main():
             generate_map(mundo, path, mode='ranking', entity='tribe', metric=metric)
             time.sleep(0.5)
 
-        # 2. Mapas de Player (4 ranking + Dominância = 5)
-        for metric in ["points", "oda", "odd", "ods"]:
+        # 2. Mapas de Player (5 ranking + Dominância = 6)
+        for metric in ["points", "oda", "odd", "ods", "xgoal"]:
             path = os.path.join(PASTA_RAIZ, mundo, "Players")
             generate_map(mundo, path, mode='ranking', entity='player', metric=metric)
             time.sleep(0.5)
