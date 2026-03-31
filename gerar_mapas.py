@@ -43,7 +43,12 @@ def main():
         print(f" [OK] {mundo} finalizado com sucesso!")
         time.sleep(1)
 
-    print("\n=== OPERAÇÃO CONCLUÍDA: Todos os mapas foram gerados na pasta /Resultados/ ===")
+    # 4. Atualizar o Índice da Galeria Web
+    print("\n=== [ GALERIA ] Atualizando Índice Web... ===")
+    from Automação.gerar_index import main as update_index
+    update_index()
+
+    print("\n=== OPERAÇÃO CONCLUÍDA: Todos os mapas foram gerados e a galeria foi atualizada! ===")
 
 if __name__ == "__main__":
     main()

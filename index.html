@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TribalWars Maps - Galeria de Rankings</title>
+    <link rel="stylesheet" href="assets/web/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="header">
+        <h1>TribalWars Maps</h1>
+        <p>Acompanhe o desenvolvimento do seu mundo com mapas de alta resolução atualizados diariamente. Rankings de jogadores, tribos e dominância territorial.</p>
+        <p id="last-update" style="margin-top: 20px; font-size: 0.8rem; font-style: italic; opacity: 0.7;"></p>
+    </section>
+
+    <div class="container">
+        
+        <!-- World Selection Grid -->
+        <div id="world-grid">
+            <div style="grid-column: 1/-1; text-align: center; color: var(--text-secondary);">
+                Carregando mundos...
+            </div>
+        </div>
+
+        <!-- Gallery View (Hidden by default) -->
+        <div id="gallery-view">
+            <span class="back-btn" onclick="goBack()">← Voltar para seleção</span>
+            <h2 id="world-title" style="margin-bottom: 20px; color: var(--secondary); font-size: 2.5rem;">BR---</h2>
+            
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('players')">Jogadores</button>
+                <button class="tab-btn" onclick="switchTab('tribes')">Tribos</button>
+            </div>
+            
+            <div id="maps-grid" class="maps-grid">
+                <!-- Maps will be injected here -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal for Preview -->
+    <div id="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="Preview">
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Leandruz &bull; TribalWars Maps &copy; 2026</p>
+        <p style="font-size: 0.7rem; margin-top: 10px; opacity: 0.5;">Os dados são atualizados automaticamente a cada ciclo de geração.</p>
+    </footer>
+
+    <script src="assets/web/script.js"></script>
+</body>
+</html>
