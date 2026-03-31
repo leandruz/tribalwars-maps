@@ -5,6 +5,7 @@ import re
 from urllib.parse import unquote_plus
 from io import StringIO
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from datetime import datetime
 
 # Configurações do Mundo
 import sys
@@ -186,7 +187,7 @@ img = Image.new('RGBA', (img_largura_total, img_altura_total), color=(93, 113, 2
 draw = ImageDraw.Draw(img)
 
 # Fundo Legenda
-draw.rectangle([img_tamanho, 0, img_largura_total, img_tamanho], fill=(230, 220, 195, 255))
+draw.rectangle([img_tamanho, 0, img_largura_total, img_tamanho], fill=(237, 217, 174, 255))
 
 cor_grade = (45, 65, 15, 255)
 for block in range(0, 1000, 100): 
@@ -281,6 +282,11 @@ else:
             
             texto_y += 15
             rank_pos += 1
+
+# Timestamp de Geração
+timestamp_agora = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+fonte_data = get_font(12, bold=False)
+draw.text((img_largura_total - 180, img_altura_total - 25), f"Atualização: {timestamp_agora}", fill=(80, 80, 80, 255), font=fonte_data)
 
 arquivo_saida = os.path.join(PASTA_SAIDA, f"mapa_top15_conquistas_{MUNDO}.png")
 img.save(arquivo_saida)

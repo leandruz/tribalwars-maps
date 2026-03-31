@@ -26,16 +26,6 @@ def baixar_e_ler(arquivo):
         print(f"Erro ao baixar {arquivo}: {e}")
         return pd.DataFrame()
 
-def normalize_tag(tag):
-    tag = str(tag).upper().strip()
-    tag = tag.replace('!', 'I').replace('1', 'I').replace('3', 'E').replace('4', 'A').replace('0', 'O')
-    tag = re.sub(r'[^A-Z0-9]', '', tag)
-    m = re.match(r'^([A-Z]+)\d*$', tag)
-    if m:
-        tag = m.group(1)
-    if not tag: return str(tag)
-    return tag
-
 def get_font(size, bold=False):
     fonts = [
         '/System/Library/Fonts/Supplemental/Arial Bold.ttf' if bold else '/System/Library/Fonts/Supplemental/Arial.ttf',
@@ -49,25 +39,29 @@ def get_font(size, bold=False):
     return ImageFont.load_default()
 
 print("Baixando dados do mundo...")
-df_ally = baixar_e_ler("ally.txt")
 df_player = baixar_e_ler("player.txt")
 df_village = baixar_e_ler("village.txt")
+df_kill_sup = baixar_e_ler("kill_sup.txt")
 
-if df_ally.empty or df_player.empty or df_village.empty:
+if df_player.empty or df_village.empty or df_kill_sup.empty:
     print("Erro ao baixar dados. O script não pode continuar.")
     exit()
 
-# Processar Tribos Top 15 (Agrupamento por Família)
-df_ally = df_ally.copy()
-# ally.txt format: id, name, tag, members, villages, points, all_points, rank
-df_ally[5] = pd.to_numeric(df_ally[5], errors='coerce').fillna(0) # points
-df_ally['family_tag'] = df_ally[2].astype(str).apply(normalize_tag)
+# Extrair ODS (Apoio) dos jogadores
+# kill_sup.txt format: 0: rank, 1: player_id, 2: ods_score
+df_kill = df_kill_sup[[1, 2]].rename(columns={1: 'player_id', 2: 'ods'})
+df_kill['player_id'] = pd.to_numeric(df_kill['player_id'], errors='coerce')
+df_kill['ods'] = pd.to_numeric(df_kill['ods'], errors='coerce').fillna(0)
 
-mapa_id_familytag = df_ally.set_index(0)['family_tag'].to_dict()
+# Processar Top 15 jogadores
+df_player.rename(columns={0: 'player_id', 1: 'name', 4: 'points', 5: 'rank'}, inplace=True)
+df_player['player_id'] = pd.to_numeric(df_player['player_id'], errors='coerce')
 
-# Agrupar por família e somar pontos
-familias_pontos = df_ally.groupby('family_tag')[5].sum().reset_index(name='total_pontos')
-top15_familias = familias_pontos.sort_values(by='total_pontos', ascending=False).head(15)
+df_player = df_player.merge(df_kill, on='player_id', how='left')
+df_player['ods'] = df_player['ods'].fillna(0)
+
+# Ordenar por ODS e pegar os top 15
+top15_jogadores = df_player.sort_values(by='ods', ascending=False).head(15)
 
 cores_top15 = [
     (0, 85, 255),    # Azul Real
@@ -87,33 +81,30 @@ cores_top15 = [
     (210, 105, 30)   # Chocolate
 ]
 
-mapa_familia_cor = {}
-mapa_tribo_info = []
-for i, row in enumerate(top15_familias.itertuples()):
-    fam_tag = row.family_tag
-    pontos = row.total_pontos
-    mapa_familia_cor[fam_tag] = cores_top15[i]
-    mapa_tribo_info.append({'tag': fam_tag, 'pontos': pontos, 'rank': i + 1})
+mapa_jogador_cor = {}
+mapa_jogador_info = []
 
-# Relacionar id_ally com cor da familia para o mapa principal
-mapa_tribo_cor = {}
-for ally_id, fam_tag in mapa_id_familytag.items():
-    if fam_tag in mapa_familia_cor:
-        mapa_tribo_cor[ally_id] = mapa_familia_cor[fam_tag]
+for i, row in enumerate(top15_jogadores.itertuples()):
+    pid = row.player_id
+    nome = row.name
+    ods = row.ods
+    
+    mapa_jogador_cor[pid] = cores_top15[i]
+    mapa_jogador_info.append({'name': nome, 'pontos': ods, 'rank': i + 1, 'cor': cores_top15[i]})
 
-# Relacionar jogadores e tribos
-df_player = df_player.iloc[:, [0, 2]].rename(columns={0: "player_id", 2: "ally_id"})
-df_player['player_id'] = pd.to_numeric(df_player['player_id'], errors='coerce')
-df_player['ally_id'] = pd.to_numeric(df_player['ally_id'], errors='coerce')
-
+# Preparar vilas
 df_village = df_village.iloc[:, [0, 2, 3, 4]].rename(columns={0: "village_id", 2: "x", 3: "y", 4: "player_id"})
 df_village['player_id'] = pd.to_numeric(df_village['player_id'], errors='coerce')
-df_village = df_village.merge(df_player, on="player_id", how="left")
 
-# --- Configurar Bounding Box / Zoom ---
-print("Gerando mapa de calor visual (com Autocrop, Blur e Colunas)...")
-x_min, x_max = df_village['x'].min(), df_village['x'].max()
-y_min, y_max = df_village['y'].min(), df_village['y'].max()
+# Bounding Box apenas nas vilas dos 15 jogadores para ajustar o zoom
+print("Gerando mapa visual (com Autocrop, Blur)...")
+df_territorio_zoom = df_village[df_village['player_id'].isin(mapa_jogador_cor.keys())]
+
+if not df_territorio_zoom.empty:
+    x_min, x_max = df_territorio_zoom['x'].min(), df_territorio_zoom['x'].max()
+    y_min, y_max = df_territorio_zoom['y'].min(), df_territorio_zoom['y'].max()
+else:
+    x_min, x_max, y_min, y_max = 0, 999, 0, 999
 
 padding = 30
 x_min, y_min = max(0, x_min - padding), max(0, y_min - padding)
@@ -133,10 +124,9 @@ def mapear_coord(x_real, y_real):
 font_title = get_font(32, bold=True)
 font_bold = get_font(18, bold=True)
 font_normal = get_font(18, bold=False)
-font_small = get_font(14, bold=False)
 
-largura_legenda = 400
-img_tamanho = 1000 # Forçar o mapa a ser 1000x1000 exatos novamente
+largura_legenda = 450
+img_tamanho = 1000
 img_largura_total = img_tamanho + largura_legenda
 img_altura_total = img_tamanho
 
@@ -160,7 +150,7 @@ overlay_draw = ImageDraw.Draw(overlay)
 pontos_overlay = Image.new('RGBA', img.size, (0, 0, 0, 0))
 pontos_draw = ImageDraw.Draw(pontos_overlay)
 
-df_territorio = df_village[df_village['ally_id'].isin(mapa_tribo_cor.keys())]
+df_territorio = df_village[df_village['player_id'].isin(mapa_jogador_cor.keys())]
 
 if not df_territorio.empty:
     for _, raw in df_territorio.iterrows():
@@ -168,7 +158,7 @@ if not df_territorio.empty:
         x, y = mapear_coord(x_real, y_real)
         if x > img_tamanho: continue # não vazar na legenda
         
-        cor_rgb = mapa_tribo_cor[raw['ally_id']]
+        cor_rgb = mapa_jogador_cor[raw['player_id']]
         overlay_draw.ellipse([x-10, y-10, x+10, y+10], fill=cor_rgb + (255,))
         pontos_draw.ellipse([x-2, y-2, x+3, y+3], fill=cor_rgb + (255,), outline=(0,0,0,255), width=1)
 
@@ -187,24 +177,25 @@ texto_x = img_tamanho + 20
 texto_y = 25
 
 texto_titulo_1 = f"BR{MUNDO[-3:] if MUNDO[-3:].isdigit() else MUNDO}:"
-texto_titulo_2 = "TOP 15 Dominância"
+texto_titulo_2 = "TOP 15 ODS (Apoio - Jogadores)"
 draw.text((texto_x, texto_y), texto_titulo_1, fill=(20, 20, 20, 255), font=font_title)
+# Ajuste de espaçamento para título de duas linhas
 texto_y += 35
 draw.text((texto_x, texto_y), texto_titulo_2, fill=(20, 20, 20, 255), font=font_title)
 texto_y += 60
 
-# ESCREVER Legenda por Colunas
-draw.text((texto_x, texto_y), "Ranking de Famílias", fill=(0, 0, 0, 255), font=font_bold)
+# Legenda
+draw.text((texto_x, texto_y), "Ranking de Jogadores (Por ODS)", fill=(0, 0, 0, 255), font=font_bold)
 draw.line([(texto_x, texto_y+24), (img_largura_total - 20, texto_y+24)], fill=(150,150,150,255), width=1)
 texto_y += 40
 
-for tribo in mapa_tribo_info:
-    cor_atacante = mapa_familia_cor[tribo['tag']]
-    pontos = f"{int(tribo['pontos']):,}".replace(',', '.')
+for jogador in mapa_jogador_info:
+    cor_atacante = jogador['cor']
+    pontos_formatados = f"{int(jogador['pontos']):,}".replace(',', '.')
     
-    # Titulo Tribo
     draw.rectangle([texto_x, texto_y + 3, texto_x + 16, texto_y + 19], fill=cor_atacante + (255,))
-    draw.text((texto_x + 25, texto_y), f"{tribo['rank']}. {tribo['tag']} ({pontos} pts)", fill=(0, 0, 0, 255), font=font_bold)
+    texto_linha = f"{int(jogador['rank'])}. {jogador['name']} - {pontos_formatados} ODS"
+    draw.text((texto_x + 25, texto_y), texto_linha, fill=(0, 0, 0, 255), font=font_bold)
     texto_y += 35
 
 # Timestamp de Geração
@@ -212,6 +203,6 @@ timestamp_agora = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 fonte_data = get_font(12, bold=False)
 draw.text((img_largura_total - 180, img_altura_total - 25), f"Atualização: {timestamp_agora}", fill=(80, 80, 80, 255), font=fonte_data)
 
-arquivo_saida = os.path.join(PASTA_SAIDA, f"mapa_top15_familias_{MUNDO}.png")
+arquivo_saida = os.path.join(PASTA_SAIDA, f"mapa_top15_ods_jogadores_{MUNDO}.png")
 img.save(arquivo_saida)
-print(f"Pronto! Mapa quadrado gerado: {arquivo_saida}")
+print(f"Pronto! Mapa gerado: {arquivo_saida}")

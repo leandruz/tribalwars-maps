@@ -17,13 +17,15 @@ SCRIPTS = {
         "Top 15 Tribe - K",
         "Top 15 Tribe - Noble",
         "Top 15 Tribe - ODA",
-        "Top 15 Tribe - ODD"
+        "Top 15 Tribe - ODD",
+        "Top 15 Tribe - ODS"
     ],
     "Players": [
         "Top 15 Players",
         "Top 15 Players - K",
         "Top 15 Players - ODA",
-        "Top 15 Players - ODD"
+        "Top 15 Players - ODD",
+        "Top 15 Players - ODS"
     ]
 }
 
