@@ -1,0 +1,48 @@
+name: Atualização Diária de Mapas (TribalWars)
+
+on:
+  schedule:
+    # Roda todos os dias às 04:00 UTC (01:00 Horário de Brasília)
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+    # Permite rodar o script manualmente clicando num botão pelo painel do GitHub caso precise
+
+permissions:
+  contents: write # Permissão necessária para o Commit Automático funcionar no GH Actions
+
+jobs:
+  gerar-mapas:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Baixar seu Repositório (Checkout)
+        uses: actions/checkout@v4
+        
+      - name: Configurar ambiente Python 3.9
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          cache: 'pip' # Acelera a execução baixando do cache
+
+      - name: Instalar Fontes Base do Computador (Arial/Helvetica)
+        run: |
+          sudo apt-get update
+          # Essa linha aceita os termos automáticos da Microsoft pra deixar o Ubuntu usar Arial nativo
+          echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+          sudo apt-get install ttf-mscorefonts-installer
+          sudo fc-cache -f -v
+          
+      - name: Instalar Extensões Python (Pillow, Pandas, Requests)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r Automação/requirements.txt
+          
+      - name: Download da InnoGames e Geração dos Mapas PNG
+        run: |
+          python Automação/gerar_mapas_automacao.py
+          
+      - name: Commit & Push (Enviar as imagens finalizadas de volta ao Repositório)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🗺️ Atualização Diária automática: Mapas do TribalWars"
+          file_pattern: 'Resultados/**/*.png' # Somente os mapas png serão trackeados e upados

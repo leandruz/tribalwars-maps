@@ -1,0 +1,287 @@
+import pandas as pd
+import requests
+import time
+import re
+from urllib.parse import unquote_plus
+from io import StringIO
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+
+# Configurações do Mundo
+import sys
+import os
+
+MUNDO = sys.argv[1] if len(sys.argv) > 1 else "br140"
+PASTA_SAIDA = sys.argv[2] if len(sys.argv) > 2 else "."
+
+URL_BASE = f"https://{MUNDO}.tribalwars.com.br/map"
+
+def baixar_e_ler(arquivo):
+    url = f"{URL_BASE}/{arquivo}"
+    try:
+        resposta = requests.get(url, timeout=10)
+        df = pd.read_csv(StringIO(resposta.text), header=None)
+        for col in df.select_dtypes(include=['object']).columns:
+            df[col] = df[col].astype(str).apply(unquote_plus)
+        return df
+    except Exception as e:
+        print(f"Erro ao baixar {arquivo}: {e}")
+        return pd.DataFrame()
+
+def normalize_tag(tag):
+    tag = str(tag).upper().strip()
+    tag = tag.replace('!', 'I').replace('1', 'I').replace('3', 'E').replace('4', 'A').replace('0', 'O')
+    tag = re.sub(r'[^A-Z0-9]', '', tag)
+    m = re.match(r'^([A-Z]+)\d*$', tag)
+    if m:
+        tag = m.group(1)
+    if not tag: return str(tag)
+    return tag
+
+def get_font(size, bold=False):
+    fonts = [
+        '/System/Library/Fonts/Supplemental/Arial Bold.ttf' if bold else '/System/Library/Fonts/Supplemental/Arial.ttf',
+        '/Library/Fonts/Arial Bold.ttf' if bold else '/Library/Fonts/Arial.ttf',
+        'arialbd.ttf' if bold else 'arial.ttf',
+        '/System/Library/Fonts/Helvetica.ttc'
+    ]
+    for f in fonts:
+        try: return ImageFont.truetype(f, size)
+        except IOError: pass
+    return ImageFont.load_default()
+
+print("Baixando dados do mundo...")
+df_ally = baixar_e_ler("ally.txt")
+df_player = baixar_e_ler("player.txt")
+df_conquer = baixar_e_ler("conquer.txt")
+df_village = baixar_e_ler("village.txt")
+
+mapa_tribo_cor_fam, mapa_id_familytag, mapa_familytag_originais = {}, {}, {}
+df_ally_full = pd.DataFrame()
+
+if not df_ally.empty:
+    df_ally_full = df_ally.copy()
+    df_ally_full['family_tag'] = df_ally_full[2].astype(str).apply(normalize_tag)
+    
+    if len(df_ally_full.columns) > 7:
+        df_ally_full[7] = pd.to_numeric(df_ally_full[7], errors='coerce').fillna(9999)
+        tags_por_familia = df_ally_full.groupby('family_tag')[2].apply(lambda x: list(set(x))).reset_index().rename(columns={2: 'tags_originais'})
+        mapa_familytag_originais = tags_por_familia.set_index('family_tag')['tags_originais'].to_dict()
+        mapa_id_familytag = df_ally_full.set_index(0)['family_tag'].to_dict()
+
+if not df_player.empty:
+    df_player = df_player.iloc[:, [0, 2]].rename(columns={0: "player_id", 2: "ally_id"})
+    df_player['player_id'] = pd.to_numeric(df_player['player_id'], errors='coerce')
+    df_player['ally_id'] = pd.to_numeric(df_player['ally_id'], errors='coerce')
+
+agressores_top10 = pd.DataFrame()
+dados_legenda = []
+
+if not df_conquer.empty and not df_player.empty:
+    df_conquer.columns = ["village_id", "timestamp", "new_owner_id", "old_owner_id"]
+    agora = int(time.time())
+    df_conquer = df_conquer[df_conquer["timestamp"] > (agora - 24 * 3600)]
+
+    df_merged = df_conquer.merge(df_player, left_on="new_owner_id", right_on="player_id", how="left")\
+                         .rename(columns={"ally_id": "new_ally_id"}).drop(columns=["player_id"])\
+                         .merge(df_player, left_on="old_owner_id", right_on="player_id", how="left")\
+                         .rename(columns={"ally_id": "old_ally_id"}).drop(columns=["player_id"])
+
+    df_noblados = df_merged[
+        (df_merged["new_ally_id"].notna()) & (df_merged["new_ally_id"] != 0)
+    ].copy()
+
+    if not df_noblados.empty and mapa_id_familytag:
+        df_noblados['new_family'] = df_noblados['new_ally_id'].map(mapa_id_familytag)
+        
+        df_noblados = df_noblados[df_noblados['new_family'].notna()]
+        
+        if not df_noblados.empty:
+            agressores_top10 = df_noblados.groupby("new_family").size().reset_index(name="total").sort_values("total", ascending=False).head(15)
+            
+            cores_top15 = [
+                (0, 85, 255),    # Azul Real
+                (255, 40, 40),   # Vermelho Brilhante
+                (20, 180, 20),   # Verde Kelly
+                (255, 240, 0),   # Amarelo Canário
+                (255, 130, 0),   # Laranja Vivo
+                (0, 230, 255),   # Ciano Vibrante
+                (255, 20, 180),  # Magenta Choque
+                (130, 0, 200),   # Roxo Real
+                (0, 170, 170),   # Turquesa Profunda
+                (180, 140, 0),   # Ouro Antigo
+                (255, 105, 180), # Hot Pink
+                (139, 69, 19),   # Marrom
+                (0, 250, 154),   # Verde Limão
+                (30, 144, 255),  # Azul Celeste
+                (210, 105, 30)   # Chocolate
+            ]
+            mapa_familia_cor = {row["new_family"]: cores_top15[i] for i, row in agressores_top10.reset_index().iterrows()}
+            mapa_tribo_cor_fam = df_ally_full.set_index(0)['family_tag'].map(mapa_familia_cor).to_dict()
+            
+            for _, r_ata in agressores_top10.iterrows():
+                fam_atac, total = r_ata['new_family'], r_ata['total']
+                dados_legenda.append({'atacante': fam_atac, 'total': total})
+
+# --- Configurar Bounding Box / Zoom ---
+print("Gerando mapa de calor visual (com Autocrop, Blur e Colunas)...")
+df_village = df_village.iloc[:, [0, 2, 3, 4]].rename(columns={0: "village_id", 2: "x", 3: "y", 4: "player_id"})
+df_village['player_id'] = pd.to_numeric(df_village['player_id'], errors='coerce')
+if not df_player.empty:
+    df_village = df_village.merge(df_player, on="player_id", how="left")
+else:
+    df_village['ally_id'] = pd.NA
+
+x_min, x_max = df_village['x'].min(), df_village['x'].max()
+y_min, y_max = df_village['y'].min(), df_village['y'].max()
+
+padding = 30
+x_min, y_min = max(0, x_min - padding), max(0, y_min - padding)
+x_max, y_max = min(999, x_max + padding), min(999, y_max + padding)
+
+w, h = x_max - x_min, y_max - y_min
+escala_x = 1000 / w if w > 0 else 1
+escala_y = 1000 / h if h > 0 else 1
+escala = min(escala_x, escala_y)
+
+offset_x = (1000 - w * escala) / 2
+offset_y = (1000 - h * escala) / 2
+
+def mapear_coord(x_real, y_real):
+    return int((x_real - x_min) * escala + offset_x), int((y_real - y_min) * escala + offset_y)
+
+font_title = get_font(32, bold=True)
+font_bold = get_font(18, bold=True)
+font_normal = get_font(18, bold=False)
+font_small = get_font(14, bold=False)
+
+# Calcular Colunas Dinâmicas da Legenda (para não esticar o mapa no Y)
+largura_legenda = 350
+img_tamanho = 1000 # Forçar o mapa a ser 1000x1000 exatos novamente
+
+blocos_legenda = []
+for d in dados_legenda:
+    h_bloco = 26 + 15
+    blocos_legenda.append((d, h_bloco))
+
+colunas = []
+col_atual = []
+col_h = 0
+for d, h_bloco in blocos_legenda:
+    if col_h + h_bloco > (img_tamanho - 50) and len(col_atual) > 0:
+        colunas.append(col_atual)
+        col_atual = []
+        col_h = 0
+    col_atual.append(d)
+    col_h += h_bloco
+if col_atual: colunas.append(col_atual)
+
+# Ajusta largura pela quantidade de colunas geradas
+largura_legenda = max(450, len(colunas) * 320)
+altura_rodape = 0
+
+img_largura_total = img_tamanho + largura_legenda
+img_altura_total = img_tamanho + altura_rodape
+
+img = Image.new('RGBA', (img_largura_total, img_altura_total), color=(93, 113, 27, 255))
+draw = ImageDraw.Draw(img)
+
+# Fundo Legenda
+draw.rectangle([img_tamanho, 0, img_largura_total, img_tamanho], fill=(230, 220, 195, 255))
+
+cor_grade = (45, 65, 15, 255)
+for block in range(0, 1000, 100): 
+    mx, _ = mapear_coord(block, 0)
+    _, my = mapear_coord(0, block)
+    if 0 <= mx <= img_tamanho: draw.line([(mx, 0), (mx, img_tamanho)], fill=cor_grade, width=1)
+    if 0 <= my <= img_tamanho: draw.line([(0, my), (img_tamanho, my)], fill=cor_grade, width=1)
+draw.line([(img_tamanho, 0), (img_tamanho, img_tamanho)], fill=(0,0,0,255), width=2) # Divisoria
+
+overlay = Image.new('RGBA', img.size, (0, 0, 0, 0))
+overlay_draw = ImageDraw.Draw(overlay)
+
+pontos_overlay = Image.new('RGBA', img.size, (0, 0, 0, 0))
+pontos_draw = ImageDraw.Draw(pontos_overlay)
+
+if not df_village.empty and mapa_tribo_cor_fam:
+    tribos_coloridas = {k for k, v in mapa_tribo_cor_fam.items() if isinstance(v, tuple)}
+    df_territorio = df_village[df_village['ally_id'].isin(tribos_coloridas)]
+    
+    for _, raw in df_territorio.iterrows():
+        x_real, y_real = int(raw['x']), int(raw['y'])
+        x, y = mapear_coord(x_real, y_real)
+        if x > img_tamanho: continue # não vazar na legenda
+        
+        cor_rgb = mapa_tribo_cor_fam[raw['ally_id']]
+        overlay_draw.ellipse([x-10, y-10, x+10, y+10], fill=cor_rgb + (255,))
+
+if not df_conquer.empty and not df_noblados.empty:
+    df_visual = df_noblados.merge(df_village, on="village_id", how="inner")
+    
+    for _, raw in df_visual.iterrows():
+        x_real, y_real = int(raw['x']), int(raw['y'])
+        x, y = mapear_coord(x_real, y_real)
+        
+        if x > img_tamanho: continue # não vazar na legenda
+        
+        cor_rgb = mapa_tribo_cor_fam.get(raw['new_ally_id'])
+        if pd.isna(cor_rgb) or not isinstance(cor_rgb, tuple): cor_rgb = (255, 0, 0)
+            
+        pontos_draw.ellipse([x-2, y-2, x+3, y+3], fill=cor_rgb + (255,), outline=(0,0,0,255), width=1)
+
+# Blur e Alpha Merge
+overlay = overlay.filter(ImageFilter.GaussianBlur(1))
+alpha_ch = overlay.getchannel('A')
+alpha_ch = alpha_ch.point(lambda i: int(i * 0.35))
+overlay.putalpha(alpha_ch)
+
+img = Image.alpha_composite(img, overlay)
+img = Image.alpha_composite(img, pontos_overlay)
+draw = ImageDraw.Draw(img)
+
+# ESCREVER Titulo Forte na Legenda (para não sobrepor o mapa)
+texto_x_base = img_tamanho + 20
+texto_y_base = 25
+rank_pos = 1
+
+texto_titulo_1 = f"BR{MUNDO[-3:] if MUNDO[-3:].isdigit() else MUNDO}:"
+texto_titulo_2 = "Conquistas(24h)"
+draw.text((texto_x_base, texto_y_base), texto_titulo_1, fill=(20, 20, 20, 255), font=font_title)
+texto_y_base += 35
+draw.text((texto_x_base, texto_y_base), texto_titulo_2, fill=(20, 20, 20, 255), font=font_title)
+texto_y_base += 60
+
+# ESCREVER Legenda por Colunas
+draw.text((texto_x_base, texto_y_base), "TOP 15 Tribos", fill=(0, 0, 0, 255), font=font_bold)
+draw.line([(texto_x_base, texto_y_base+24), (img_largura_total - 20, texto_y_base+24)], fill=(150,150,150,255), width=1)
+texto_y_base += 40
+
+if not colunas:
+    draw.text((texto_x_base, texto_y_base), "Nenhum conflito ativo detectado.", fill=(0, 0, 0, 255), font=font_normal)
+else:
+    for col_idx, coluna in enumerate(colunas):
+        texto_x = texto_x_base + (col_idx * 300)
+        texto_y = texto_y_base
+        
+        for atacante in coluna:
+            fam_atac = atacante['atacante']
+            total = atacante['total']
+            
+            cor_atacante = (100, 100, 100)
+            if not df_ally_full.empty:
+                for _, allyID in df_ally_full[df_ally_full['family_tag'] == fam_atac][0].items():
+                    cc = mapa_tribo_cor_fam.get(allyID)
+                    if pd.notna(cc) and isinstance(cc, tuple):
+                        cor_atacante = cc
+                        break
+                        
+            # Titulo Ataque
+            draw.rectangle([texto_x, texto_y + 3, texto_x + 16, texto_y + 19], fill=cor_atacante + (255,))
+            draw.text((texto_x + 25, texto_y), f"{rank_pos}. {fam_atac} (Total: {total})", fill=(0, 0, 0, 255), font=font_bold)
+            texto_y += 26
+            
+            texto_y += 15
+            rank_pos += 1
+
+arquivo_saida = os.path.join(PASTA_SAIDA, f"mapa_top15_conquistas_{MUNDO}.png")
+img.save(arquivo_saida)
+print(f"Pronto! Mapa quadrado com legenda particionada gerado: {arquivo_saida}")

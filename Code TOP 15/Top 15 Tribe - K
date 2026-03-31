@@ -1,0 +1,274 @@
+import pandas as pd
+import requests
+import re
+from urllib.parse import unquote_plus
+from io import StringIO
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+
+import sys
+import os
+
+MUNDO = sys.argv[1] if len(sys.argv) > 1 else "br140"
+PASTA_SAIDA = sys.argv[2] if len(sys.argv) > 2 else "."
+
+URL_BASE = f"https://{MUNDO}.tribalwars.com.br/map"
+
+def baixar_e_ler(arquivo):
+    url = f"{URL_BASE}/{arquivo}"
+    try:
+        resposta = requests.get(url, timeout=10)
+        df = pd.read_csv(StringIO(resposta.text), header=None)
+        for col in df.select_dtypes(include=['object']).columns:
+            df[col] = df[col].astype(str).apply(unquote_plus)
+        return df
+    except Exception as e:
+        print(f"Erro ao baixar {arquivo}: {e}")
+        return pd.DataFrame()
+
+def normalize_tag(tag):
+    tag = str(tag).upper().strip()
+    tag = tag.replace('!', 'I').replace('1', 'I').replace('3', 'E').replace('4', 'A').replace('0', 'O')
+    tag = re.sub(r'[^A-Z0-9]', '', tag)
+    m = re.match(r'^([A-Z]+)\d*$', tag)
+    if m:
+        tag = m.group(1)
+    if not tag: return str(tag)
+    return tag
+
+def get_font(size, bold=False):
+    fonts = [
+        '/System/Library/Fonts/Supplemental/Arial Bold.ttf' if bold else '/System/Library/Fonts/Supplemental/Arial.ttf',
+        '/Library/Fonts/Arial Bold.ttf' if bold else '/Library/Fonts/Arial.ttf',
+        'arialbd.ttf' if bold else 'arial.ttf',
+        '/System/Library/Fonts/Helvetica.ttc'
+    ]
+    for f in fonts:
+        try: return ImageFont.truetype(f, size)
+        except IOError: pass
+    return ImageFont.load_default()
+
+print("Baixando dados do mundo...")
+df_ally = baixar_e_ler("ally.txt")
+df_player = baixar_e_ler("player.txt")
+df_village = baixar_e_ler("village.txt")
+
+if df_ally.empty or df_player.empty or df_village.empty:
+    print("Erro ao baixar dados. O script não pode continuar.")
+    exit()
+
+# Processar Tribos Top 15 (Agrupamento por Família)
+df_ally = df_ally.copy()
+# ally.txt format: id, name, tag, members, villages, points, all_points, rank
+df_ally[5] = pd.to_numeric(df_ally[5], errors='coerce').fillna(0) # points
+df_ally['family_tag'] = df_ally[2].astype(str).apply(normalize_tag)
+
+mapa_id_familytag = df_ally.set_index(0)['family_tag'].to_dict()
+
+# Agrupar por família e somar pontos
+familias_pontos = df_ally.groupby('family_tag')[5].sum().reset_index(name='total_pontos')
+top15_familias = familias_pontos.sort_values(by='total_pontos', ascending=False).head(15)
+
+cores_top15 = [
+    (0, 85, 255),    # Azul Real
+    (255, 40, 40),   # Vermelho Brilhante
+    (20, 180, 20),   # Verde Kelly
+    (255, 240, 0),   # Amarelo Canário
+    (255, 130, 0),   # Laranja Vivo
+    (0, 230, 255),   # Ciano Vibrante
+    (255, 20, 180),  # Magenta Choque
+    (130, 0, 200),   # Roxo Real
+    (0, 170, 170),   # Turquesa Profunda
+    (180, 140, 0),   # Ouro Antigo
+    (255, 105, 180), # Hot Pink
+    (139, 69, 19),   # Marrom
+    (0, 250, 154),   # Verde Limão
+    (30, 144, 255),  # Azul Celeste
+    (210, 105, 30)   # Chocolate
+]
+
+mapa_familia_cor = {}
+mapa_tribo_info = []
+
+# Calcular o total de pontos de todas as famílias/allys do mundo para dominância
+total_pontos_mundo = df_ally[5].sum()
+
+for i, row in enumerate(top15_familias.itertuples()):
+    fam_tag = row.family_tag
+    pontos = row.total_pontos
+    mapa_familia_cor[fam_tag] = cores_top15[i]
+    perc_global = (pontos / total_pontos_mundo * 100) if total_pontos_mundo > 0 else 0
+    mapa_tribo_info.append({'tag': fam_tag, 'pontos': pontos, 'rank': i + 1, 'perc_global': perc_global})
+
+# Relacionar id_ally com cor da familia para o mapa principal
+mapa_tribo_cor = {}
+for ally_id, fam_tag in mapa_id_familytag.items():
+    if fam_tag in mapa_familia_cor:
+        mapa_tribo_cor[ally_id] = mapa_familia_cor[fam_tag]
+
+# Relacionar jogadores e tribos
+df_player = df_player.iloc[:, [0, 2]].rename(columns={0: "player_id", 2: "ally_id"})
+df_player['player_id'] = pd.to_numeric(df_player['player_id'], errors='coerce')
+df_player['ally_id'] = pd.to_numeric(df_player['ally_id'], errors='coerce')
+
+df_village = df_village.iloc[:, [0, 2, 3, 4, 5]].rename(columns={0: "village_id", 2: "x", 3: "y", 4: "player_id", 5: "points"})
+df_village['player_id'] = pd.to_numeric(df_village['player_id'], errors='coerce')
+df_village['points'] = pd.to_numeric(df_village['points'], errors='coerce').fillna(0)
+df_village = df_village.merge(df_player, on="player_id", how="left")
+
+# Calcular dominancia por K
+df_village['K'] = (df_village['y'] // 100).astype(int) * 10 + (df_village['x'] // 100).astype(int)
+df_village['family_tag'] = df_village['ally_id'].map(mapa_id_familytag)
+
+pontos_por_k = df_village.groupby('K')['points'].sum().reset_index(name='total_points_k')
+pontos_por_k = pontos_por_k[pontos_por_k['total_points_k'] > 0]
+pontos_fam_k = df_village.dropna(subset=['family_tag']).groupby(['K', 'family_tag'])['points'].sum().reset_index(name='fam_points_k')
+
+pontos_fam_k = pontos_fam_k.merge(pontos_por_k, on='K')
+pontos_fam_k['perc'] = (pontos_fam_k['fam_points_k'] / pontos_fam_k['total_points_k']) * 100
+pontos_fam_k = pontos_fam_k[pontos_fam_k['perc'] >= 1.0] # Ignorar irrelevantes
+pontos_fam_k.sort_values(['K', 'perc'], ascending=[True, False], inplace=True)
+top_k = pontos_fam_k.groupby('K').head(2)
+
+# --- Configurar Bounding Box / Zoom ---
+print("Gerando mapa de calor visual (com Autocrop, Blur e Colunas)...")
+x_min, x_max = df_village['x'].min(), df_village['x'].max()
+y_min, y_max = df_village['y'].min(), df_village['y'].max()
+
+padding = 30
+x_min, y_min = max(0, x_min - padding), max(0, y_min - padding)
+x_max, y_max = min(999, x_max + padding), min(999, y_max + padding)
+
+w, h = x_max - x_min, y_max - y_min
+escala_x = 1000 / w if w > 0 else 1
+escala_y = 1000 / h if h > 0 else 1
+escala = min(escala_x, escala_y)
+
+offset_x = (1000 - w * escala) / 2
+offset_y = (1000 - h * escala) / 2
+
+def mapear_coord(x_real, y_real):
+    return int((x_real - x_min) * escala + offset_x), int((y_real - y_min) * escala + offset_y)
+
+font_title = get_font(28, bold=True)
+font_bold = get_font(18, bold=True)
+font_normal = get_font(18, bold=False)
+font_small = get_font(14, bold=False)
+font_k_id = get_font(14, bold=True)
+font_k_top1 = get_font(16, bold=False)
+font_k_top2 = get_font(10, bold=False)
+
+largura_legenda = 400
+img_tamanho = 1000 # Forçar o mapa a ser 1000x1000 exatos novamente
+img_largura_total = img_tamanho + largura_legenda
+img_altura_total = img_tamanho
+
+img = Image.new('RGBA', (img_largura_total, img_altura_total), color=(93, 113, 27, 255))
+draw = ImageDraw.Draw(img)
+
+# Fundo Legenda
+draw.rectangle([img_tamanho, 0, img_largura_total, img_tamanho], fill=(230, 220, 195, 255))
+
+cor_grade = (45, 65, 15, 255)
+for block in range(0, 1000, 100): 
+    mx, _ = mapear_coord(block, 0)
+    _, my = mapear_coord(0, block)
+    if 0 <= mx <= img_tamanho: draw.line([(mx, 0), (mx, img_tamanho)], fill=cor_grade, width=1)
+    if 0 <= my <= img_tamanho: draw.line([(0, my), (img_tamanho, my)], fill=cor_grade, width=1)
+draw.line([(img_tamanho, 0), (img_tamanho, img_tamanho)], fill=(0,0,0,255), width=2) # Divisoria
+
+def draw_text_bordered(draw_obj, pos, text, font, fill, outline=(0,0,0,210), width=2):
+    x, y = pos
+    for dx in range(-width, width+1):
+        for dy in range(-width, width+1):
+            if dx*dx + dy*dy > width*width: continue
+            draw_obj.text((x+dx, y+dy), text, font=font, fill=outline)
+    draw_obj.text(pos, text, font=font, fill=fill)
+
+# Escrever as Dominâncias por Continente (sem blur, sem vilas)
+for k_id, group in top_k.groupby('K'):
+    if group.empty: continue
+    
+    kx = k_id % 10
+    ky = k_id // 10
+    
+    centro_x_real = kx * 100 + 50
+    centro_y_real = ky * 100 + 50
+    cx, cy = mapear_coord(centro_x_real, centro_y_real)
+    
+    if not (0 <= cx <= img_tamanho and 0 <= cy <= img_tamanho):
+        continue
+    
+    rows = group.to_dict('records')
+    top1 = rows[0]
+    
+    texto_k = f"K{k_id:02d}"
+    texto1 = f"{top1['family_tag']} {top1['perc']:.1f}%".replace('.', ',')
+    
+    bbox_k = draw.textbbox((0, 0), texto_k, font=font_k_id)
+    bbox1 = draw.textbbox((0, 0), texto1, font=font_k_top1)
+    
+    hk = bbox_k[3] - bbox_k[1]
+    wk = bbox_k[2] - bbox_k[0]
+    h1 = bbox1[3] - bbox1[1]
+    w1 = bbox1[2] - bbox1[0]
+    
+    has_top2 = (len(rows) > 1 and rows[1]['perc'] >= 1.0)
+    if has_top2:
+        top2 = rows[1]
+        texto2 = f"{top2['family_tag']} {top2['perc']:.1f}%".replace('.', ',')
+        bbox2 = draw.textbbox((0, 0), texto2, font=font_k_top2)
+        h2 = bbox2[3] - bbox2[1]
+        w2 = bbox2[2] - bbox2[0]
+    else:
+        texto2 = ""
+        h2 = 0
+        w2 = 0
+        
+    # Calcular altura total para centralização exata do bloco inteiro
+    gap = 4
+    total_h = hk + gap + h1 + (gap + h2 if has_top2 else 0)
+    
+    start_y = cy - total_h // 2
+    
+    # Desenhar K
+    draw_text_bordered(draw, (cx - wk // 2, start_y), texto_k, font=font_k_id, fill=(220, 220, 220, 255))
+    start_y += hk + gap
+    
+    # Desenhar TOP 1
+    fill1 = mapa_familia_cor.get(top1['family_tag'], (255, 255, 255))
+    draw_text_bordered(draw, (cx - w1 // 2, start_y), texto1, font=font_k_top1, fill=fill1 + (255,))
+    start_y += h1 + gap
+    
+    # Desenhar TOP 2
+    if has_top2:
+        fill2 = mapa_familia_cor.get(top2['family_tag'], (255, 255, 255))
+        draw_text_bordered(draw, (cx - w2 // 2, start_y), texto2, font=font_k_top2, fill=fill2 + (255,))
+
+# ESCREVER Titulo Forte na Legenda (para não sobrepor o mapa)
+texto_x = img_tamanho + 20
+texto_y = 25
+
+texto_titulo_1 = f"BR{MUNDO[-3:] if MUNDO[-3:].isdigit() else MUNDO}:"
+texto_titulo_2 = "Tribos por Dominância (K)"
+draw.text((texto_x, texto_y), texto_titulo_1, fill=(20, 20, 20, 255), font=font_title)
+texto_y += 35
+draw.text((texto_x, texto_y), texto_titulo_2, fill=(20, 20, 20, 255), font=font_title)
+texto_y += 60
+
+# ESCREVER Legenda por Colunas
+draw.text((texto_x, texto_y), "Ranking de Famílias (Dominância Global)", fill=(0, 0, 0, 255), font=font_bold)
+draw.line([(texto_x, texto_y+24), (img_largura_total - 20, texto_y+24)], fill=(150,150,150,255), width=1)
+texto_y += 40
+
+for tribo in mapa_tribo_info:
+    cor_atacante = mapa_familia_cor[tribo['tag']]
+    perc_global = tribo['perc_global']
+    
+    draw.rectangle([texto_x, texto_y + 3, texto_x + 16, texto_y + 19], fill=cor_atacante + (255,))
+    texto_linha = f"{tribo['rank']}. {tribo['tag']} ({perc_global:.2f}%)".replace('.', '.')
+    draw.text((texto_x + 25, texto_y), texto_linha, fill=(0, 0, 0, 255), font=font_bold)
+    texto_y += 35
+
+arquivo_saida = os.path.join(PASTA_SAIDA, f"mapa_top15_dominancia_K_{MUNDO}.png")
+img.save(arquivo_saida)
+print(f"Pronto! Mapa quadrado gerado: {arquivo_saida}")
