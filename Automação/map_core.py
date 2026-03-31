@@ -246,9 +246,9 @@ def generate_map(mundo, target_path, mode, entity="tribe", metric="points"):
         
         villages_conq = df_village[df_village[0].isin(df_conq['vid'])].merge(df_conq, left_on=0, right_on='vid')
         villages_conq['color'] = villages_conq['fam'].map(map_id_color)
-        # Preencher vazios com Vermelho (255,0,0) de forma segura para o Pandas
-        for idx in villages_conq.index[villages_conq['color'].isna()]:
-            villages_conq.at[idx, 'color'] = (255, 0, 0)
+        
+        # Filtra apenas noblagens das famílias Top 15 (conforme pedido do usuário)
+        villages_conq = villages_conq.dropna(subset=['color'])
 
     # --- DESENHO ARTÍSTICO ---
     # 1. Bounding Box
@@ -297,7 +297,7 @@ def generate_map(mundo, target_path, mode, entity="tribe", metric="points"):
         # Cloud (Background)
         for r in target_ids_for_map.itertuples():
             x, y = map_xy(r[3], r[4])
-            if x > 1000: continue
+            if not (0 <= x <= 1000 and 0 <= y <= 1000): continue
             cor = tuple(map_id_color[r.color_key])
             o_draw.ellipse([x-10, y-10, x+10, y+10], fill=cor + (255,))
         
@@ -313,7 +313,7 @@ def generate_map(mundo, target_path, mode, entity="tribe", metric="points"):
             xx = r[3] # Coluna X da vila (índice 2+1)
             yy = r[4] # Coluna Y da vila (índice 3+1)
             x, y = map_xy(xx, yy)
-            if x > 1000: continue
+            if not (0 <= x <= 1000 and 0 <= y <= 1000): continue
             cor = r.color if mode == 'conquests' else map_id_color[r.color_key]
             cor = tuple(cor)
             d_draw.ellipse([x-2, y-2, x+3, y+3], fill=cor + (255,), outline=(0,0,0,255))
