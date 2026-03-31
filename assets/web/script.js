@@ -84,9 +84,9 @@ function renderMaps() {
             <div class="map-info">
                 <div class="map-title">${map.title}</div>
                 <div class="copy-actions">
-                    <button class="btn-copy" onclick="copyText('[IMG]${fullUrl}[/IMG]')">BBCode</button>
-                    <button class="btn-copy" onclick="copyText('![${map.title}](${fullUrl})')">Markdown</button>
-                    <button class="btn-copy" onclick="copyText('${fullUrl}')">URL</button>
+                    <button class="btn-copy" onclick="copyText('[IMG]${fullUrl}[/IMG]', this)">BBCode</button>
+                    <button class="btn-copy" onclick="copyText('![${map.title}](${fullUrl})', this)">Markdown</button>
+                    <button class="btn-copy" onclick="copyText('${fullUrl}', this)">URL</button>
                 </div>
             </div>
         `;
@@ -94,9 +94,15 @@ function renderMaps() {
     });
 }
 
-function copyText(text) {
+function copyText(text, btn) {
+    const originalText = btn.textContent;
     navigator.clipboard.writeText(text).then(() => {
-        alert('Copiado para a área de transferência!');
+        btn.textContent = 'Copiado!';
+        btn.style.backgroundColor = 'var(--primary)';
+        setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.backgroundColor = '';
+        }, 1500);
     });
 }
 
