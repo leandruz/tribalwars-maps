@@ -1,3 +1,6 @@
+# Autor: Leandro Beraldo (Leandruz)
+# GitHub: https://github.com/Leandruz/TribalWars-Maps
+
 import os
 import subprocess
 import time
