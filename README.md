@@ -4,33 +4,36 @@
 ![Automação](https://img.shields.io/badge/Automação-Daily-blue)
 ![Licença](https://img.shields.io/badge/Licença-MIT-green)
 
-Sistema automático de geração de infográficos de guerra para o jogo TribalWars (Servidores Brasileiros).
+Sistema automático de geração de infográficos de guerra para o jogo TribalWars (Servidor Brasil).
 
 ## 🚀 Como Funciona?
 
-O projeto utiliza a API pública oficial da InnoGames para capturar dados em tempo real (aldeias, jogadores, tribos e ODs) e gera mapas de alta definição com as seguintes métricas:
+O projeto utiliza a API oficial da InnoGames para capturar dados em tempo real e gera mapas de alta definição:
 
-- **Top 15 Famílias/Tribos**: Rankings por Pontos, ODA, ODD, ODS e Dominância por Continente (K).
-- **Top 15 Jogadores**: Rankings por Pontos, ODA, ODD, ODS e Dominância por Continente (K).
-- **Top 15 Noblagens**: Rastreamento de conquistas do dia.
+- **Top 15 Famílias/Jogadores**: Rankings por Pontos, ODA, ODD, ODS e Dominância (K).
+- **Relatório de Conquistas**: Rastreamento de noblagens das últimas 24h.
 
-## 🕒 Atualização Diária
+## 📂 Estrutura do Projeto (V2 Modular)
 
-Utilizamos o **GitHub Actions** para rodar todos os scripts automaticamente todos os dias às **01:00 (Horário de Brasília)**. As imagens na pasta `Resultados/` são atualizadas e podem ser linkadas diretamente em fóruns e mensagens coletivas de tribos.
+- **`gerar_mapas.py`**: Único arquivo necessário para gerar todos os 48 mapas de uma vez.
+- **`Automação/map_core.py`**: O motor central de processamento e desenho.
+- **`Automação/config.json`**: Configuração de mundos ativos e paleta de cores.
+- **`assets/fonts/`**: Fontes locais (Arial) para funcionamento universal.
+- **`Resultados/`**: Mapas PNG atualizados diariamente.
 
-## 📂 Estrutura do Projeto
+---
 
-- `/Automação`: Contém o script orquestrador e dependências.
-- `/Code TOP 15`: Scripts individuais em Python para cada tipo de mapa.
-- `/Resultados`: Onde as imagens finais estão hospedadas (BR138, BR139, BR140, BR141).
+## 🛠️ Como Usar Localmente
 
-## 🛠️ Como usar localmente
-
-Caso queira rodar os mapas agora mesmo no seu computador:
-
-1. Instale o Python 3.9+ 
+1. Tenha o Python 3.9+ instalado.
 2. Instale as dependências: `pip install -r Automação/requirements.txt`
-3. Execute o script mestre: `python Automação/gerar_mapas_automacao.py`
+3. Execute o gerador: `python gerar_mapas.py`
+
+---
+
+## 🤖 Automação (GitHub Actions)
+
+Os mapas são atualizados automaticamente **todos os dias às 01:00 (Horário de Brasília)** via GitHub Actions. As imagens na pasta `Resultados/` podem ser linkadas diretamente em fóruns e mensagens coletivas.
 
 ## 👤 Autoria
 
@@ -38,4 +41,4 @@ Desenvolvido por **Leandro Beraldo (Leandruz)**.
 GitHub: [https://github.com/Leandruz/TribalWars-Maps](https://github.com/Leandruz/TribalWars-Maps)
 
 ---
-*Este projeto é de uso livre sob a Licença MIT. Sinta-se à vontade para contribuir ou usar os mapas em seus mundos!*
+*Este projeto é de uso livre sob a Licença MIT.*
