@@ -1,0 +1,656 @@
+{
+  "players": [
+    {
+      "rank": 14209613,
+      "name": 11379158,
+      "pts": 1335,
+      "villages": 116
+    },
+    {
+      "rank": 9008104,
+      "name": 11318998,
+      "pts": 858,
+      "villages": 116
+    },
+    {
+      "rank": 7344391,
+      "name": 11581774,
+      "pts": 709,
+      "villages": 320
+    },
+    {
+      "rank": 7294412,
+      "name": 8350817,
+      "pts": 747,
+      "villages": 116
+    },
+    {
+      "rank": 7068136,
+      "name": 11371039,
+      "pts": 731,
+      "villages": 116
+    },
+    {
+      "rank": 7051904,
+      "name": 10725639,
+      "pts": 666,
+      "villages": 116
+    },
+    {
+      "rank": 6826698,
+      "name": 849363286,
+      "pts": 660,
+      "villages": 0
+    },
+    {
+      "rank": 6563325,
+      "name": 10208762,
+      "pts": 628,
+      "villages": 116
+    },
+    {
+      "rank": 6146953,
+      "name": 10396534,
+      "pts": 578,
+      "villages": 116
+    },
+    {
+      "rank": 5888835,
+      "name": 4448391,
+      "pts": 571,
+      "villages": 116
+    },
+    {
+      "rank": 5873870,
+      "name": 848974806,
+      "pts": 561,
+      "villages": 116
+    },
+    {
+      "rank": 5763860,
+      "name": 848907513,
+      "pts": 524,
+      "villages": 116
+    },
+    {
+      "rank": 5459552,
+      "name": 11273253,
+      "pts": 523,
+      "villages": 116
+    },
+    {
+      "rank": 5443420,
+      "name": 849344155,
+      "pts": 528,
+      "villages": 320
+    },
+    {
+      "rank": 5329188,
+      "name": 849220024,
+      "pts": 517,
+      "villages": 320
+    },
+    {
+      "rank": 4722440,
+      "name": 11433890,
+      "pts": 460,
+      "villages": 116
+    },
+    {
+      "rank": 4697835,
+      "name": 849278217,
+      "pts": 473,
+      "villages": 116
+    },
+    {
+      "rank": 4598459,
+      "name": 849263786,
+      "pts": 427,
+      "villages": 320
+    },
+    {
+      "rank": 4588517,
+      "name": 11305948,
+      "pts": 433,
+      "villages": 116
+    },
+    {
+      "rank": 4442692,
+      "name": 11157592,
+      "pts": 442,
+      "villages": 116
+    },
+    {
+      "rank": 4312608,
+      "name": 11468481,
+      "pts": 421,
+      "villages": 116
+    },
+    {
+      "rank": 4227390,
+      "name": 9941625,
+      "pts": 392,
+      "villages": 116
+    },
+    {
+      "rank": 4092673,
+      "name": 4062502,
+      "pts": 385,
+      "villages": 116
+    },
+    {
+      "rank": 4013296,
+      "name": 11534098,
+      "pts": 377,
+      "villages": 116
+    },
+    {
+      "rank": 3813528,
+      "name": 848903334,
+      "pts": 365,
+      "villages": 320
+    },
+    {
+      "rank": 3789556,
+      "name": 10964115,
+      "pts": 348,
+      "villages": 116
+    },
+    {
+      "rank": 3720467,
+      "name": 849205818,
+      "pts": 366,
+      "villages": 320
+    },
+    {
+      "rank": 3702743,
+      "name": 849100689,
+      "pts": 346,
+      "villages": 116
+    },
+    {
+      "rank": 3679233,
+      "name": 11517343,
+      "pts": 329,
+      "villages": 485
+    },
+    {
+      "rank": 3585319,
+      "name": 849349785,
+      "pts": 357,
+      "villages": 320
+    },
+    {
+      "rank": 3568614,
+      "name": 849356279,
+      "pts": 335,
+      "villages": 525
+    },
+    {
+      "rank": 3247002,
+      "name": 849189750,
+      "pts": 318,
+      "villages": 525
+    },
+    {
+      "rank": 3024419,
+      "name": 8395839,
+      "pts": 314,
+      "villages": 525
+    },
+    {
+      "rank": 2904988,
+      "name": 849234488,
+      "pts": 272,
+      "villages": 116
+    },
+    {
+      "rank": 2880611,
+      "name": 849069488,
+      "pts": 299,
+      "villages": 525
+    },
+    {
+      "rank": 2873941,
+      "name": 11514009,
+      "pts": 279,
+      "villages": 847
+    },
+    {
+      "rank": 2872809,
+      "name": 849201339,
+      "pts": 278,
+      "villages": 525
+    },
+    {
+      "rank": 2806790,
+      "name": 11468547,
+      "pts": 275,
+      "villages": 485
+    },
+    {
+      "rank": 2756476,
+      "name": 849176307,
+      "pts": 270,
+      "villages": 116
+    },
+    {
+      "rank": 2708231,
+      "name": 849088910,
+      "pts": 280,
+      "villages": 525
+    },
+    {
+      "rank": 2669034,
+      "name": 10817917,
+      "pts": 262,
+      "villages": 485
+    },
+    {
+      "rank": 2565968,
+      "name": 11173438,
+      "pts": 259,
+      "villages": 485
+    },
+    {
+      "rank": 2538474,
+      "name": 849347766,
+      "pts": 255,
+      "villages": 525
+    },
+    {
+      "rank": 2521063,
+      "name": 849287380,
+      "pts": 251,
+      "villages": 686
+    },
+    {
+      "rank": 2517713,
+      "name": 11468509,
+      "pts": 243,
+      "villages": 320
+    },
+    {
+      "rank": 2455228,
+      "name": 11458062,
+      "pts": 247,
+      "villages": 485
+    },
+    {
+      "rank": 2450458,
+      "name": 849365866,
+      "pts": 234,
+      "villages": 485
+    },
+    {
+      "rank": 2422315,
+      "name": 849140706,
+      "pts": 239,
+      "villages": 485
+    },
+    {
+      "rank": 2380554,
+      "name": 849365147,
+      "pts": 258,
+      "villages": 525
+    },
+    {
+      "rank": 2374976,
+      "name": 11578392,
+      "pts": 240,
+      "villages": 485
+    }
+  ],
+  "tribes": [
+    {
+      "rank": 128580385,
+      "name": 116,
+      "tag": "P is won, again",
+      "pts": 23,
+      "villages": 128580385
+    },
+    {
+      "rank": 48573611,
+      "name": 320,
+      "tag": "Margot Robbie Fan Club.",
+      "pts": 16,
+      "villages": 48573611
+    },
+    {
+      "rank": 35172270,
+      "name": 485,
+      "tag": "Phalanx 2",
+      "pts": 18,
+      "villages": 35172270
+    },
+    {
+      "rank": 34531498,
+      "name": 525,
+      "tag": "Margot Robbie Fan Club",
+      "pts": 18,
+      "villages": 34531498
+    },
+    {
+      "rank": 14860172,
+      "name": 686,
+      "tag": "Odin's Guardians",
+      "pts": 23,
+      "villages": 14860172
+    },
+    {
+      "rank": 10570563,
+      "name": 282,
+      "tag": "The Minions",
+      "pts": 24,
+      "villages": 10570563
+    },
+    {
+      "rank": 5960301,
+      "name": 679,
+      "tag": "Death Cult",
+      "pts": 15,
+      "villages": 5960301
+    },
+    {
+      "rank": 3788586,
+      "name": 567,
+      "tag": "Arcanjos de fogo",
+      "pts": 19,
+      "villages": 3788586
+    },
+    {
+      "rank": 3265991,
+      "name": 574,
+      "tag": "EXCUZS",
+      "pts": 8,
+      "villages": 3265991
+    },
+    {
+      "rank": 3194593,
+      "name": 210,
+      "tag": "Unbroken Armada North",
+      "pts": 16,
+      "villages": 3194593
+    },
+    {
+      "rank": 2186376,
+      "name": 806,
+      "tag": "A New Beginning",
+      "pts": 14,
+      "villages": 2186376
+    },
+    {
+      "rank": 2873941,
+      "name": 847,
+      "tag": "Woot",
+      "pts": 1,
+      "villages": 2873941
+    },
+    {
+      "rank": 2202895,
+      "name": 340,
+      "tag": "Rim Control",
+      "pts": 8,
+      "villages": 2202895
+    },
+    {
+      "rank": 744603,
+      "name": 781,
+      "tag": "Rains of Castemere",
+      "pts": 3,
+      "villages": 744603
+    },
+    {
+      "rank": 482066,
+      "name": 834,
+      "tag": "Woopty doop",
+      "pts": 2,
+      "villages": 482066
+    },
+    {
+      "rank": 726772,
+      "name": 805,
+      "tag": "Phoenix",
+      "pts": 3,
+      "villages": 726772
+    },
+    {
+      "rank": 655122,
+      "name": 384,
+      "tag": "Kindom Of Heaven",
+      "pts": 6,
+      "villages": 655122
+    },
+    {
+      "rank": 732440,
+      "name": 837,
+      "tag": "The Old Guard",
+      "pts": 4,
+      "villages": 732440
+    },
+    {
+      "rank": 339211,
+      "name": 18,
+      "tag": "I Cavalieri Templari",
+      "pts": 21,
+      "villages": 339211
+    },
+    {
+      "rank": 339603,
+      "name": 229,
+      "tag": "UNBROKEN ARMADA SOUTH",
+      "pts": 8,
+      "villages": 339603
+    },
+    {
+      "rank": 636153,
+      "name": 361,
+      "tag": "Tortoises",
+      "pts": 3,
+      "villages": 636153
+    },
+    {
+      "rank": 305013,
+      "name": 619,
+      "tag": "solus",
+      "pts": 9,
+      "villages": 305013
+    },
+    {
+      "rank": 483796,
+      "name": 122,
+      "tag": "NO NAME",
+      "pts": 5,
+      "villages": 483796
+    },
+    {
+      "rank": 477349,
+      "name": 596,
+      "tag": "South Union",
+      "pts": 2,
+      "villages": 477349
+    },
+    {
+      "rank": 365305,
+      "name": 433,
+      "tag": "Michal C Hall Fan Club.",
+      "pts": 3,
+      "villages": 365305
+    },
+    {
+      "rank": 159919,
+      "name": 822,
+      "tag": "BARBZ HUNTERZ",
+      "pts": 5,
+      "villages": 159919
+    },
+    {
+      "rank": 332869,
+      "name": 1,
+      "tag": "PKM357",
+      "pts": 7,
+      "villages": 332869
+    },
+    {
+      "rank": 176780,
+      "name": 648,
+      "tag": "AVENGERS",
+      "pts": 5,
+      "villages": 176780
+    },
+    {
+      "rank": 118084,
+      "name": 742,
+      "tag": "POLSKA",
+      "pts": 1,
+      "villages": 118084
+    },
+    {
+      "rank": 239770,
+      "name": 34,
+      "tag": "NoOneKnowsHowToRule",
+      "pts": 7,
+      "villages": 239770
+    },
+    {
+      "rank": 211330,
+      "name": 774,
+      "tag": "FALLEN",
+      "pts": 3,
+      "villages": 211330
+    },
+    {
+      "rank": 105749,
+      "name": 14,
+      "tag": "+KNIGHTS OF CAMELOT+",
+      "pts": 23,
+      "villages": 105749
+    },
+    {
+      "rank": 193103,
+      "name": 663,
+      "tag": "The Old Guys Tribe",
+      "pts": 4,
+      "villages": 193103
+    },
+    {
+      "rank": 129474,
+      "name": 207,
+      "tag": "GIVE US THE PP",
+      "pts": 5,
+      "villages": 129474
+    },
+    {
+      "rank": 126337,
+      "name": 2,
+      "tag": "~SHOCKWAVE~",
+      "pts": 11,
+      "villages": 126337
+    },
+    {
+      "rank": 76877,
+      "name": 129,
+      "tag": "God For War",
+      "pts": 6,
+      "villages": 76877
+    },
+    {
+      "rank": 174164,
+      "name": 166,
+      "tag": "Symphony Of Chaos",
+      "pts": 2,
+      "villages": 174164
+    },
+    {
+      "rank": 41180,
+      "name": 798,
+      "tag": "Winged Hussars",
+      "pts": 7,
+      "villages": 41180
+    },
+    {
+      "rank": 41671,
+      "name": 8,
+      "tag": "ViRuS",
+      "pts": 9,
+      "villages": 41671
+    },
+    {
+      "rank": 84145,
+      "name": 220,
+      "tag": "Certified732",
+      "pts": 3,
+      "villages": 84145
+    },
+    {
+      "rank": 110565,
+      "name": 595,
+      "tag": "Johnny English",
+      "pts": 3,
+      "villages": 110565
+    },
+    {
+      "rank": 17602,
+      "name": 30,
+      "tag": "Valley Of Blossoms",
+      "pts": 12,
+      "villages": 17602
+    },
+    {
+      "rank": 117814,
+      "name": 799,
+      "tag": "Phalanx 3",
+      "pts": 1,
+      "villages": 117814
+    },
+    {
+      "rank": 76099,
+      "name": 491,
+      "tag": "Kingdom of Heaven",
+      "pts": 1,
+      "villages": 76099
+    },
+    {
+      "rank": 88799,
+      "name": 337,
+      "tag": "Non Believers",
+      "pts": 3,
+      "villages": 88799
+    },
+    {
+      "rank": 103177,
+      "name": 531,
+      "tag": "FUBAR",
+      "pts": 1,
+      "villages": 103177
+    },
+    {
+      "rank": 46262,
+      "name": 817,
+      "tag": "$$$$",
+      "pts": 1,
+      "villages": 46262
+    },
+    {
+      "rank": 20951,
+      "name": 503,
+      "tag": "United",
+      "pts": 4,
+      "villages": 20951
+    },
+    {
+      "rank": 60615,
+      "name": 388,
+      "tag": "The Rogue Minions",
+      "pts": 1,
+      "villages": 60615
+    },
+    {
+      "rank": 56392,
+      "name": 715,
+      "tag": "Knights of Hyrule",
+      "pts": 1,
+      "villages": 56392
+    }
+  ]
+}
