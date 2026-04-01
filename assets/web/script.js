@@ -1,6 +1,21 @@
 let galleryData = null;
-let currentWorld = null;
+let currentWorldId = null;
+let currentServer = null;
 let currentTab = 'players';
+
+const SERVER_FLAGS = {
+    ".BR": "🇧🇷",
+    ".PT": "🇵🇹",
+    ".NET": "🌐",
+    ".DS": "🇩🇪"
+};
+
+const SERVER_NAMES = {
+    ".BR": "Brasil",
+    ".PT": "Portugal",
+    ".NET": "Internacional",
+    ".DS": "Alemanha"
+};
 
 async function init() {
     try {
@@ -9,47 +24,76 @@ async function init() {
         galleryData = await response.json();
         
         document.getElementById('last-update').textContent = `Última atualização: ${galleryData.last_update}`;
-        renderWorldGrid();
+        renderGallery();
         
     } catch (error) {
         console.error('Error loading gallery:', error);
         document.getElementById('world-grid').innerHTML = `
-            <div style="grid-column: 1/-1; text-align: center; color: #ff6b6b;">
-                Erro ao carregar dados da galeria. Certifique-se de que rodou <b>gerar_mapas.py</b> primeiro.
+            <div style="grid-column: 1/-1; text-align: center; color: #ff6b6b; padding: 40px;">
+                <p>Erro ao carregar dados da galeria.</p>
+                <small>Certifique-se de que rodou <b>gerar_mapas.py</b> no GitHub Actions.</small>
             </div>
         `;
     }
 }
 
-function renderWorldGrid() {
+function renderGallery() {
     const grid = document.getElementById('world-grid');
     grid.innerHTML = '';
     
-    // Sort worlds by name (br141, br140, etc)
-    const worlds = Object.keys(galleryData.worlds).sort((a, b) => b.localeCompare(a));
+    // Iterar por SERVIDORES
+    const servers = Object.keys(galleryData.servers).sort();
     
-    worlds.forEach(id => {
-        const world = galleryData.worlds[id];
-        const card = document.createElement('div');
-        card.className = 'world-card';
-        card.onclick = () => showWorld(id);
+    servers.forEach(srv => {
+        const worldsObj = galleryData.servers[srv];
+        const worldIds = Object.keys(worldsObj).sort((a, b) => b.localeCompare(a));
         
-        card.innerHTML = `
-            <div class="icon">🌍</div>
-            <h3>${world.name}</h3>
-            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">
-                ${world.players.length + world.tribes.length} Mapas
-            </p>
+        if (worldIds.length === 0) return;
+
+        // Título do Servidor
+        const sectionHeader = document.createElement('div');
+        sectionHeader.className = 'server-section-header';
+        sectionHeader.style.gridColumn = "1 / -1";
+        sectionHeader.style.margin = "30px 0 15px 0";
+        sectionHeader.innerHTML = `
+            <h2 style="display: flex; align-items: center; gap: 10px; font-size: 1.5rem;">
+                <span>${SERVER_FLAGS[srv] || '🏳️'}</span>
+                <span>${SERVER_NAMES[srv] || srv}</span>
+                <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(${srv})</span>
+            </h2>
         `;
-        grid.appendChild(card);
+        grid.appendChild(sectionHeader);
+
+        // Cards dos Mundos
+        worldIds.forEach(id => {
+            const world = worldsObj[id];
+            const card = document.createElement('div');
+            card.className = 'world-card';
+            card.onclick = () => showWorld(srv, id);
+            
+            card.innerHTML = `
+                <div class="icon">🏘️</div>
+                <h3>${world.name}</h3>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">
+                    ${world.players.length + world.tribes.length} Mapas
+                </p>
+            `;
+            grid.appendChild(card);
+        });
     });
 }
 
-function showWorld(worldId) {
-    currentWorld = worldId;
+function showWorld(srv, worldId) {
+    currentServer = srv;
+    currentWorldId = worldId;
+    
     document.getElementById('world-grid').style.display = 'none';
     document.getElementById('gallery-view').style.display = 'block';
-    document.getElementById('world-title').textContent = galleryData.worlds[worldId].name;
+    
+    const worldData = galleryData.servers[srv][worldId];
+    document.getElementById('world-title').innerHTML = `
+        <span style="margin-right: 10px;">${SERVER_FLAGS[srv]}</span> ${worldData.name}
+    `;
     
     renderMaps();
 }
@@ -57,6 +101,7 @@ function showWorld(worldId) {
 function goBack() {
     document.getElementById('world-grid').style.display = 'grid';
     document.getElementById('gallery-view').style.display = 'none';
+    window.scrollTo(0, 0);
 }
 
 function switchTab(tab) {
@@ -70,17 +115,26 @@ function renderMaps() {
     const grid = document.getElementById('maps-grid');
     grid.innerHTML = '';
     
-    const world = galleryData.worlds[currentWorld];
+    const world = galleryData.servers[currentServer][currentWorldId];
     const maps = currentTab === 'players' ? world.players : world.tribes;
     
+    if (!maps || maps.length === 0) {
+        grid.innerHTML = '<p style="grid-column:1/-1; text-align:center; padding: 40px; color: var(--text-secondary);">Nenhum mapa disponível nesta categoria.</p>';
+        return;
+    }
+
     maps.forEach(map => {
         const card = document.createElement('div');
         card.className = 'map-card';
         
-        const fullUrl = window.location.origin + window.location.pathname.replace('index.html', '') + map.path;
+        // Caminho absoluto para os BBcodes
+        const baseUrl = window.location.href.split('?')[0].split('#')[0].replace('index.html', '');
+        const fullUrl = baseUrl + map.path;
         
         card.innerHTML = `
-            <img src="${map.path}" class="map-thumb" onclick="openModal('${map.path}')">
+            <div class="map-img-container">
+                <img src="${map.path}" class="map-thumb" onclick="openModal('${map.path}')">
+            </div>
             <div class="map-info">
                 <div class="map-title">${map.title}</div>
                 <div class="copy-actions">
@@ -98,10 +152,12 @@ function copyText(text, btn) {
     const originalText = btn.textContent;
     navigator.clipboard.writeText(text).then(() => {
         btn.textContent = 'Copiado!';
-        btn.style.backgroundColor = 'var(--primary)';
+        btn.style.backgroundColor = '#10b981'; // Emerald 500
+        btn.style.color = 'white';
         setTimeout(() => {
             btn.textContent = originalText;
             btn.style.backgroundColor = '';
+            btn.style.color = '';
         }, 1500);
     });
 }
@@ -117,15 +173,11 @@ function closeModal() {
     document.getElementById('modal').style.display = 'none';
 }
 
-// Close modal on click outside
 window.onclick = function(event) {
     const modal = document.getElementById('modal');
-    if (event.target == modal) {
-        closeModal();
-    }
+    if (event.target == modal) closeModal();
 }
 
-// Keyboard shortcuts
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal();
 });

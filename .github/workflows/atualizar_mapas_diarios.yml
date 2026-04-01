@@ -30,11 +30,14 @@ jobs:
           pip install -r Automação/requirements.txt
           
       - name: Gerar Mapas (Core V2)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python gerar_mapas.py
           
       - name: Commit & Push (Enviar as imagens finalizadas de volta ao Repositório)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🗺️ Atualização Diária automática: Mapas do TribalWars"
-          file_pattern: 'Resultados/**/*.png Resultados/gallery.json' # Mapas e o Índice da Galeria serão trackeados
+          commit_message: "🗺️ Atualização Diária automática: Mapas e Rankings do TribalWars"
+          file_pattern: 'Resultados/**/* Automação/config.json'

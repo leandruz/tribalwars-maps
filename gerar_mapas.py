@@ -4,51 +4,75 @@
 import os
 import json
 import time
-from Automação.map_core import generate_map
+from concurrent.futures import ThreadPoolExecutor
+from Automação.map_core import generate_map, archive_daily_data
 
-# Carregar Mundos do Config
+# Carregar Config
 CONFIG_PATH = os.path.join("Automação", "config.json")
-with open(CONFIG_PATH, "r") as f:
+with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     CONFIG = json.load(f)
 
-MUNDOS = CONFIG["worlds"]
+SERVERS = CONFIG["servers"]
 PASTA_RAIZ = "Resultados"
 
-def main():
-    print(f"=== [ SISTEMA CORE V2 ] Iniciando Geração ({len(MUNDOS)} mundos) ===\n")
-    
-    for mundo in MUNDOS:
-        print(f"\n>>>> MUNDO: {mundo.upper()} <<<<")
+def process_world(server, mundo):
+    """Função para processar um único mundo (pode rodar em paralelo)"""
+    try:
+        print(f"\n>>>> [Início] {server} {mundo.upper()}")
         
-        # 1. Mapas de Tribo (3 ranking + Dominância + Conquistas = 5)
+        # 1. Mapas de Tribo (Points, ODA, ODD)
         for metric in ["points", "oda", "odd"]:
-            path = os.path.join(PASTA_RAIZ, mundo, "Tribes")
-            generate_map(mundo, path, mode='ranking', entity='tribe', metric=metric)
-            time.sleep(0.5)
+            generate_map(mundo, server, PASTA_RAIZ, mode='ranking', entity='tribe', metric=metric)
 
-        # 2. Mapas de Player (5 ranking + Dominância = 6)
-        for metric in ["points", "oda", "odd", "ods", "xgoal"]:
-            path = os.path.join(PASTA_RAIZ, mundo, "Players")
-            generate_map(mundo, path, mode='ranking', entity='player', metric=metric)
-            time.sleep(0.5)
+        # 2. Mapas de Player (Points, ODA, ODD, xGoal)
+        for metric in ["points", "oda", "odd", "xgoal"]:
+            generate_map(mundo, server, PASTA_RAIZ, mode='ranking', entity='player', metric=metric)
 
         # 3. Dominância e Conquistas
-        path_t = os.path.join(PASTA_RAIZ, mundo, "Tribes")
-        path_p = os.path.join(PASTA_RAIZ, mundo, "Players")
-        
-        generate_map(mundo, path_t, mode='dominance_k', entity='tribe')      # mapa_top15_dominancia_K
-        generate_map(mundo, path_p, mode='dominance_k', entity='player')     # mapa_top15_dominancia_jogadores_K
-        generate_map(mundo, path_t, mode='conquests')                        # mapa_top15_conquistas
+        generate_map(mundo, server, PASTA_RAIZ, mode='dominance_k', entity='tribe')
+        generate_map(mundo, server, PASTA_RAIZ, mode='dominance_k', entity='player')
+        generate_map(mundo, server, PASTA_RAIZ, mode='conquests')
+
+        # 4. Arquivamento de Dados
+        archive_daily_data(mundo, server, PASTA_RAIZ)
 
         print(f" [OK] {mundo} finalizado com sucesso!")
-        time.sleep(1)
+        return True
+    except Exception as e:
+        print(f" [ERRO] Falha ao processar {mundo}: {e}")
+        return False
 
-    # 4. Atualizar o Índice da Galeria Web
+def main():
+    total_mundos = sum(len(worlds) for worlds in SERVERS.values())
+    print(f"=== [ SISTEMA CORE V2.2 ] Iniciando Geração paralela ({total_mundos} mundos) ===\n")
+    
+    # Criar lista de tarefas (flatten)
+    tasks = []
+    for server, mundos in SERVERS.items():
+        for mundo in mundos:
+            tasks.append((server, mundo))
+
+    # Executar em paralelo (máximo de 4 workers para não sobrecarregar ou ser bloqueado)
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        futures = [executor.submit(process_world, srv, m) for srv, m in tasks]
+        
+        # Aguarda todos terminarem
+        results = [f.result() for f in futures]
+
+    # 5. Atualizar o Índice da Galeria Web
     print("\n=== [ GALERIA ] Atualizando Índice Web... ===")
     from Automação.gerar_index import main as update_index
     update_index()
 
-    print("\n=== OPERAÇÃO CONCLUÍDA: Todos os mapas foram gerados e a galeria foi atualizada! ===")
+    # 6. Notificar Telegram
+    print("\n=== [ NOTIFICAÇÃO ] Enviando aviso para o Telegram... ===")
+    try:
+        from Automação.notificar_telegram import main as notify
+        notify()
+    except Exception as e:
+        print(f"Aviso: Telegram não notificado.")
+
+    print(f"\n=== OPERAÇÃO CONCLUÍDA: {sum(results)}/{total_mundos} mundos processados! ===")
 
 if __name__ == "__main__":
     main()
