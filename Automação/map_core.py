@@ -453,12 +453,24 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
     target_path = os.path.join(target_root, server_key, mundo, "Players" if entity == 'player' else "Tribes")
     os.makedirs(target_path, exist_ok=True)
     
-    f_prefix = f"mapa_top15_{metric if metric != 'points' else ''}_{'jogadores' if entity == 'player' else 'familias'}"
-    if mode == 'conquests': f_prefix = "mapa_top15_conquistas"
-    elif mode == 'dominance_k': f_prefix = f"mapa_top15_dominancia_{'jogadores' if entity == 'player' else ''}"
-    elif mode == 'combat_heatmap': f_prefix = "mapa_calor_combate"
-    
-    f_name = f"{f_prefix.strip('_')}_{mundo}.png"
+    ent = "jogadores" if entity == 'player' else "familias"
+    if mode == 'ranking':
+        if metric == 'points':
+            f_name = f"mapa_top15_{ent}_{mundo}.png"
+        else:
+            f_name = f"mapa_top15_{metric}_{ent}_{mundo}.png"
+    elif mode == 'conquests':
+        f_name = f"mapa_top15_conquistas_{mundo}.png"
+    elif mode == 'dominance_k':
+        if entity == 'player':
+            f_name = f"mapa_top15_dominancia_jogadores_K_{mundo}.png"
+        else:
+            f_name = f"mapa_top15_dominancia_K_{mundo}.png"
+    elif mode == 'combat_heatmap':
+        f_name = f"mapa_calor_combate_{mundo}.png"
+    else:
+        f_name = f"mapa_{mode}_{mundo}.png"
+
     img.save(os.path.join(target_path, f_name))
     print(f"Finalizado: {f_name}")
 
