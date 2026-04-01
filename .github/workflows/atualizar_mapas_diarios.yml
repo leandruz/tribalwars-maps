@@ -37,4 +37,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "🗺️ Atualização Diária automática: Mapas do TribalWars"
-          file_pattern: 'Resultados/**/*.png' # Somente os mapas png serão trackeados e upados
+          file_pattern: 'Resultados/**/*.png Resultados/gallery.json' # Mapas e o Índice da Galeria serão trackeados
