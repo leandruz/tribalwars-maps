@@ -32,6 +32,7 @@ def process_world(server, mundo):
         generate_map(mundo, server, PASTA_RAIZ, mode='dominance_k', entity='tribe')
         generate_map(mundo, server, PASTA_RAIZ, mode='dominance_k', entity='player')
         generate_map(mundo, server, PASTA_RAIZ, mode='conquests')
+        generate_map(mundo, server, PASTA_RAIZ, mode='conquest_hotspot')
 
         # 4. Arquivamento de Dados
         archive_daily_data(mundo, server, PASTA_RAIZ)

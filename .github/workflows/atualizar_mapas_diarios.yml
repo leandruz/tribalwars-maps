@@ -40,5 +40,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "🗺️ Atualização Diária automática: Mapas e Rankings do TribalWars"
+          add_options: '-A'
           file_pattern: 'Resultados/ Automação/config.json .nojekyll'
           push_options: '--force-with-lease'
