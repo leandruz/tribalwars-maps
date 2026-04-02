@@ -1,5 +1,5 @@
 {
-  "last_update": "01/04/2026 10:22:11",
+  "last_update": "02/04/2026 05:31:59",
   "servers": {
     ".BR": {
       "br141": {
@@ -467,6 +467,14 @@
         "name": "DEC4",
         "players": [
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/dec4/Players/mapa_top15_dominancia_jogadores_K_dec4.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/dec4/Players/mapa_top15_jogadores_dec4.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/dec4/Players/mapa_top15_oda_jogadores_dec4.png"
           },
@@ -485,6 +493,14 @@
             "path": "Resultados/.DS/dec4/Tribes/mapa_top15_conquistas_dec4.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/dec4/Tribes/mapa_top15_dominancia_K_dec4.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/dec4/Tribes/mapa_top15_familias_dec4.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/dec4/Tribes/mapa_top15_oda_familias_dec4.png"
           },
@@ -497,6 +513,14 @@
       "de253": {
         "name": "DE253",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de253/Players/mapa_top15_dominancia_jogadores_K_de253.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de253/Players/mapa_top15_jogadores_de253.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de253/Players/mapa_top15_oda_jogadores_de253.png"
@@ -516,6 +540,14 @@
             "path": "Resultados/.DS/de253/Tribes/mapa_top15_conquistas_de253.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de253/Tribes/mapa_top15_dominancia_K_de253.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de253/Tribes/mapa_top15_familias_de253.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de253/Tribes/mapa_top15_oda_familias_de253.png"
           },
@@ -528,6 +560,14 @@
       "de252": {
         "name": "DE252",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de252/Players/mapa_top15_dominancia_jogadores_K_de252.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de252/Players/mapa_top15_jogadores_de252.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de252/Players/mapa_top15_oda_jogadores_de252.png"
@@ -547,6 +587,14 @@
             "path": "Resultados/.DS/de252/Tribes/mapa_top15_conquistas_de252.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de252/Tribes/mapa_top15_dominancia_K_de252.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de252/Tribes/mapa_top15_familias_de252.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de252/Tribes/mapa_top15_oda_familias_de252.png"
           },
@@ -559,6 +607,14 @@
       "de251": {
         "name": "DE251",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de251/Players/mapa_top15_dominancia_jogadores_K_de251.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de251/Players/mapa_top15_jogadores_de251.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de251/Players/mapa_top15_oda_jogadores_de251.png"
@@ -578,6 +634,14 @@
             "path": "Resultados/.DS/de251/Tribes/mapa_top15_conquistas_de251.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de251/Tribes/mapa_top15_dominancia_K_de251.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de251/Tribes/mapa_top15_familias_de251.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de251/Tribes/mapa_top15_oda_familias_de251.png"
           },
@@ -590,6 +654,14 @@
       "de250": {
         "name": "DE250",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de250/Players/mapa_top15_dominancia_jogadores_K_de250.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de250/Players/mapa_top15_jogadores_de250.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de250/Players/mapa_top15_oda_jogadores_de250.png"
@@ -609,6 +681,14 @@
             "path": "Resultados/.DS/de250/Tribes/mapa_top15_conquistas_de250.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de250/Tribes/mapa_top15_dominancia_K_de250.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de250/Tribes/mapa_top15_familias_de250.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de250/Tribes/mapa_top15_oda_familias_de250.png"
           },
@@ -621,6 +701,14 @@
       "de249": {
         "name": "DE249",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de249/Players/mapa_top15_dominancia_jogadores_K_de249.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de249/Players/mapa_top15_jogadores_de249.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de249/Players/mapa_top15_oda_jogadores_de249.png"
@@ -640,6 +728,14 @@
             "path": "Resultados/.DS/de249/Tribes/mapa_top15_conquistas_de249.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de249/Tribes/mapa_top15_dominancia_K_de249.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de249/Tribes/mapa_top15_familias_de249.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de249/Tribes/mapa_top15_oda_familias_de249.png"
           },
@@ -652,6 +748,14 @@
       "de248": {
         "name": "DE248",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de248/Players/mapa_top15_dominancia_jogadores_K_de248.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de248/Players/mapa_top15_jogadores_de248.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de248/Players/mapa_top15_oda_jogadores_de248.png"
@@ -671,6 +775,14 @@
             "path": "Resultados/.DS/de248/Tribes/mapa_top15_conquistas_de248.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de248/Tribes/mapa_top15_dominancia_K_de248.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de248/Tribes/mapa_top15_familias_de248.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de248/Tribes/mapa_top15_oda_familias_de248.png"
           },
@@ -683,6 +795,14 @@
       "de247": {
         "name": "DE247",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de247/Players/mapa_top15_dominancia_jogadores_K_de247.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de247/Players/mapa_top15_jogadores_de247.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de247/Players/mapa_top15_oda_jogadores_de247.png"
@@ -702,6 +822,14 @@
             "path": "Resultados/.DS/de247/Tribes/mapa_top15_conquistas_de247.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de247/Tribes/mapa_top15_dominancia_K_de247.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de247/Tribes/mapa_top15_familias_de247.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de247/Tribes/mapa_top15_oda_familias_de247.png"
           },
@@ -714,6 +842,14 @@
       "de246": {
         "name": "DE246",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de246/Players/mapa_top15_dominancia_jogadores_K_de246.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de246/Players/mapa_top15_jogadores_de246.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de246/Players/mapa_top15_oda_jogadores_de246.png"
@@ -733,6 +869,14 @@
             "path": "Resultados/.DS/de246/Tribes/mapa_top15_conquistas_de246.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de246/Tribes/mapa_top15_dominancia_K_de246.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de246/Tribes/mapa_top15_familias_de246.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de246/Tribes/mapa_top15_oda_familias_de246.png"
           },
@@ -745,6 +889,14 @@
       "de245": {
         "name": "DE245",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de245/Players/mapa_top15_dominancia_jogadores_K_de245.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de245/Players/mapa_top15_jogadores_de245.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de245/Players/mapa_top15_oda_jogadores_de245.png"
@@ -764,6 +916,14 @@
             "path": "Resultados/.DS/de245/Tribes/mapa_top15_conquistas_de245.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de245/Tribes/mapa_top15_dominancia_K_de245.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de245/Tribes/mapa_top15_familias_de245.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de245/Tribes/mapa_top15_oda_familias_de245.png"
           },
@@ -776,6 +936,14 @@
       "de244": {
         "name": "DE244",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de244/Players/mapa_top15_dominancia_jogadores_K_de244.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de244/Players/mapa_top15_jogadores_de244.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de244/Players/mapa_top15_oda_jogadores_de244.png"
@@ -795,6 +963,14 @@
             "path": "Resultados/.DS/de244/Tribes/mapa_top15_conquistas_de244.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de244/Tribes/mapa_top15_dominancia_K_de244.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de244/Tribes/mapa_top15_familias_de244.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de244/Tribes/mapa_top15_oda_familias_de244.png"
           },
@@ -807,6 +983,14 @@
       "de243": {
         "name": "DE243",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de243/Players/mapa_top15_dominancia_jogadores_K_de243.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de243/Players/mapa_top15_jogadores_de243.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de243/Players/mapa_top15_oda_jogadores_de243.png"
@@ -826,6 +1010,14 @@
             "path": "Resultados/.DS/de243/Tribes/mapa_top15_conquistas_de243.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.DS/de243/Tribes/mapa_top15_dominancia_K_de243.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de243/Tribes/mapa_top15_familias_de243.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.DS/de243/Tribes/mapa_top15_oda_familias_de243.png"
           },
@@ -840,6 +1032,14 @@
       "enc2": {
         "name": "ENC2",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/enc2/Players/mapa_top15_dominancia_jogadores_K_enc2.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/enc2/Players/mapa_top15_jogadores_enc2.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/enc2/Players/mapa_top15_oda_jogadores_enc2.png"
@@ -859,6 +1059,14 @@
             "path": "Resultados/.NET/enc2/Tribes/mapa_top15_conquistas_enc2.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/enc2/Tribes/mapa_top15_dominancia_K_enc2.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/enc2/Tribes/mapa_top15_familias_enc2.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/enc2/Tribes/mapa_top15_oda_familias_enc2.png"
           },
@@ -871,6 +1079,14 @@
       "enc1": {
         "name": "ENC1",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/enc1/Players/mapa_top15_dominancia_jogadores_K_enc1.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/enc1/Players/mapa_top15_jogadores_enc1.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/enc1/Players/mapa_top15_oda_jogadores_enc1.png"
@@ -890,6 +1106,14 @@
             "path": "Resultados/.NET/enc1/Tribes/mapa_top15_conquistas_enc1.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/enc1/Tribes/mapa_top15_dominancia_K_enc1.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/enc1/Tribes/mapa_top15_familias_enc1.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/enc1/Tribes/mapa_top15_oda_familias_enc1.png"
           },
@@ -902,6 +1126,14 @@
       "en154": {
         "name": "EN154",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en154/Players/mapa_top15_dominancia_jogadores_K_en154.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en154/Players/mapa_top15_jogadores_en154.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en154/Players/mapa_top15_oda_jogadores_en154.png"
@@ -921,6 +1153,14 @@
             "path": "Resultados/.NET/en154/Tribes/mapa_top15_conquistas_en154.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en154/Tribes/mapa_top15_dominancia_K_en154.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en154/Tribes/mapa_top15_familias_en154.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en154/Tribes/mapa_top15_oda_familias_en154.png"
           },
@@ -933,6 +1173,14 @@
       "en153": {
         "name": "EN153",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en153/Players/mapa_top15_dominancia_jogadores_K_en153.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en153/Players/mapa_top15_jogadores_en153.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en153/Players/mapa_top15_oda_jogadores_en153.png"
@@ -952,6 +1200,14 @@
             "path": "Resultados/.NET/en153/Tribes/mapa_top15_conquistas_en153.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en153/Tribes/mapa_top15_dominancia_K_en153.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en153/Tribes/mapa_top15_familias_en153.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en153/Tribes/mapa_top15_oda_familias_en153.png"
           },
@@ -964,6 +1220,14 @@
       "en152": {
         "name": "EN152",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en152/Players/mapa_top15_dominancia_jogadores_K_en152.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en152/Players/mapa_top15_jogadores_en152.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en152/Players/mapa_top15_oda_jogadores_en152.png"
@@ -983,6 +1247,14 @@
             "path": "Resultados/.NET/en152/Tribes/mapa_top15_conquistas_en152.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en152/Tribes/mapa_top15_dominancia_K_en152.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en152/Tribes/mapa_top15_familias_en152.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en152/Tribes/mapa_top15_oda_familias_en152.png"
           },
@@ -995,6 +1267,14 @@
       "en151": {
         "name": "EN151",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en151/Players/mapa_top15_dominancia_jogadores_K_en151.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en151/Players/mapa_top15_jogadores_en151.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en151/Players/mapa_top15_oda_jogadores_en151.png"
@@ -1014,6 +1294,14 @@
             "path": "Resultados/.NET/en151/Tribes/mapa_top15_conquistas_en151.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en151/Tribes/mapa_top15_dominancia_K_en151.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en151/Tribes/mapa_top15_familias_en151.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en151/Tribes/mapa_top15_oda_familias_en151.png"
           },
@@ -1026,6 +1314,14 @@
       "en150": {
         "name": "EN150",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en150/Players/mapa_top15_dominancia_jogadores_K_en150.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en150/Players/mapa_top15_jogadores_en150.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en150/Players/mapa_top15_oda_jogadores_en150.png"
@@ -1045,6 +1341,14 @@
             "path": "Resultados/.NET/en150/Tribes/mapa_top15_conquistas_en150.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en150/Tribes/mapa_top15_dominancia_K_en150.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en150/Tribes/mapa_top15_familias_en150.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en150/Tribes/mapa_top15_oda_familias_en150.png"
           },
@@ -1057,6 +1361,14 @@
       "en149": {
         "name": "EN149",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en149/Players/mapa_top15_dominancia_jogadores_K_en149.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en149/Players/mapa_top15_jogadores_en149.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en149/Players/mapa_top15_oda_jogadores_en149.png"
@@ -1076,6 +1388,14 @@
             "path": "Resultados/.NET/en149/Tribes/mapa_top15_conquistas_en149.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en149/Tribes/mapa_top15_dominancia_K_en149.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en149/Tribes/mapa_top15_familias_en149.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en149/Tribes/mapa_top15_oda_familias_en149.png"
           },
@@ -1088,6 +1408,14 @@
       "en148": {
         "name": "EN148",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en148/Players/mapa_top15_dominancia_jogadores_K_en148.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en148/Players/mapa_top15_jogadores_en148.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en148/Players/mapa_top15_oda_jogadores_en148.png"
@@ -1107,6 +1435,14 @@
             "path": "Resultados/.NET/en148/Tribes/mapa_top15_conquistas_en148.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.NET/en148/Tribes/mapa_top15_dominancia_K_en148.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en148/Tribes/mapa_top15_familias_en148.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/en148/Tribes/mapa_top15_oda_familias_en148.png"
           },
@@ -1121,6 +1457,14 @@
       "ptc1": {
         "name": "PTC1",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/ptc1/Players/mapa_top15_dominancia_jogadores_K_ptc1.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/ptc1/Players/mapa_top15_jogadores_ptc1.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.PT/ptc1/Players/mapa_top15_oda_jogadores_ptc1.png"
@@ -1140,6 +1484,14 @@
             "path": "Resultados/.PT/ptc1/Tribes/mapa_top15_conquistas_ptc1.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/ptc1/Tribes/mapa_top15_dominancia_K_ptc1.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/ptc1/Tribes/mapa_top15_familias_ptc1.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.PT/ptc1/Tribes/mapa_top15_oda_familias_ptc1.png"
           },
@@ -1152,6 +1504,14 @@
       "pt113": {
         "name": "PT113",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/pt113/Players/mapa_top15_dominancia_jogadores_K_pt113.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt113/Players/mapa_top15_jogadores_pt113.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.PT/pt113/Players/mapa_top15_oda_jogadores_pt113.png"
@@ -1171,6 +1531,14 @@
             "path": "Resultados/.PT/pt113/Tribes/mapa_top15_conquistas_pt113.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/pt113/Tribes/mapa_top15_dominancia_K_pt113.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt113/Tribes/mapa_top15_familias_pt113.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.PT/pt113/Tribes/mapa_top15_oda_familias_pt113.png"
           },
@@ -1183,6 +1551,14 @@
       "pt112": {
         "name": "PT112",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/pt112/Players/mapa_top15_dominancia_jogadores_K_pt112.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt112/Players/mapa_top15_jogadores_pt112.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.PT/pt112/Players/mapa_top15_oda_jogadores_pt112.png"
@@ -1202,6 +1578,14 @@
             "path": "Resultados/.PT/pt112/Tribes/mapa_top15_conquistas_pt112.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/pt112/Tribes/mapa_top15_dominancia_K_pt112.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt112/Tribes/mapa_top15_familias_pt112.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.PT/pt112/Tribes/mapa_top15_oda_familias_pt112.png"
           },
@@ -1214,6 +1598,14 @@
       "pt111": {
         "name": "PT111",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/pt111/Players/mapa_top15_dominancia_jogadores_K_pt111.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt111/Players/mapa_top15_jogadores_pt111.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.PT/pt111/Players/mapa_top15_oda_jogadores_pt111.png"
@@ -1233,6 +1625,14 @@
             "path": "Resultados/.PT/pt111/Tribes/mapa_top15_conquistas_pt111.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/pt111/Tribes/mapa_top15_dominancia_K_pt111.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt111/Tribes/mapa_top15_familias_pt111.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.PT/pt111/Tribes/mapa_top15_oda_familias_pt111.png"
           },
@@ -1245,6 +1645,14 @@
       "pt110": {
         "name": "PT110",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/pt110/Players/mapa_top15_dominancia_jogadores_K_pt110.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt110/Players/mapa_top15_jogadores_pt110.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.PT/pt110/Players/mapa_top15_oda_jogadores_pt110.png"
@@ -1264,6 +1672,14 @@
             "path": "Resultados/.PT/pt110/Tribes/mapa_top15_conquistas_pt110.png"
           },
           {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/pt110/Tribes/mapa_top15_dominancia_K_pt110.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt110/Tribes/mapa_top15_familias_pt110.png"
+          },
+          {
             "title": "Ranking ODA",
             "path": "Resultados/.PT/pt110/Tribes/mapa_top15_oda_familias_pt110.png"
           },
@@ -1276,6 +1692,14 @@
       "pt109": {
         "name": "PT109",
         "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/pt109/Players/mapa_top15_dominancia_jogadores_K_pt109.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt109/Players/mapa_top15_jogadores_pt109.png"
+          },
           {
             "title": "Ranking ODA",
             "path": "Resultados/.PT/pt109/Players/mapa_top15_oda_jogadores_pt109.png"
@@ -1293,6 +1717,14 @@
           {
             "title": "Conquistas (24h)",
             "path": "Resultados/.PT/pt109/Tribes/mapa_top15_conquistas_pt109.png"
+          },
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.PT/pt109/Tribes/mapa_top15_dominancia_K_pt109.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt109/Tribes/mapa_top15_familias_pt109.png"
           },
           {
             "title": "Ranking ODA",
