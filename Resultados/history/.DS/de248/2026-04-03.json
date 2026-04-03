@@ -1,0 +1,656 @@
+{
+  "players": [
+    {
+      "rank": 1762404,
+      "name": 1577444761,
+      "pts": 178,
+      "villages": 173
+    },
+    {
+      "rank": 1478943,
+      "name": 1577123742,
+      "pts": 155,
+      "villages": 173
+    },
+    {
+      "rank": 1478295,
+      "name": 10157803,
+      "pts": 152,
+      "villages": 173
+    },
+    {
+      "rank": 1404748,
+      "name": 2512811,
+      "pts": 150,
+      "villages": 173
+    },
+    {
+      "rank": 1285148,
+      "name": 3467530,
+      "pts": 137,
+      "villages": 173
+    },
+    {
+      "rank": 1169268,
+      "name": 1577511401,
+      "pts": 132,
+      "villages": 173
+    },
+    {
+      "rank": 1118096,
+      "name": 9052304,
+      "pts": 156,
+      "villages": 153
+    },
+    {
+      "rank": 1101088,
+      "name": 1577424638,
+      "pts": 123,
+      "villages": 173
+    },
+    {
+      "rank": 1081018,
+      "name": 9714778,
+      "pts": 119,
+      "villages": 173
+    },
+    {
+      "rank": 1027497,
+      "name": 9845689,
+      "pts": 109,
+      "villages": 173
+    },
+    {
+      "rank": 1011239,
+      "name": 1576947504,
+      "pts": 109,
+      "villages": 173
+    },
+    {
+      "rank": 998877,
+      "name": 1577507980,
+      "pts": 115,
+      "villages": 153
+    },
+    {
+      "rank": 995699,
+      "name": 580692,
+      "pts": 106,
+      "villages": 153
+    },
+    {
+      "rank": 987029,
+      "name": 1577280632,
+      "pts": 110,
+      "villages": 173
+    },
+    {
+      "rank": 966533,
+      "name": 1577440659,
+      "pts": 102,
+      "villages": 173
+    },
+    {
+      "rank": 956817,
+      "name": 1577235991,
+      "pts": 102,
+      "villages": 173
+    },
+    {
+      "rank": 955832,
+      "name": 1577462011,
+      "pts": 98,
+      "villages": 140
+    },
+    {
+      "rank": 928731,
+      "name": 1577382500,
+      "pts": 105,
+      "villages": 153
+    },
+    {
+      "rank": 918511,
+      "name": 9250998,
+      "pts": 115,
+      "villages": 173
+    },
+    {
+      "rank": 872403,
+      "name": 2450835,
+      "pts": 101,
+      "villages": 140
+    },
+    {
+      "rank": 872137,
+      "name": 1576975200,
+      "pts": 102,
+      "villages": 140
+    },
+    {
+      "rank": 852622,
+      "name": 8985816,
+      "pts": 96,
+      "villages": 173
+    },
+    {
+      "rank": 849933,
+      "name": 1576795149,
+      "pts": 90,
+      "villages": 153
+    },
+    {
+      "rank": 841413,
+      "name": 1430117,
+      "pts": 89,
+      "villages": 140
+    },
+    {
+      "rank": 828256,
+      "name": 1577461787,
+      "pts": 99,
+      "villages": 140
+    },
+    {
+      "rank": 716715,
+      "name": 7945473,
+      "pts": 83,
+      "villages": 153
+    },
+    {
+      "rank": 681185,
+      "name": 1577507386,
+      "pts": 74,
+      "villages": 173
+    },
+    {
+      "rank": 674983,
+      "name": 3045379,
+      "pts": 83,
+      "villages": 140
+    },
+    {
+      "rank": 674232,
+      "name": 1577120911,
+      "pts": 76,
+      "villages": 140
+    },
+    {
+      "rank": 666671,
+      "name": 9707878,
+      "pts": 72,
+      "villages": 173
+    },
+    {
+      "rank": 654680,
+      "name": 1577344543,
+      "pts": 88,
+      "villages": 140
+    },
+    {
+      "rank": 616034,
+      "name": 1577489931,
+      "pts": 79,
+      "villages": 140
+    },
+    {
+      "rank": 594349,
+      "name": 9604413,
+      "pts": 65,
+      "villages": 173
+    },
+    {
+      "rank": 571061,
+      "name": 1577504258,
+      "pts": 58,
+      "villages": 173
+    },
+    {
+      "rank": 562774,
+      "name": 1576181592,
+      "pts": 89,
+      "villages": 153
+    },
+    {
+      "rank": 560966,
+      "name": 1576173395,
+      "pts": 67,
+      "villages": 140
+    },
+    {
+      "rank": 557880,
+      "name": 1577489236,
+      "pts": 66,
+      "villages": 173
+    },
+    {
+      "rank": 539933,
+      "name": 1577047615,
+      "pts": 72,
+      "villages": 140
+    },
+    {
+      "rank": 535334,
+      "name": 1576851780,
+      "pts": 62,
+      "villages": 153
+    },
+    {
+      "rank": 534024,
+      "name": 1577382755,
+      "pts": 72,
+      "villages": 173
+    },
+    {
+      "rank": 532939,
+      "name": 1576617784,
+      "pts": 56,
+      "villages": 140
+    },
+    {
+      "rank": 531874,
+      "name": 8342200,
+      "pts": 68,
+      "villages": 173
+    },
+    {
+      "rank": 529394,
+      "name": 1577039301,
+      "pts": 62,
+      "villages": 173
+    },
+    {
+      "rank": 528199,
+      "name": 1576866266,
+      "pts": 74,
+      "villages": 153
+    },
+    {
+      "rank": 528118,
+      "name": 9694526,
+      "pts": 59,
+      "villages": 81
+    },
+    {
+      "rank": 522357,
+      "name": 1577498017,
+      "pts": 63,
+      "villages": 153
+    },
+    {
+      "rank": 511721,
+      "name": 1577502548,
+      "pts": 66,
+      "villages": 153
+    },
+    {
+      "rank": 504393,
+      "name": 1577350562,
+      "pts": 59,
+      "villages": 140
+    },
+    {
+      "rank": 491654,
+      "name": 1577506313,
+      "pts": 48,
+      "villages": 140
+    },
+    {
+      "rank": 488195,
+      "name": 1577491762,
+      "pts": 69,
+      "villages": 153
+    }
+  ],
+  "tribes": [
+    {
+      "rank": 22697471,
+      "name": 173,
+      "tag": "How to sell Drugs fast",
+      "pts": 25,
+      "villages": 22697471
+    },
+    {
+      "rank": 12122785,
+      "name": 140,
+      "tag": "How I Met Your Sister",
+      "pts": 25,
+      "villages": 12122785
+    },
+    {
+      "rank": 11752998,
+      "name": 153,
+      "tag": "ENDGAME",
+      "pts": 23,
+      "villages": 11752998
+    },
+    {
+      "rank": 3525609,
+      "name": 81,
+      "tag": "Average Joe's",
+      "pts": 19,
+      "villages": 3525609
+    },
+    {
+      "rank": 1888629,
+      "name": 210,
+      "tag": "Tierfänger",
+      "pts": 17,
+      "villages": 1888629
+    },
+    {
+      "rank": 1584297,
+      "name": 267,
+      "tag": "Ährenmänner*innen",
+      "pts": 13,
+      "villages": 1584297
+    },
+    {
+      "rank": 1229850,
+      "name": 11,
+      "tag": "-The Last Soldiers-",
+      "pts": 15,
+      "villages": 1229850
+    },
+    {
+      "rank": 972466,
+      "name": 493,
+      "tag": "Troublemaker",
+      "pts": 14,
+      "villages": 972466
+    },
+    {
+      "rank": 1153186,
+      "name": 270,
+      "tag": "Enjoyer",
+      "pts": 24,
+      "villages": 1153186
+    },
+    {
+      "rank": 538338,
+      "name": 183,
+      "tag": "Rage Time",
+      "pts": 15,
+      "villages": 538338
+    },
+    {
+      "rank": 615401,
+      "name": 514,
+      "tag": "Dorfbande",
+      "pts": 16,
+      "villages": 615401
+    },
+    {
+      "rank": 693453,
+      "name": 577,
+      "tag": "How Ticker Met Me",
+      "pts": 5,
+      "villages": 693453
+    },
+    {
+      "rank": 347972,
+      "name": 566,
+      "tag": "VollmondStamm",
+      "pts": 15,
+      "villages": 347972
+    },
+    {
+      "rank": 465709,
+      "name": 240,
+      "tag": "ENDGAME3",
+      "pts": 8,
+      "villages": 465709
+    },
+    {
+      "rank": 323490,
+      "name": 14,
+      "tag": "pacificati",
+      "pts": 6,
+      "villages": 323490
+    },
+    {
+      "rank": 469872,
+      "name": 228,
+      "tag": "Die Cola trinker",
+      "pts": 12,
+      "villages": 469872
+    },
+    {
+      "rank": 282896,
+      "name": 581,
+      "tag": "Randgruppe",
+      "pts": 6,
+      "villages": 282896
+    },
+    {
+      "rank": 310320,
+      "name": 509,
+      "tag": "Mystery Inc.",
+      "pts": 4,
+      "villages": 310320
+    },
+    {
+      "rank": 174653,
+      "name": 242,
+      "tag": "Intelligent Qualities II",
+      "pts": 1,
+      "villages": 174653
+    },
+    {
+      "rank": 348902,
+      "name": 388,
+      "tag": "goated",
+      "pts": 3,
+      "villages": 348902
+    },
+    {
+      "rank": 172094,
+      "name": 506,
+      "tag": "Vilstal Kings",
+      "pts": 6,
+      "villages": 172094
+    },
+    {
+      "rank": 140903,
+      "name": 441,
+      "tag": "Ultima Ratio",
+      "pts": 12,
+      "villages": 140903
+    },
+    {
+      "rank": 222077,
+      "name": 402,
+      "tag": "Joker Clapping",
+      "pts": 3,
+      "villages": 222077
+    },
+    {
+      "rank": 307890,
+      "name": 154,
+      "tag": "DIE LÖWEN",
+      "pts": 8,
+      "villages": 307890
+    },
+    {
+      "rank": 158565,
+      "name": 576,
+      "tag": "Dorfkneipe",
+      "pts": 4,
+      "villages": 158565
+    },
+    {
+      "rank": 103527,
+      "name": 580,
+      "tag": "die letzten Helden",
+      "pts": 14,
+      "villages": 103527
+    },
+    {
+      "rank": 77500,
+      "name": 182,
+      "tag": "ENDGAME2",
+      "pts": 5,
+      "villages": 77500
+    },
+    {
+      "rank": 92510,
+      "name": 511,
+      "tag": "Knights of the Seven Kingdoms",
+      "pts": 5,
+      "villages": 92510
+    },
+    {
+      "rank": 118661,
+      "name": 550,
+      "tag": "Stamm.0815.",
+      "pts": 3,
+      "villages": 118661
+    },
+    {
+      "rank": 99929,
+      "name": 593,
+      "tag": "Boxer2",
+      "pts": 24,
+      "villages": 99929
+    },
+    {
+      "rank": 167529,
+      "name": 486,
+      "tag": "Krämer",
+      "pts": 3,
+      "villages": 167529
+    },
+    {
+      "rank": 69414,
+      "name": 597,
+      "tag": "Last EXIT",
+      "pts": 20,
+      "villages": 69414
+    },
+    {
+      "rank": 38576,
+      "name": 458,
+      "tag": "Triple X",
+      "pts": 9,
+      "villages": 38576
+    },
+    {
+      "rank": 51105,
+      "name": 574,
+      "tag": "Königreich am Rande der Welt",
+      "pts": 8,
+      "villages": 51105
+    },
+    {
+      "rank": 95558,
+      "name": 146,
+      "tag": "Rettet die Wale",
+      "pts": 2,
+      "villages": 95558
+    },
+    {
+      "rank": 92697,
+      "name": 588,
+      "tag": "Ein Mann Armee",
+      "pts": 1,
+      "villages": 92697
+    },
+    {
+      "rank": 23829,
+      "name": 464,
+      "tag": "ANUNNAKI",
+      "pts": 11,
+      "villages": 23829
+    },
+    {
+      "rank": 37571,
+      "name": 434,
+      "tag": "Bloods",
+      "pts": 5,
+      "villages": 37571
+    },
+    {
+      "rank": 48203,
+      "name": 48,
+      "tag": "Hells Zellers",
+      "pts": 4,
+      "villages": 48203
+    },
+    {
+      "rank": 31576,
+      "name": 583,
+      "tag": "Rozdi",
+      "pts": 4,
+      "villages": 31576
+    },
+    {
+      "rank": 60934,
+      "name": 219,
+      "tag": "How to sell Drugs Online",
+      "pts": 2,
+      "villages": 60934
+    },
+    {
+      "rank": 85257,
+      "name": 304,
+      "tag": "KartenRandSpieler2",
+      "pts": 5,
+      "villages": 85257
+    },
+    {
+      "rank": 37473,
+      "name": 552,
+      "tag": "Boxer",
+      "pts": 9,
+      "villages": 37473
+    },
+    {
+      "rank": 63401,
+      "name": 225,
+      "tag": "Klassenzimmer",
+      "pts": 4,
+      "villages": 63401
+    },
+    {
+      "rank": 30528,
+      "name": 469,
+      "tag": "Westland",
+      "pts": 4,
+      "villages": 30528
+    },
+    {
+      "rank": 36577,
+      "name": 201,
+      "tag": "Legion",
+      "pts": 2,
+      "villages": 36577
+    },
+    {
+      "rank": 37148,
+      "name": 513,
+      "tag": "Neustart",
+      "pts": 1,
+      "villages": 37148
+    },
+    {
+      "rank": 22028,
+      "name": 591,
+      "tag": "TillTheEnd",
+      "pts": 2,
+      "villages": 22028
+    },
+    {
+      "rank": 23788,
+      "name": 75,
+      "tag": "Die letzte Überlebende",
+      "pts": 1,
+      "villages": 23788
+    },
+    {
+      "rank": 14438,
+      "name": 180,
+      "tag": "Volksfront von Judäa",
+      "pts": 3,
+      "villages": 14438
+    }
+  ]
+}
