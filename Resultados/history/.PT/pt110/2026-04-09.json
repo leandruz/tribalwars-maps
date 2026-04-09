@@ -1,0 +1,656 @@
+{
+  "players": [
+    {
+      "rank": 11647602,
+      "name": 848971491,
+      "pts": 1112,
+      "villages": 34
+    },
+    {
+      "rank": 10030300,
+      "name": 1510877,
+      "pts": 965,
+      "villages": 34
+    },
+    {
+      "rank": 5819050,
+      "name": 2875517,
+      "pts": 591,
+      "villages": 47
+    },
+    {
+      "rank": 5642908,
+      "name": 848954257,
+      "pts": 556,
+      "villages": 47
+    },
+    {
+      "rank": 4590731,
+      "name": 437634,
+      "pts": 403,
+      "villages": 47
+    },
+    {
+      "rank": 4396858,
+      "name": 3079082,
+      "pts": 430,
+      "villages": 45
+    },
+    {
+      "rank": 4268571,
+      "name": 2955334,
+      "pts": 428,
+      "villages": 34
+    },
+    {
+      "rank": 4246057,
+      "name": 848991413,
+      "pts": 433,
+      "villages": 34
+    },
+    {
+      "rank": 3905405,
+      "name": 848898150,
+      "pts": 405,
+      "villages": 45
+    },
+    {
+      "rank": 3681868,
+      "name": 848872541,
+      "pts": 358,
+      "villages": 47
+    },
+    {
+      "rank": 3567720,
+      "name": 848961571,
+      "pts": 348,
+      "villages": 47
+    },
+    {
+      "rank": 3550506,
+      "name": 848965638,
+      "pts": 347,
+      "villages": 34
+    },
+    {
+      "rank": 3475794,
+      "name": 848883749,
+      "pts": 356,
+      "villages": 47
+    },
+    {
+      "rank": 3409881,
+      "name": 1804502,
+      "pts": 348,
+      "villages": 47
+    },
+    {
+      "rank": 3367444,
+      "name": 474301,
+      "pts": 339,
+      "villages": 47
+    },
+    {
+      "rank": 2923397,
+      "name": 2802981,
+      "pts": 303,
+      "villages": 34
+    },
+    {
+      "rank": 2835058,
+      "name": 848968147,
+      "pts": 278,
+      "villages": 34
+    },
+    {
+      "rank": 2770262,
+      "name": 3018922,
+      "pts": 274,
+      "villages": 45
+    },
+    {
+      "rank": 2748330,
+      "name": 848947853,
+      "pts": 312,
+      "villages": 34
+    },
+    {
+      "rank": 2746159,
+      "name": 848892292,
+      "pts": 282,
+      "villages": 47
+    },
+    {
+      "rank": 2730235,
+      "name": 848988021,
+      "pts": 266,
+      "villages": 47
+    },
+    {
+      "rank": 2715738,
+      "name": 848977626,
+      "pts": 273,
+      "villages": 47
+    },
+    {
+      "rank": 2692162,
+      "name": 2755377,
+      "pts": 240,
+      "villages": 47
+    },
+    {
+      "rank": 2465731,
+      "name": 2512153,
+      "pts": 243,
+      "villages": 47
+    },
+    {
+      "rank": 2437979,
+      "name": 2734838,
+      "pts": 246,
+      "villages": 34
+    },
+    {
+      "rank": 2433920,
+      "name": 848954455,
+      "pts": 263,
+      "villages": 45
+    },
+    {
+      "rank": 2393778,
+      "name": 848954394,
+      "pts": 255,
+      "villages": 34
+    },
+    {
+      "rank": 2289293,
+      "name": 3173238,
+      "pts": 237,
+      "villages": 47
+    },
+    {
+      "rank": 2129307,
+      "name": 1789933,
+      "pts": 212,
+      "villages": 47
+    },
+    {
+      "rank": 2119581,
+      "name": 848964262,
+      "pts": 209,
+      "villages": 628
+    },
+    {
+      "rank": 2115136,
+      "name": 848954254,
+      "pts": 211,
+      "villages": 47
+    },
+    {
+      "rank": 2066421,
+      "name": 2506209,
+      "pts": 210,
+      "villages": 34
+    },
+    {
+      "rank": 1905162,
+      "name": 848986239,
+      "pts": 183,
+      "villages": 47
+    },
+    {
+      "rank": 1884182,
+      "name": 3046700,
+      "pts": 197,
+      "villages": 34
+    },
+    {
+      "rank": 1835474,
+      "name": 3053919,
+      "pts": 192,
+      "villages": 34
+    },
+    {
+      "rank": 1834924,
+      "name": 2407017,
+      "pts": 178,
+      "villages": 34
+    },
+    {
+      "rank": 1769606,
+      "name": 848871688,
+      "pts": 172,
+      "villages": 47
+    },
+    {
+      "rank": 1751432,
+      "name": 848939941,
+      "pts": 169,
+      "villages": 34
+    },
+    {
+      "rank": 1570534,
+      "name": 2288481,
+      "pts": 169,
+      "villages": 34
+    },
+    {
+      "rank": 1569161,
+      "name": 3163615,
+      "pts": 162,
+      "villages": 45
+    },
+    {
+      "rank": 1546749,
+      "name": 2263361,
+      "pts": 155,
+      "villages": 45
+    },
+    {
+      "rank": 1544345,
+      "name": 2342204,
+      "pts": 156,
+      "villages": 45
+    },
+    {
+      "rank": 1519020,
+      "name": 2759579,
+      "pts": 145,
+      "villages": 34
+    },
+    {
+      "rank": 1476765,
+      "name": 2970600,
+      "pts": 155,
+      "villages": 47
+    },
+    {
+      "rank": 1473518,
+      "name": 2994016,
+      "pts": 145,
+      "villages": 47
+    },
+    {
+      "rank": 1411057,
+      "name": 848889390,
+      "pts": 138,
+      "villages": 34
+    },
+    {
+      "rank": 1344423,
+      "name": 2460361,
+      "pts": 134,
+      "villages": 68
+    },
+    {
+      "rank": 1316068,
+      "name": 293338,
+      "pts": 129,
+      "villages": 45
+    },
+    {
+      "rank": 1261825,
+      "name": 3007426,
+      "pts": 130,
+      "villages": 47
+    },
+    {
+      "rank": 1224624,
+      "name": 848927337,
+      "pts": 122,
+      "villages": 68
+    }
+  ],
+  "tribes": [
+    {
+      "rank": 67927444,
+      "name": 34,
+      "tag": "Cigarrada",
+      "pts": 29,
+      "villages": 67927444
+    },
+    {
+      "rank": 67230973,
+      "name": 47,
+      "tag": "-Cigarrada",
+      "pts": 28,
+      "villages": 67230973
+    },
+    {
+      "rank": 22108096,
+      "name": 45,
+      "tag": "CIGARRADA III",
+      "pts": 20,
+      "villages": 22108096
+    },
+    {
+      "rank": 7430737,
+      "name": 68,
+      "tag": "ACTIVITY",
+      "pts": 19,
+      "villages": 7430737
+    },
+    {
+      "rank": 5408007,
+      "name": 12,
+      "tag": "Cavaleiros Veteranos",
+      "pts": 29,
+      "villages": 5408007
+    },
+    {
+      "rank": 5619586,
+      "name": 296,
+      "tag": "ACTIVITY-3",
+      "pts": 14,
+      "villages": 5619586
+    },
+    {
+      "rank": 4907395,
+      "name": 165,
+      "tag": "Sem Nome",
+      "pts": 14,
+      "villages": 4907395
+    },
+    {
+      "rank": 2119581,
+      "name": 628,
+      "tag": "Aldeias Bárbaras Bandeiras",
+      "pts": 1,
+      "villages": 2119581
+    },
+    {
+      "rank": 861181,
+      "name": 73,
+      "tag": "Now Or Never",
+      "pts": 29,
+      "villages": 861181
+    },
+    {
+      "rank": 546090,
+      "name": 438,
+      "tag": "Legião do Último suspiro",
+      "pts": 16,
+      "villages": 546090
+    },
+    {
+      "rank": 622161,
+      "name": 610,
+      "tag": "União Europeia",
+      "pts": 9,
+      "villages": 622161
+    },
+    {
+      "rank": 569242,
+      "name": 460,
+      "tag": "TREZENTOS",
+      "pts": 18,
+      "villages": 569242
+    },
+    {
+      "rank": 292173,
+      "name": 32,
+      "tag": "Never Give Up",
+      "pts": 6,
+      "villages": 292173
+    },
+    {
+      "rank": 109649,
+      "name": 35,
+      "tag": "Tribo SIM",
+      "pts": 11,
+      "villages": 109649
+    },
+    {
+      "rank": 127173,
+      "name": 624,
+      "tag": "IPOPAGAQUIGRAFO",
+      "pts": 15,
+      "villages": 127173
+    },
+    {
+      "rank": 227057,
+      "name": 642,
+      "tag": "*Ecos do Abismo*",
+      "pts": 4,
+      "villages": 227057
+    },
+    {
+      "rank": 95834,
+      "name": 607,
+      "tag": "Chapeus de Pallha",
+      "pts": 2,
+      "villages": 95834
+    },
+    {
+      "rank": 148028,
+      "name": 86,
+      "tag": "ACTIVITY-1ª",
+      "pts": 5,
+      "villages": 148028
+    },
+    {
+      "rank": 120006,
+      "name": 350,
+      "tag": "Independance Day",
+      "pts": 2,
+      "villages": 120006
+    },
+    {
+      "rank": 67368,
+      "name": 566,
+      "tag": "MightyDriveGirl e Kiroma60",
+      "pts": 14,
+      "villages": 67368
+    },
+    {
+      "rank": 92655,
+      "name": 601,
+      "tag": "Olimpo for fun",
+      "pts": 2,
+      "villages": 92655
+    },
+    {
+      "rank": 128251,
+      "name": 343,
+      "tag": "CAICO",
+      "pts": 2,
+      "villages": 128251
+    },
+    {
+      "rank": 139059,
+      "name": 37,
+      "tag": "Irmandade de Avalon",
+      "pts": 4,
+      "villages": 139059
+    },
+    {
+      "rank": 44253,
+      "name": 41,
+      "tag": "5IMPred",
+      "pts": 5,
+      "villages": 44253
+    },
+    {
+      "rank": 70372,
+      "name": 582,
+      "tag": "Bons Companheiros",
+      "pts": 2,
+      "villages": 70372
+    },
+    {
+      "rank": 36987,
+      "name": 380,
+      "tag": "-Pumpkin Head-",
+      "pts": 4,
+      "villages": 36987
+    },
+    {
+      "rank": 62480,
+      "name": 10,
+      "tag": "HeartlessSilencers",
+      "pts": 6,
+      "villages": 62480
+    },
+    {
+      "rank": 28162,
+      "name": 532,
+      "tag": "Empire",
+      "pts": 5,
+      "villages": 28162
+    },
+    {
+      "rank": 48196,
+      "name": 371,
+      "tag": "No_Mercy",
+      "pts": 9,
+      "villages": 48196
+    },
+    {
+      "rank": 18122,
+      "name": 572,
+      "tag": "Fusion",
+      "pts": 1,
+      "villages": 18122
+    },
+    {
+      "rank": 20287,
+      "name": 633,
+      "tag": "El Nino Ductions",
+      "pts": 1,
+      "villages": 20287
+    },
+    {
+      "rank": 18406,
+      "name": 379,
+      "tag": "Veteranos",
+      "pts": 3,
+      "villages": 18406
+    },
+    {
+      "rank": 17284,
+      "name": 311,
+      "tag": "XupaKabras2",
+      "pts": 1,
+      "villages": 17284
+    },
+    {
+      "rank": 11231,
+      "name": 43,
+      "tag": "Nódoa da Tainada",
+      "pts": 1,
+      "villages": 11231
+    },
+    {
+      "rank": 13226,
+      "name": 533,
+      "tag": "Wave of terror",
+      "pts": 3,
+      "villages": 13226
+    },
+    {
+      "rank": 12533,
+      "name": 543,
+      "tag": "Last World",
+      "pts": 1,
+      "villages": 12533
+    },
+    {
+      "rank": 17970,
+      "name": 17,
+      "tag": "Nobres",
+      "pts": 1,
+      "villages": 17970
+    },
+    {
+      "rank": 13076,
+      "name": 626,
+      "tag": "MeteºNojo",
+      "pts": 1,
+      "villages": 13076
+    },
+    {
+      "rank": 7942,
+      "name": 616,
+      "tag": "Just for Fun",
+      "pts": 1,
+      "villages": 7942
+    },
+    {
+      "rank": 13692,
+      "name": 623,
+      "tag": "qwew",
+      "pts": 1,
+      "villages": 13692
+    },
+    {
+      "rank": 10679,
+      "name": 109,
+      "tag": "Chocolate em pó",
+      "pts": 3,
+      "villages": 10679
+    },
+    {
+      "rank": 18005,
+      "name": 342,
+      "tag": "Mafia Lambrini",
+      "pts": 3,
+      "villages": 18005
+    },
+    {
+      "rank": 10270,
+      "name": 597,
+      "tag": "Dark",
+      "pts": 1,
+      "villages": 10270
+    },
+    {
+      "rank": 963,
+      "name": 638,
+      "tag": "Filhos da Ruína",
+      "pts": 2,
+      "villages": 963
+    },
+    {
+      "rank": 52,
+      "name": 637,
+      "tag": "----",
+      "pts": 2,
+      "villages": 52
+    },
+    {
+      "rank": 3853,
+      "name": 570,
+      "tag": "Mata Mouros",
+      "pts": 3,
+      "villages": 3853
+    },
+    {
+      "rank": 788,
+      "name": 575,
+      "tag": "Tribu",
+      "pts": 1,
+      "villages": 788
+    },
+    {
+      "rank": 19758,
+      "name": 407,
+      "tag": "ACTIVITY 4",
+      "pts": 1,
+      "villages": 19758
+    },
+    {
+      "rank": 8285,
+      "name": 641,
+      "tag": "Templarios",
+      "pts": 1,
+      "villages": 8285
+    },
+    {
+      "rank": 3928,
+      "name": 617,
+      "tag": "Verdadeiros",
+      "pts": 3,
+      "villages": 3928
+    }
+  ]
+}
