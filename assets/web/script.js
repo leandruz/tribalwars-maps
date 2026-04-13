@@ -3,6 +3,12 @@ let currentWorldId = null;
 let currentServer = null;
 let currentTab = 'players';
 
+// Zoom and Pan variables
+let zoomLevel = 1;
+let isDragging = false;
+let startX = 0, startY = 0;
+let translateX = 0, translateY = 0;
+
 const SERVER_FLAGS = {
     ".BR": "🇧🇷",
     ".PT": "🇵🇹",
@@ -25,6 +31,7 @@ async function init() {
         
         document.getElementById('last-update').textContent = `Última atualização: ${galleryData.last_update}`;
         renderGallery();
+        initZoomTool();
         
     } catch (error) {
         console.error('Error loading gallery:', error);
@@ -166,7 +173,61 @@ function openModal(src) {
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modal-img');
     modalImg.src = src;
+    
+    // Reset zoom and pan
+    zoomLevel = 1;
+    translateX = 0;
+    translateY = 0;
+    updateModalTransform();
+    
     modal.style.display = 'flex';
+}
+
+function updateModalTransform() {
+    const modalImg = document.getElementById('modal-img');
+    modalImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${zoomLevel})`;
+}
+
+function initZoomTool() {
+    const modalImg = document.getElementById('modal-img');
+    const modal = document.getElementById('modal');
+
+    // Zoom com o scroll do mouse
+    modal.addEventListener('wheel', (e) => {
+        if (modal.style.display !== 'flex') return;
+        e.preventDefault();
+        const zoomDelta = e.deltaY * -0.002;
+        zoomLevel += zoomDelta;
+        zoomLevel = Math.min(Math.max(0.5, zoomLevel), 5); // Limite de 0.5x a 5x
+        updateModalTransform();
+    }, { passive: false });
+
+    // Iniciar Arrastar
+    modalImg.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.clientX - translateX;
+        startY = e.clientY - translateY;
+        modalImg.style.cursor = 'grabbing';
+        e.preventDefault();
+    });
+
+    // Parar Arrastar
+    window.addEventListener('mouseup', () => {
+        isDragging = false;
+        modalImg.style.cursor = 'grab';
+    });
+
+    // Arrastar
+    window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        translateX = e.clientX - startX;
+        translateY = e.clientY - startY;
+        updateModalTransform();
+    });
+    
+    modalImg.style.cursor = 'grab';
+    modalImg.style.transition = 'transform 0.1s ease-out';
 }
 
 function closeModal() {

@@ -118,18 +118,18 @@ def test_conquest_analysis(mundo="br140"):
             if map_pid_fam.get(l.new_p) == map_pid_fam.get(l.old_p): continue
             loss_p.append((map_vid_xy[l.vid][2], map_vid_xy[l.vid][3]))
 
-        for cl in cluster_points(adv_p, 8):
+        for cl in cluster_points(adv_p, 10):
             k = get_k(cl['x'], cl['y']); tribe_stats[fam]["adv"] += cl['count']; k_activity[k] += cl['count']
             tribe_stats[fam]["adv_k"][k] = tribe_stats[fam]["adv_k"].get(k, 0) + cl['count']
             coords = v_tribe[[2, 3]].values
             nx, ny = coords[np.argmin(np.sqrt((coords[:,0]-cl['x'])**2 + (coords[:,1]-cl['y'])**2))]
             draw_arrow(draw, map_xy(nx, ny), (map_xy(cl['x'], cl['y'])), color, scale=np.sqrt(cl['count']))
-        for cl in cluster_points(int_p, 6):
+        for cl in cluster_points(int_p, 8):
             k = get_k(cl['x'], cl['y']); tribe_stats[fam]["int"] += cl['count']; k_activity[k] += cl['count']
             mx, my = map_xy(cl['x'], cl['y']); r = int(9 * np.sqrt(cl['count']))
             draw.ellipse([mx-r-1, my-r-1, mx+r+1, my+r+1], fill=(0,0,0,255))
             draw.ellipse([mx-r, my-r, mx+r, my+r], fill=color + (255,))
-        for cl in cluster_points(loss_p, 7):
+        for cl in cluster_points(loss_p, 8):
             k = get_k(cl['x'], cl['y']); tribe_stats[fam]["loss"] += cl['count']; k_activity[k] += cl['count']
             mx, my = map_xy(cl['x'], cl['y']); sz = int(12 * np.sqrt(cl['count'])); w = max(int(5 * np.sqrt(cl['count'])), 3)
             # Borda do X
@@ -147,7 +147,7 @@ def test_conquest_analysis(mundo="br140"):
     draw_arrow(draw, (leg_x, 150), (leg_x+60, 150), (100,100,100), scale=0.8)
     draw.text((leg_x+75, 140), "Seta: Avanço Territorial", fill=(0,0,0), font=get_font(14))
     draw.ellipse([leg_x+15, 185, leg_x+45, 215], fill=(0,0,0)); draw.ellipse([leg_x+18, 188, leg_x+42, 212], fill=(100,100,100))
-    draw.text((leg_x+75, 190), "Círculo: Noblagem Interna", fill=(0,0,0), font=get_font(14))
+    draw.text((leg_x+75, 190), "Círculo: Consolidação de Área", fill=(0,0,0), font=get_font(14))
     gx, gy = leg_x+30, 245
     draw.line([(gx-10, gy-10), (gx+10, gy+10)], fill=(0,0,0), width=5); draw.line([(gx+10, gy-10), (gx-10, gy+10)], fill=(0,0,0), width=5)
     draw.line([(gx-8, gy-8), (gx+8, gy+8)], fill=(200,0,0), width=3); draw.line([(gx+8, gy-8), (gx-8, gy+8)], fill=(200,0,0), width=3)

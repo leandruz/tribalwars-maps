@@ -59,7 +59,7 @@ TEXTS = {
         "tactical_title": "INTELIGÊNCIA TÁTICA (24H):",
         "nobling_dynamics": "Dinâmica de Noblagens (24h)",
         "arrow_label": "Seta: Avanço Territorial",
-        "circle_label": "Círculo: Noblagem Interna",
+        "circle_label": "Círculo: Consolidação de Área",
         "x_label": "X: Perda de Território"
     },
     "en": {
@@ -90,7 +90,7 @@ TEXTS = {
         "tactical_title": "TACTICAL INTELLIGENCE (24H):",
         "nobling_dynamics": "Nobling Dynamics (24h)",
         "arrow_label": "Arrow: Territorial Advance",
-        "circle_label": "Circle: Internal Nobling",
+        "circle_label": "Circle: Area Consolidation",
         "x_label": "X: Territorial Loss"
     }
 }
@@ -551,18 +551,18 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
                 if map_pid_fam.get(l.new) == map_pid_fam.get(l.old): continue
                 loss_p.append((map_vid_xy[l.vid][2], map_vid_xy[l.vid][3]))
 
-            for cl in cluster_points(adv_p, 8):
+            for cl in cluster_points(adv_p, 10):
                 k = get_k(cl['x'], cl['y']); tribe_stats[fam]["adv"] += cl['count']; k_activity[k] += cl['count']
                 tribe_stats[fam]["adv_k"][k] = tribe_stats[fam]["adv_k"].get(k, 0) + cl['count']
                 coords = v_tribe[[2, 3]].values
                 nx, ny = coords[np.argmin(np.sqrt((coords[:,0]-cl['x'])**2 + (coords[:,1]-cl['y'])**2))]
                 draw_arrow(draw, map_xy(nx, ny), (map_xy(cl['x'], cl['y'])), color, scale=np.sqrt(cl['count']))
-            for cl in cluster_points(int_p, 6):
+            for cl in cluster_points(int_p, 8):
                 k = get_k(cl['x'], cl['y']); tribe_stats[fam]["int"] += cl['count']; k_activity[k] += cl['count']
                 mx, my = map_xy(cl['x'], cl['y']); r = int(9 * np.sqrt(cl['count']))
                 draw.ellipse([mx-r-1, my-r-1, mx+r+1, my+r+1], fill=(0,0,0,255)) # Borda de 1px
                 draw.ellipse([mx-r, my-r, mx+r, my+r], fill=color + (255,))
-            for cl in cluster_points(loss_p, 7):
+            for cl in cluster_points(loss_p, 8):
                 k = get_k(cl['x'], cl['y']); tribe_stats[fam]["loss"] += cl['count']; k_activity[k] += cl['count']
                 mx, my = map_xy(cl['x'], cl['y']); sz = int(12 * np.sqrt(cl['count'])); w = max(int(5 * np.sqrt(cl['count'])), 3)
                 # Borda do X
