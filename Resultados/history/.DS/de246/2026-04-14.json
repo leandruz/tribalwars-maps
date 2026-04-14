@@ -1,0 +1,656 @@
+{
+  "players": [
+    {
+      "rank": 2938786,
+      "name": 7846445,
+      "pts": 252,
+      "villages": 208
+    },
+    {
+      "rank": 2549825,
+      "name": 1577255946,
+      "pts": 241,
+      "villages": 208
+    },
+    {
+      "rank": 2406679,
+      "name": 1576975419,
+      "pts": 248,
+      "villages": 86
+    },
+    {
+      "rank": 2268487,
+      "name": 1575887251,
+      "pts": 210,
+      "villages": 418
+    },
+    {
+      "rank": 2156496,
+      "name": 8627486,
+      "pts": 210,
+      "villages": 238
+    },
+    {
+      "rank": 2151550,
+      "name": 1577149945,
+      "pts": 197,
+      "villages": 238
+    },
+    {
+      "rank": 2140404,
+      "name": 1577443830,
+      "pts": 227,
+      "villages": 86
+    },
+    {
+      "rank": 2139211,
+      "name": 7674115,
+      "pts": 213,
+      "villages": 246
+    },
+    {
+      "rank": 2115716,
+      "name": 1577220935,
+      "pts": 210,
+      "villages": 86
+    },
+    {
+      "rank": 2069635,
+      "name": 1577271571,
+      "pts": 186,
+      "villages": 244
+    },
+    {
+      "rank": 2054656,
+      "name": 1577386966,
+      "pts": 196,
+      "villages": 244
+    },
+    {
+      "rank": 1984293,
+      "name": 8784105,
+      "pts": 211,
+      "villages": 0
+    },
+    {
+      "rank": 1965690,
+      "name": 1577496619,
+      "pts": 208,
+      "villages": 86
+    },
+    {
+      "rank": 1899588,
+      "name": 1577139362,
+      "pts": 195,
+      "villages": 0
+    },
+    {
+      "rank": 1836606,
+      "name": 1577375287,
+      "pts": 191,
+      "villages": 190
+    },
+    {
+      "rank": 1816460,
+      "name": 1577409984,
+      "pts": 190,
+      "villages": 190
+    },
+    {
+      "rank": 1799870,
+      "name": 1577050715,
+      "pts": 174,
+      "villages": 190
+    },
+    {
+      "rank": 1799067,
+      "name": 1577160674,
+      "pts": 182,
+      "villages": 86
+    },
+    {
+      "rank": 1757250,
+      "name": 1577489938,
+      "pts": 190,
+      "villages": 246
+    },
+    {
+      "rank": 1756420,
+      "name": 1577185229,
+      "pts": 191,
+      "villages": 71
+    },
+    {
+      "rank": 1741514,
+      "name": 1577390379,
+      "pts": 182,
+      "villages": 238
+    },
+    {
+      "rank": 1706888,
+      "name": 1575948513,
+      "pts": 177,
+      "villages": 418
+    },
+    {
+      "rank": 1697902,
+      "name": 1576848631,
+      "pts": 170,
+      "villages": 244
+    },
+    {
+      "rank": 1633098,
+      "name": 1577451081,
+      "pts": 161,
+      "villages": 244
+    },
+    {
+      "rank": 1618579,
+      "name": 1577455239,
+      "pts": 155,
+      "villages": 244
+    },
+    {
+      "rank": 1602271,
+      "name": 1577222968,
+      "pts": 171,
+      "villages": 71
+    },
+    {
+      "rank": 1595891,
+      "name": 1577149176,
+      "pts": 173,
+      "villages": 0
+    },
+    {
+      "rank": 1544616,
+      "name": 1577464140,
+      "pts": 163,
+      "villages": 71
+    },
+    {
+      "rank": 1507383,
+      "name": 1577027850,
+      "pts": 151,
+      "villages": 238
+    },
+    {
+      "rank": 1473317,
+      "name": 1577431585,
+      "pts": 143,
+      "villages": 238
+    },
+    {
+      "rank": 1463202,
+      "name": 1577437406,
+      "pts": 156,
+      "villages": 86
+    },
+    {
+      "rank": 1424611,
+      "name": 1577025400,
+      "pts": 141,
+      "villages": 244
+    },
+    {
+      "rank": 1421937,
+      "name": 9707878,
+      "pts": 133,
+      "villages": 238
+    },
+    {
+      "rank": 1418556,
+      "name": 10220179,
+      "pts": 161,
+      "villages": 208
+    },
+    {
+      "rank": 1414130,
+      "name": 9712251,
+      "pts": 126,
+      "villages": 86
+    },
+    {
+      "rank": 1402063,
+      "name": 1577087042,
+      "pts": 142,
+      "villages": 238
+    },
+    {
+      "rank": 1385451,
+      "name": 1577079441,
+      "pts": 149,
+      "villages": 244
+    },
+    {
+      "rank": 1377092,
+      "name": 1577011504,
+      "pts": 145,
+      "villages": 244
+    },
+    {
+      "rank": 1286261,
+      "name": 1577327396,
+      "pts": 136,
+      "villages": 190
+    },
+    {
+      "rank": 1277092,
+      "name": 1575968832,
+      "pts": 133,
+      "villages": 246
+    },
+    {
+      "rank": 1268015,
+      "name": 1577368821,
+      "pts": 129,
+      "villages": 246
+    },
+    {
+      "rank": 1244243,
+      "name": 1576746399,
+      "pts": 133,
+      "villages": 246
+    },
+    {
+      "rank": 1231911,
+      "name": 2910580,
+      "pts": 133,
+      "villages": 244
+    },
+    {
+      "rank": 1182786,
+      "name": 1577294023,
+      "pts": 113,
+      "villages": 776
+    },
+    {
+      "rank": 1069675,
+      "name": 1577197889,
+      "pts": 132,
+      "villages": 246
+    },
+    {
+      "rank": 1042468,
+      "name": 10277944,
+      "pts": 97,
+      "villages": 190
+    },
+    {
+      "rank": 1039561,
+      "name": 1577026902,
+      "pts": 104,
+      "villages": 238
+    },
+    {
+      "rank": 1031528,
+      "name": 1577426291,
+      "pts": 108,
+      "villages": 71
+    },
+    {
+      "rank": 1029819,
+      "name": 1577462252,
+      "pts": 115,
+      "villages": 244
+    },
+    {
+      "rank": 1028165,
+      "name": 3011627,
+      "pts": 106,
+      "villages": 208
+    }
+  ],
+  "tribes": [
+    {
+      "rank": 18209235,
+      "name": 86,
+      "tag": "Gewürzgurken",
+      "pts": 15,
+      "villages": 18209235
+    },
+    {
+      "rank": 17226809,
+      "name": 244,
+      "tag": "Liquids",
+      "pts": 14,
+      "villages": 17226809
+    },
+    {
+      "rank": 16132307,
+      "name": 238,
+      "tag": "Die drei von der Tankstelle",
+      "pts": 16,
+      "villages": 16132307
+    },
+    {
+      "rank": 12143300,
+      "name": 246,
+      "tag": "EIEIEI",
+      "pts": 13,
+      "villages": 12143300
+    },
+    {
+      "rank": 10671287,
+      "name": 208,
+      "tag": "Künstliche Gurkenintelligenz",
+      "pts": 10,
+      "villages": 10671287
+    },
+    {
+      "rank": 10214567,
+      "name": 190,
+      "tag": "Honiggurken",
+      "pts": 9,
+      "villages": 10214567
+    },
+    {
+      "rank": 8874625,
+      "name": 71,
+      "tag": "Shnauzgurken",
+      "pts": 10,
+      "villages": 8874625
+    },
+    {
+      "rank": 7054891,
+      "name": 418,
+      "tag": "Frankfurt",
+      "pts": 19,
+      "villages": 7054891
+    },
+    {
+      "rank": 2158263,
+      "name": 581,
+      "tag": "Haus Stark",
+      "pts": 16,
+      "villages": 2158263
+    },
+    {
+      "rank": 1600717,
+      "name": 665,
+      "tag": "Gurken Moralis",
+      "pts": 6,
+      "villages": 1600717
+    },
+    {
+      "rank": 1279417,
+      "name": 194,
+      "tag": "Cocktailgurken",
+      "pts": 10,
+      "villages": 1279417
+    },
+    {
+      "rank": 1368247,
+      "name": 739,
+      "tag": "OnlyTheFamily²",
+      "pts": 4,
+      "villages": 1368247
+    },
+    {
+      "rank": 975046,
+      "name": 778,
+      "tag": "die Wahren Musketiere",
+      "pts": 2,
+      "villages": 975046
+    },
+    {
+      "rank": 1210000,
+      "name": 776,
+      "tag": "Cornichons",
+      "pts": 2,
+      "villages": 1210000
+    },
+    {
+      "rank": 774034,
+      "name": 374,
+      "tag": "RANDALE",
+      "pts": 4,
+      "villages": 774034
+    },
+    {
+      "rank": 419408,
+      "name": 744,
+      "tag": "ToDo",
+      "pts": 9,
+      "villages": 419408
+    },
+    {
+      "rank": 476127,
+      "name": 591,
+      "tag": "Der Rand ist teuer",
+      "pts": 15,
+      "villages": 476127
+    },
+    {
+      "rank": 506339,
+      "name": 248,
+      "tag": "Kater",
+      "pts": 5,
+      "villages": 506339
+    },
+    {
+      "rank": 544652,
+      "name": 378,
+      "tag": "Gelsenkirchener Bahnhofsgirls",
+      "pts": 9,
+      "villages": 544652
+    },
+    {
+      "rank": 341854,
+      "name": 314,
+      "tag": "Fürs EndGame",
+      "pts": 9,
+      "villages": 341854
+    },
+    {
+      "rank": 273221,
+      "name": 671,
+      "tag": "Randlage",
+      "pts": 5,
+      "villages": 273221
+    },
+    {
+      "rank": 444809,
+      "name": 785,
+      "tag": "Das Ende",
+      "pts": 1,
+      "villages": 444809
+    },
+    {
+      "rank": 233085,
+      "name": 722,
+      "tag": "NeumondStamm",
+      "pts": 7,
+      "villages": 233085
+    },
+    {
+      "rank": 235133,
+      "name": 325,
+      "tag": "ULTRAS",
+      "pts": 10,
+      "villages": 235133
+    },
+    {
+      "rank": 310164,
+      "name": 342,
+      "tag": "Guardians of the Dragons",
+      "pts": 8,
+      "villages": 310164
+    },
+    {
+      "rank": 182425,
+      "name": 615,
+      "tag": "Capitol Versicherung",
+      "pts": 10,
+      "villages": 182425
+    },
+    {
+      "rank": 196176,
+      "name": 758,
+      "tag": "Die Guten",
+      "pts": 3,
+      "villages": 196176
+    },
+    {
+      "rank": 288747,
+      "name": 550,
+      "tag": "Die Allianz",
+      "pts": 3,
+      "villages": 288747
+    },
+    {
+      "rank": 189245,
+      "name": 586,
+      "tag": "On Fire",
+      "pts": 2,
+      "villages": 189245
+    },
+    {
+      "rank": 305675,
+      "name": 152,
+      "tag": "Dillgurken",
+      "pts": 3,
+      "villages": 305675
+    },
+    {
+      "rank": 67524,
+      "name": 305,
+      "tag": "Mentale Hasbullas",
+      "pts": 2,
+      "villages": 67524
+    },
+    {
+      "rank": 137042,
+      "name": 181,
+      "tag": "Die 3 Musketiere",
+      "pts": 4,
+      "villages": 137042
+    },
+    {
+      "rank": 104344,
+      "name": 580,
+      "tag": "Lebensmittelkontrolle",
+      "pts": 5,
+      "villages": 104344
+    },
+    {
+      "rank": 192028,
+      "name": 247,
+      "tag": "Bundesverband freier Tankstellen",
+      "pts": 3,
+      "villages": 192028
+    },
+    {
+      "rank": 186750,
+      "name": 775,
+      "tag": "letzter widerstand",
+      "pts": 1,
+      "villages": 186750
+    },
+    {
+      "rank": 259916,
+      "name": 780,
+      "tag": "Baum",
+      "pts": 1,
+      "villages": 259916
+    },
+    {
+      "rank": 106432,
+      "name": 24,
+      "tag": "Klingen des Nordens",
+      "pts": 5,
+      "villages": 106432
+    },
+    {
+      "rank": 70704,
+      "name": 541,
+      "tag": "Lumpen",
+      "pts": 5,
+      "villages": 70704
+    },
+    {
+      "rank": 120375,
+      "name": 564,
+      "tag": "no pasaran",
+      "pts": 1,
+      "villages": 120375
+    },
+    {
+      "rank": 52801,
+      "name": 696,
+      "tag": "Guen",
+      "pts": 9,
+      "villages": 52801
+    },
+    {
+      "rank": 45038,
+      "name": 755,
+      "tag": "VollmondStamm",
+      "pts": 9,
+      "villages": 45038
+    },
+    {
+      "rank": 67207,
+      "name": 394,
+      "tag": "Die Unentschlossenen",
+      "pts": 2,
+      "villages": 67207
+    },
+    {
+      "rank": 66756,
+      "name": 478,
+      "tag": "Widerstand",
+      "pts": 1,
+      "villages": 66756
+    },
+    {
+      "rank": 37245,
+      "name": 428,
+      "tag": "Disneys große Pause 2",
+      "pts": 1,
+      "villages": 37245
+    },
+    {
+      "rank": 99705,
+      "name": 757,
+      "tag": "CAPO",
+      "pts": 1,
+      "villages": 99705
+    },
+    {
+      "rank": 41073,
+      "name": 746,
+      "tag": "Wienerwald",
+      "pts": 1,
+      "villages": 41073
+    },
+    {
+      "rank": 33336,
+      "name": 777,
+      "tag": "Alles für die Kogge",
+      "pts": 1,
+      "villages": 33336
+    },
+    {
+      "rank": 58948,
+      "name": 274,
+      "tag": "Mental Breakdown",
+      "pts": 2,
+      "villages": 58948
+    },
+    {
+      "rank": 24030,
+      "name": 410,
+      "tag": "Gemeinsam Einsam",
+      "pts": 1,
+      "villages": 24030
+    },
+    {
+      "rank": 35447,
+      "name": 33,
+      "tag": "Nord Wacht",
+      "pts": 2,
+      "villages": 35447
+    }
+  ]
+}
