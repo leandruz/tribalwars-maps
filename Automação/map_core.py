@@ -462,9 +462,12 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
     box_v = target_ids_for_map if mode not in ['combat_heatmap', 'dominance_k', 'conquest_hotspot'] else df_village
     if box_v.empty: x_min, x_max, y_min, y_max = 0, 999, 0, 999
     else:
-        # Pega os limites das aldeias
-        x_min, x_max = int(box_v[2].min()), int(box_v[2].max())
-        y_min, y_max = int(box_v[3].min()), int(box_v[3].max())
+        # Pega os limites das aldeias, ignorando (0,0) que costuma ser outlier/admin
+        v_clean = box_v[~((box_v[2] == 0) & (box_v[3] == 0))]
+        if v_clean.empty: v_clean = box_v # fallback se for a única aldeia
+        
+        x_min, x_max = int(v_clean[2].min()), int(v_clean[2].max())
+        y_min, y_max = int(v_clean[3].min()), int(v_clean[3].max())
         
         # Para mapas globais (Dominância/Hotspot), garante que o centro (500,500) não seja cortado
         # e mantém uma área mínima de visão para dar contexto
