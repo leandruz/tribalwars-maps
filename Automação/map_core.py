@@ -280,20 +280,23 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
                     label_metric = txt["avg_noblings"]
                 else:
                     print(f"[{mundo}] xGoal abortado: Data de início não encontrada")
-                    return
-            elif metric != "points":
+            if metric != "points":
                 df_kill = data.fetch(f"kill_{mk}.txt")
-                if df_kill.empty: return
-                df_kill.columns = [0, 1, 2]
-                df_kill = df_kill[[1, 2]].rename(columns={1: 0, 2: 'val'})
-                df_target = df_target.merge(df_kill, on=0, how='left')
-                df_target['val'] = pd.to_numeric(df_target['val'], errors='coerce').fillna(0)
+                if not df_kill.empty:
+                    df_kill.columns = list(range(df_kill.shape[1]))
+                    df_kill = df_kill[[1, 2]].rename(columns={1: 0, 2: 'val'})
+                    df_target = df_target.merge(df_kill, on=0, how='left')
+                
+                df_target['val'] = pd.to_numeric(df_target.get('val', 0), errors='coerce').fillna(0)
                 label_metric = f"OD{metric[2:].upper()}"
+                # Tie-breaker: Se OD for igual (como 0), ordena por pontos (coluna 4)
+                sort_cols = ['val', 4]
             else:
                 df_target['val'] = pd.to_numeric(df_target[4], errors='coerce')
                 label_metric = txt["points"]
+                sort_cols = ['val']
             
-            top15 = df_target.sort_values('val', ascending=False).head(15)
+            top15 = df_target.sort_values(sort_cols, ascending=False).head(15)
             for i, row in enumerate(top15.itertuples()):
                 map_id_color[row[1]] = COLORS[i]
                 top_entries.append({'name': row[2], 'val': row.val, 'rank': i+1, 'color': COLORS[i]})
@@ -303,22 +306,30 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
         else: # Tribe Ranking
             df_target = df_ally.copy()
             df_target['family'] = df_target[2].apply(normalize_tag)
+            df_target['points'] = pd.to_numeric(df_target[6], errors='coerce').fillna(0) # Pontos totais
+            
             metric_map = {"oda": "att", "odd": "def"}
             mk = metric_map.get(metric, metric)
             
             if metric != "points":
                 df_kill = data.fetch(f"kill_{mk}_tribe.txt")
-                if df_kill.empty: return
-                df_kill.columns = [0, 1, 2]
-                df_kill = df_kill[[1, 2]].rename(columns={1: 0, 2: 'val'})
-                df_target = df_target.merge(df_kill, on=0, how='left')
-                df_target['val'] = pd.to_numeric(df_target['val'], errors='coerce').fillna(0)
+                if not df_kill.empty:
+                    df_kill.columns = list(range(df_kill.shape[1]))
+                    df_kill = df_kill[[1, 2]].rename(columns={1: 0, 2: 'val'})
+                    df_target = df_target.merge(df_kill, on=0, how='left')
+                
+                df_target['val'] = pd.to_numeric(df_target.get('val', 0), errors='coerce').fillna(0)
                 label_metric = f"OD{metric[2:].upper()}"
+                sort_cols = ['val', 'points']
             else:
-                df_target['val'] = pd.to_numeric(df_target[4], errors='coerce')
-                label_metric = txt["alt_total"]
+                df_target['val'] = df_target['points']
+                label_metric = txt["points"]
+                sort_cols = ['val']
             
-            fams = df_target.groupby('family')['val'].sum().reset_index().sort_values('val', ascending=False).head(15)
+            # Agrupar por família, somando OD e Pontos
+            fams = df_target.groupby('family').agg({'val': 'sum', 'points': 'sum'}).reset_index()
+            fams = fams.sort_values(sort_cols, ascending=False).head(15)
+            
             for i, row in enumerate(fams.itertuples()):
                 map_id_color[row.family] = COLORS[i]
                 top_entries.append({'name': row.family, 'val': row.val, 'rank': i+1, 'color': COLORS[i]})

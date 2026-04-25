@@ -19,7 +19,7 @@
       "villages": 40
     },
     {
-      "rank": 6292,
+      "rank": 6323,
       "name": 919614145,
       "pts": 5,
       "villages": 43
@@ -43,7 +43,7 @@
       "villages": 180
     },
     {
-      "rank": 5429,
+      "rank": 5472,
       "name": 919022474,
       "pts": 1,
       "villages": 8
@@ -55,19 +55,19 @@
       "villages": 43
     },
     {
-      "rank": 4095,
+      "rank": 4105,
       "name": 7626918,
       "pts": 1,
       "villages": 43
     },
     {
-      "rank": 3914,
+      "rank": 3943,
       "name": 1618709,
       "pts": 1,
       "villages": 8
     },
     {
-      "rank": 3865,
+      "rank": 3911,
       "name": 7913167,
       "pts": 1,
       "villages": 1
@@ -79,16 +79,16 @@
       "villages": 11
     },
     {
-      "rank": 3798,
-      "name": 8196494,
-      "pts": 1,
-      "villages": 180
-    },
-    {
-      "rank": 3772,
+      "rank": 3818,
       "name": 5494957,
       "pts": 1,
       "villages": 8
+    },
+    {
+      "rank": 3807,
+      "name": 8196494,
+      "pts": 1,
+      "villages": 180
     },
     {
       "rank": 3770,
@@ -97,7 +97,7 @@
       "villages": 5
     },
     {
-      "rank": 3739,
+      "rank": 3763,
       "name": 919973472,
       "pts": 1,
       "villages": 11
@@ -109,13 +109,13 @@
       "villages": 43
     },
     {
-      "rank": 3177,
+      "rank": 3209,
       "name": 7576357,
       "pts": 1,
       "villages": 45
     },
     {
-      "rank": 3090,
+      "rank": 3095,
       "name": 919990825,
       "pts": 2,
       "villages": 103
@@ -151,22 +151,28 @@
       "villages": 180
     },
     {
+      "rank": 2773,
+      "name": 919829628,
+      "pts": 1,
+      "villages": 1
+    },
+    {
       "rank": 2738,
       "name": 7853994,
       "pts": 1,
       "villages": 40
     },
     {
-      "rank": 2736,
-      "name": 919829628,
-      "pts": 1,
-      "villages": 1
-    },
-    {
-      "rank": 2721,
+      "rank": 2726,
       "name": 918816381,
       "pts": 2,
       "villages": 43
+    },
+    {
+      "rank": 2622,
+      "name": 918851092,
+      "pts": 1,
+      "villages": 45
     },
     {
       "rank": 2574,
@@ -175,8 +181,14 @@
       "villages": 8
     },
     {
-      "rank": 2487,
-      "name": 918851092,
+      "rank": 2432,
+      "name": 919057290,
+      "pts": 1,
+      "villages": 103
+    },
+    {
+      "rank": 2392,
+      "name": 919249262,
       "pts": 1,
       "villages": 45
     },
@@ -187,37 +199,31 @@
       "villages": 8
     },
     {
-      "rank": 2332,
+      "rank": 2345,
       "name": 919473031,
       "pts": 1,
       "villages": 180
     },
     {
-      "rank": 2331,
+      "rank": 2336,
       "name": 8046778,
       "pts": 1,
       "villages": 45
     },
     {
-      "rank": 2330,
-      "name": 919249262,
-      "pts": 1,
-      "villages": 45
-    },
-    {
-      "rank": 2228,
+      "rank": 2264,
       "name": 919527574,
       "pts": 1,
       "villages": 180
     },
     {
-      "rank": 2218,
+      "rank": 2243,
       "name": 7506101,
       "pts": 1,
       "villages": 8
     },
     {
-      "rank": 2190,
+      "rank": 2210,
       "name": 919794911,
       "pts": 1,
       "villages": 5
@@ -241,13 +247,19 @@
       "villages": 0
     },
     {
+      "rank": 2068,
+      "name": 7604381,
+      "pts": 1,
+      "villages": 180
+    },
+    {
       "rank": 2061,
       "name": 919871431,
       "pts": 1,
       "villages": 103
     },
     {
-      "rank": 2008,
+      "rank": 2017,
       "name": 919800623,
       "pts": 1,
       "villages": 0
@@ -271,12 +283,6 @@
       "villages": 180
     },
     {
-      "rank": 1973,
-      "name": 7604381,
-      "pts": 1,
-      "villages": 180
-    },
-    {
       "rank": 1958,
       "name": 919951015,
       "pts": 1,
@@ -293,12 +299,6 @@
       "name": 6631824,
       "pts": 1,
       "villages": 219
-    },
-    {
-      "rank": 1920,
-      "name": 919057290,
-      "pts": 1,
-      "villages": 103
     }
   ],
   "tribes": [
