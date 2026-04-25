@@ -1,12 +1,17 @@
 {
   "players": [
     {
+<<<<<<< HEAD
       "rank": 7915030,
+=======
+      "rank": 7962151,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919397912,
       "pts": 704,
       "villages": 286
     },
     {
+<<<<<<< HEAD
       "rank": 7092205,
       "name": 919837538,
       "pts": 702,
@@ -20,14 +25,35 @@
     },
     {
       "rank": 6785552,
+=======
+      "rank": 7136047,
+      "name": 919837538,
+      "pts": 725,
+      "villages": 57
+    },
+    {
+      "rank": 6969027,
+      "name": 919722957,
+      "pts": 605,
+      "villages": 17
+    },
+    {
+      "rank": 6789349,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 7604381,
       "pts": 670,
       "villages": 57
     },
     {
+<<<<<<< HEAD
       "rank": 5758400,
       "name": 7663585,
       "pts": 602,
+=======
+      "rank": 5784953,
+      "name": 7663585,
+      "pts": 604,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "villages": 57
     },
     {
@@ -37,12 +63,23 @@
       "villages": 286
     },
     {
+<<<<<<< HEAD
       "rank": 4963880,
+=======
+      "rank": 5009259,
+      "name": 919647529,
+      "pts": 484,
+      "villages": 17
+    },
+    {
+      "rank": 4969572,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919363920,
       "pts": 463,
       "villages": 286
     },
     {
+<<<<<<< HEAD
       "rank": 4942130,
       "name": 919647529,
       "pts": 478,
@@ -62,29 +99,63 @@
     },
     {
       "rank": 4439335,
+=======
+      "rank": 4660798,
+      "name": 919717820,
+      "pts": 469,
+      "villages": 286
+    },
+    {
+      "rank": 4500377,
+      "name": 919847817,
+      "pts": 438,
+      "villages": 17
+    },
+    {
+      "rank": 4448743,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919709026,
       "pts": 444,
       "villages": 57
     },
     {
+<<<<<<< HEAD
       "rank": 3952366,
+=======
+      "rank": 3954347,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919221537,
       "pts": 374,
       "villages": 17
     },
     {
+<<<<<<< HEAD
       "rank": 3579747,
+=======
+      "rank": 3657820,
+      "name": 919830533,
+      "pts": 360,
+      "villages": 57
+    },
+    {
+      "rank": 3587271,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919753927,
       "pts": 333,
       "villages": 286
     },
     {
+<<<<<<< HEAD
       "rank": 3556440,
+=======
+      "rank": 3576017,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919560887,
       "pts": 323,
       "villages": 57
     },
     {
+<<<<<<< HEAD
       "rank": 3552473,
       "name": 919830533,
       "pts": 350,
@@ -92,27 +163,57 @@
     },
     {
       "rank": 3385613,
+=======
+      "rank": 3383723,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919614145,
       "pts": 322,
       "villages": 286
     },
     {
+<<<<<<< HEAD
       "rank": 3368412,
+=======
+      "rank": 3378900,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919469250,
       "pts": 322,
       "villages": 17
     },
     {
+<<<<<<< HEAD
       "rank": 3213137,
+=======
+      "rank": 3241138,
+      "name": 261702,
+      "pts": 329,
+      "villages": 286
+    },
+    {
+      "rank": 3217951,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919519941,
       "pts": 313,
       "villages": 57
     },
     {
+<<<<<<< HEAD
       "rank": 3194184,
       "name": 261702,
       "pts": 323,
       "villages": 286
+=======
+      "rank": 3088351,
+      "name": 919856185,
+      "pts": 316,
+      "villages": 1582
+    },
+    {
+      "rank": 3076103,
+      "name": 919499089,
+      "pts": 290,
+      "villages": 2030
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
     },
     {
       "rank": 3072304,
@@ -121,6 +222,7 @@
       "villages": 32
     },
     {
+<<<<<<< HEAD
       "rank": 3069031,
       "name": 919499089,
       "pts": 290,
@@ -140,11 +242,27 @@
     },
     {
       "rank": 2989514,
+=======
+      "rank": 3056954,
+      "name": 919964328,
+      "pts": 297,
+      "villages": 1582
+    },
+    {
+      "rank": 3019373,
+      "name": 6675895,
+      "pts": 286,
+      "villages": 286
+    },
+    {
+      "rank": 2994067,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919821173,
       "pts": 294,
       "villages": 17
     },
     {
+<<<<<<< HEAD
       "rank": 2972350,
       "name": 919856185,
       "pts": 304,
@@ -170,11 +288,39 @@
     },
     {
       "rank": 2852639,
+=======
+      "rank": 2955950,
+      "name": 919769414,
+      "pts": 281,
+      "villages": 57
+    },
+    {
+      "rank": 2938102,
+      "name": 919619714,
+      "pts": 283,
+      "villages": 286
+    },
+    {
+      "rank": 2931588,
+      "name": 7928191,
+      "pts": 290,
+      "villages": 57
+    },
+    {
+      "rank": 2901600,
+      "name": 919473330,
+      "pts": 301,
+      "villages": 286
+    },
+    {
+      "rank": 2880265,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 1751622,
       "pts": 339,
       "villages": 286
     },
     {
+<<<<<<< HEAD
       "rank": 2846592,
       "name": 7928191,
       "pts": 281,
@@ -182,11 +328,15 @@
     },
     {
       "rank": 2844467,
+=======
+      "rank": 2834241,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 8011623,
       "pts": 271,
       "villages": 57
     },
     {
+<<<<<<< HEAD
       "rank": 2735785,
       "name": 919378046,
       "pts": 263,
@@ -200,11 +350,27 @@
     },
     {
       "rank": 2710605,
+=======
+      "rank": 2831564,
+      "name": 919378046,
+      "pts": 273,
+      "villages": 57
+    },
+    {
+      "rank": 2778255,
+      "name": 919719166,
+      "pts": 280,
+      "villages": 17
+    },
+    {
+      "rank": 2711298,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919792758,
       "pts": 253,
       "villages": 17
     },
     {
+<<<<<<< HEAD
       "rank": 2606292,
       "name": 919193745,
       "pts": 260,
@@ -218,11 +384,15 @@
     },
     {
       "rank": 2582287,
+=======
+      "rank": 2605002,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919721979,
       "pts": 252,
       "villages": 57
     },
     {
+<<<<<<< HEAD
       "rank": 2547320,
       "name": 919658885,
       "pts": 244,
@@ -230,29 +400,63 @@
     },
     {
       "rank": 2504572,
+=======
+      "rank": 2603177,
+      "name": 919193745,
+      "pts": 259,
+      "villages": 57
+    },
+    {
+      "rank": 2600222,
+      "name": 8147449,
+      "pts": 237,
+      "villages": 17
+    },
+    {
+      "rank": 2569490,
+      "name": 919658885,
+      "pts": 246,
+      "villages": 19
+    },
+    {
+      "rank": 2506089,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919797091,
       "pts": 238,
       "villages": 17
     },
     {
+<<<<<<< HEAD
       "rank": 2480236,
+=======
+      "rank": 2481795,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919717421,
       "pts": 234,
       "villages": 17
     },
     {
+<<<<<<< HEAD
       "rank": 2469910,
+=======
+      "rank": 2474869,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919537869,
       "pts": 248,
       "villages": 19
     },
     {
+<<<<<<< HEAD
       "rank": 2433020,
+=======
+      "rank": 2436102,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 7758310,
       "pts": 246,
       "villages": 57
     },
     {
+<<<<<<< HEAD
       "rank": 2386296,
       "name": 919650777,
       "pts": 241,
@@ -272,17 +476,55 @@
     },
     {
       "rank": 2381017,
+=======
+      "rank": 2417416,
+      "name": 919650777,
+      "pts": 244,
+      "villages": 19
+    },
+    {
+      "rank": 2402687,
+      "name": 918758030,
+      "pts": 270,
+      "villages": 57
+    },
+    {
+      "rank": 2384530,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 8193309,
       "pts": 241,
       "villages": 286
     },
     {
+<<<<<<< HEAD
       "rank": 2352114,
+=======
+      "rank": 2384132,
+      "name": 919864891,
+      "pts": 230,
+      "villages": 57
+    },
+    {
+      "rank": 2368626,
+      "name": 5493458,
+      "pts": 297,
+      "villages": 1582
+    },
+    {
+      "rank": 2354800,
+      "name": 919962730,
+      "pts": 269,
+      "villages": 19
+    },
+    {
+      "rank": 2353391,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 919760622,
       "pts": 210,
       "villages": 0
     },
     {
+<<<<<<< HEAD
       "rank": 2338925,
       "name": 919962730,
       "pts": 268,
@@ -299,10 +541,17 @@
       "name": 7108645,
       "pts": 211,
       "villages": 286
+=======
+      "rank": 2339934,
+      "name": 77380,
+      "pts": 229,
+      "villages": 17
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
     }
   ],
   "tribes": [
     {
+<<<<<<< HEAD
       "rank": 123993916,
       "name": 57,
       "tag": "Rising Empire",
@@ -483,6 +732,188 @@
       "tag": "Crazy DANCE",
       "pts": 17,
       "villages": 594605
+=======
+      "rank": 123422679,
+      "name": 57,
+      "tag": "Rising Empire",
+      "pts": 68,
+      "villages": 100199701
+    },
+    {
+      "rank": 89419059,
+      "name": 17,
+      "tag": "Rising Empire Norte",
+      "pts": 65,
+      "villages": 77561258
+    },
+    {
+      "rank": 81942882,
+      "name": 286,
+      "tag": "Ditadura DeepWeb",
+      "pts": 49,
+      "villages": 79849319
+    },
+    {
+      "rank": 55261814,
+      "name": 1582,
+      "tag": "FÚRIA",
+      "pts": 80,
+      "villages": 42574103
+    },
+    {
+      "rank": 51400441,
+      "name": 19,
+      "tag": "Rising Empire Leste",
+      "pts": 49,
+      "villages": 49839702
+    },
+    {
+      "rank": 35904668,
+      "name": 66,
+      "tag": "Os Templários.",
+      "pts": 65,
+      "villages": 30808778
+    },
+    {
+      "rank": 14740171,
+      "name": 1005,
+      "tag": "PIRATAS ROCKS",
+      "pts": 51,
+      "villages": 14206197
+    },
+    {
+      "rank": 18176106,
+      "name": 32,
+      "tag": "P1ÇA QUENTE",
+      "pts": 27,
+      "villages": 18176106
+    },
+    {
+      "rank": 11672970,
+      "name": 1090,
+      "tag": "FÚRIA ACADEMY",
+      "pts": 75,
+      "villages": 9535578
+    },
+    {
+      "rank": 8647125,
+      "name": 64,
+      "tag": "Rising Empire Academy",
+      "pts": 17,
+      "villages": 8647125
+    },
+    {
+      "rank": 7161672,
+      "name": 2030,
+      "tag": "MOITAS",
+      "pts": 5,
+      "villages": 7161672
+    },
+    {
+      "rank": 6273858,
+      "name": 1957,
+      "tag": "Little Flags",
+      "pts": 6,
+      "villages": 6273858
+    },
+    {
+      "rank": 3437415,
+      "name": 1955,
+      "tag": "K...M...B",
+      "pts": 3,
+      "villages": 3437415
+    },
+    {
+      "rank": 3029484,
+      "name": 55,
+      "tag": "Os Piça Fria",
+      "pts": 11,
+      "villages": 3029484
+    },
+    {
+      "rank": 2999194,
+      "name": 1950,
+      "tag": "Just For Fun",
+      "pts": 11,
+      "villages": 2999194
+    },
+    {
+      "rank": 3052892,
+      "name": 1958,
+      "tag": "bandeiras",
+      "pts": 3,
+      "villages": 3052892
+    },
+    {
+      "rank": 2288326,
+      "name": 1858,
+      "tag": "Salvadores",
+      "pts": 17,
+      "villages": 2288326
+    },
+    {
+      "rank": 1996006,
+      "name": 3,
+      "tag": "Just Relax",
+      "pts": 6,
+      "villages": 1996006
+    },
+    {
+      "rank": 1361107,
+      "name": 1979,
+      "tag": "Renegados?",
+      "pts": 4,
+      "villages": 1361107
+    },
+    {
+      "rank": 1754200,
+      "name": 2016,
+      "tag": "UPPER CLASS",
+      "pts": 1,
+      "villages": 1754200
+    },
+    {
+      "rank": 986849,
+      "name": 998,
+      "tag": "O REIS ESTÁ VOLTANDO.",
+      "pts": 18,
+      "villages": 986849
+    },
+    {
+      "rank": 1552860,
+      "name": 1150,
+      "tag": "Maria Fumaça",
+      "pts": 1,
+      "villages": 1552860
+    },
+    {
+      "rank": 985541,
+      "name": 2023,
+      "tag": "Exército Bolchevique",
+      "pts": 5,
+      "villages": 985541
+    },
+    {
+      "rank": 610792,
+      "name": 1780,
+      "tag": "Crazy DANCE",
+      "pts": 17,
+      "villages": 610792
+    },
+    {
+      "rank": 776206,
+      "name": 387,
+      "tag": "Balde de Lixo",
+      "pts": 80,
+      "villages": 537285
+    },
+    {
+      "rank": 757830,
+      "name": 1975,
+      "tag": "BANDEIRAS.",
+      "pts": 4,
+      "villages": 757830
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
     },
     {
       "rank": 810190,
@@ -492,11 +923,19 @@
       "villages": 810190
     },
     {
+<<<<<<< HEAD
       "rank": 473718,
       "name": 760,
       "tag": "Power Rangers",
       "pts": 6,
       "villages": 473718
+=======
+      "rank": 480463,
+      "name": 760,
+      "tag": "Power Rangers",
+      "pts": 6,
+      "villages": 480463
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
     },
     {
       "rank": 812334,
@@ -506,6 +945,7 @@
       "villages": 812334
     },
     {
+<<<<<<< HEAD
       "rank": 589232,
       "name": 1969,
       "tag": "zé da manga",
@@ -528,24 +968,60 @@
     },
     {
       "rank": 764960,
+=======
+      "rank": 523979,
+      "name": 1906,
+      "tag": "D4RK",
+      "pts": 4,
+      "villages": 523979
+    },
+    {
+      "rank": 594848,
+      "name": 1969,
+      "tag": "zé da manga",
+      "pts": 80,
+      "villages": 326416
+    },
+    {
+      "rank": 770742,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 1925,
       "tag": "Hulk",
       "pts": 80,
       "villages": 459080
     },
     {
+<<<<<<< HEAD
       "rank": 702757,
+=======
+      "rank": 703586,
+      "name": 1922,
+      "tag": "Super Man",
+      "pts": 80,
+      "villages": 456206
+    },
+    {
+      "rank": 709305,
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
       "name": 1927,
       "tag": "Mulher Maravilha",
       "pts": 80,
       "villages": 459080
     },
     {
+<<<<<<< HEAD
       "rank": 218847,
       "name": 1790,
       "tag": "BBAx",
       "pts": 56,
       "villages": 194099
+=======
+      "rank": 208087,
+      "name": 1790,
+      "tag": "BBAx",
+      "pts": 55,
+      "villages": 185382
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
     },
     {
       "rank": 628290,
@@ -555,6 +1031,7 @@
       "villages": 628290
     },
     {
+<<<<<<< HEAD
       "rank": 385736,
       "name": 1987,
       "tag": "DUDU",
@@ -581,6 +1058,34 @@
       "tag": "LA MAFIA",
       "pts": 18,
       "villages": 272254
+=======
+      "rank": 391036,
+      "name": 1987,
+      "tag": "DUDU",
+      "pts": 2,
+      "villages": 391036
+    },
+    {
+      "rank": 233956,
+      "name": 196,
+      "tag": "VIKING'S ³",
+      "pts": 9,
+      "villages": 233956
+    },
+    {
+      "rank": 312273,
+      "name": 765,
+      "tag": "Tríade",
+      "pts": 4,
+      "villages": 312273
+    },
+    {
+      "rank": 174765,
+      "name": 1676,
+      "tag": "Pesadelo",
+      "pts": 58,
+      "villages": 168280
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
     },
     {
       "rank": 373215,
@@ -590,6 +1095,7 @@
       "villages": 317444
     },
     {
+<<<<<<< HEAD
       "rank": 180542,
       "name": 1676,
       "tag": "Pesadelo",
@@ -616,6 +1122,34 @@
       "tag": "Ragnarok",
       "pts": 7,
       "villages": 194099
+=======
+      "rank": 269412,
+      "name": 1372,
+      "tag": "LA MAFIA",
+      "pts": 18,
+      "villages": 269412
+    },
+    {
+      "rank": 513662,
+      "name": 1881,
+      "tag": "VEMCOMIGO",
+      "pts": 57,
+      "villages": 400529
+    },
+    {
+      "rank": 286670,
+      "name": 1869,
+      "tag": "BBAZ",
+      "pts": 55,
+      "villages": 268597
+    },
+    {
+      "rank": 197139,
+      "name": 27,
+      "tag": "Ragnarok",
+      "pts": 7,
+      "villages": 197139
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
     },
     {
       "rank": 142981,
@@ -625,6 +1159,7 @@
       "villages": 129739
     },
     {
+<<<<<<< HEAD
       "rank": 325829,
       "name": 1973,
       "tag": "BomBard",
@@ -644,6 +1179,13 @@
       "tag": "Renegados",
       "pts": 5,
       "villages": 222182
+=======
+      "rank": 300371,
+      "name": 1973,
+      "tag": "BomBard",
+      "pts": 1,
+      "villages": 300371
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
     },
     {
       "rank": 369051,
@@ -651,6 +1193,23 @@
       "tag": "Night Elf Empire",
       "pts": 1,
       "villages": 369051
+<<<<<<< HEAD
+=======
+    },
+    {
+      "rank": 183118,
+      "name": 141,
+      "tag": "VIKING'S ²",
+      "pts": 4,
+      "villages": 183118
+    },
+    {
+      "rank": 223946,
+      "name": 648,
+      "tag": "Renegados",
+      "pts": 5,
+      "villages": 223946
+>>>>>>> 4a2775a (🗺️ Novo Mundo: BR142 adicionado ao sistema de mapas)
     }
   ]
 }
