@@ -562,25 +562,11 @@
       "villages": 37358
     },
     {
-      "rank": 111307,
-      "name": 517,
-      "tag": "sccl",
+      "rank": 143786,
+      "name": 413,
+      "tag": "PelotãoBravo",
       "pts": 1,
-      "villages": 111307
-    },
-    {
-      "rank": 82444,
-      "name": 494,
-      "tag": "PowerTuga",
-      "pts": 2,
-      "villages": 82444
-    },
-    {
-      "rank": 53589,
-      "name": 551,
-      "tag": "ipipagaquigrafo",
-      "pts": 7,
-      "villages": 53589
+      "villages": 143786
     },
     {
       "rank": 97346,
@@ -590,11 +576,25 @@
       "villages": 97346
     },
     {
-      "rank": 143786,
-      "name": 413,
-      "tag": "PelotãoBravo",
+      "rank": 82444,
+      "name": 494,
+      "tag": "PowerTuga",
+      "pts": 2,
+      "villages": 82444
+    },
+    {
+      "rank": 111307,
+      "name": 517,
+      "tag": "sccl",
       "pts": 1,
-      "villages": 143786
+      "villages": 111307
+    },
+    {
+      "rank": 53589,
+      "name": 551,
+      "tag": "ipipagaquigrafo",
+      "pts": 7,
+      "villages": 53589
     },
     {
       "rank": 69748,
@@ -604,18 +604,18 @@
       "villages": 69748
     },
     {
-      "rank": 80260,
-      "name": 52,
-      "tag": "Army Of Death",
-      "pts": 3,
-      "villages": 80260
-    },
-    {
       "rank": 86418,
       "name": 520,
       "tag": "Test123",
       "pts": 3,
       "villages": 86418
+    },
+    {
+      "rank": 80260,
+      "name": 52,
+      "tag": "Army Of Death",
+      "pts": 3,
+      "villages": 80260
     },
     {
       "rank": 54405,
@@ -639,18 +639,18 @@
       "villages": 20648
     },
     {
-      "rank": 24238,
-      "name": 14,
-      "tag": "Blooderhood",
-      "pts": 1,
-      "villages": 24238
-    },
-    {
       "rank": 5787,
       "name": 330,
       "tag": "ATE OS COMEMOS",
       "pts": 2,
       "villages": 5787
+    },
+    {
+      "rank": 24238,
+      "name": 14,
+      "tag": "Blooderhood",
+      "pts": 1,
+      "villages": 24238
     }
   ]
 }

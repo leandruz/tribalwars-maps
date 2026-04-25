@@ -43,7 +43,7 @@ TEXTS = {
         "daily": "Atualizado diariamente",
         "continent": "Por Continente",
         "points": "Pontos",
-        "avg_noblings": "Média de Noblagens p/ Dia",
+        "avg_noblings": "Média de Noblagens/Dia",
         "combat_zones": "Zonas de Combate",
         "per_day": "aldeias/dia",
         "villages": "aldeias",
@@ -271,16 +271,18 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
             
             if metric == "xgoal":
                 start_str = get_world_start_date(mundo, domain)
-                if start_str:
-                    save_config_update("server_start_dates", mundo, start_str)
-                    start_date = datetime.strptime(start_str, "%Y-%m-%d")
-                    dias = (datetime.now() - start_date).days
-                    dias = max(dias, 1)
-                    df_target['val'] = (pd.to_numeric(df_target[3], errors='coerce') - 1) / dias
-                    label_metric = txt["avg_noblings"]
-                else:
+                if not start_str:
                     print(f"[{mundo}] xGoal abortado: Data de início não encontrada")
-            if metric != "points":
+                    return
+                
+                save_config_update("server_start_dates", mundo, start_str)
+                start_date = datetime.strptime(start_str, "%Y-%m-%d")
+                dias = (datetime.now() - start_date).days
+                dias = max(dias, 1)
+                df_target['val'] = (pd.to_numeric(df_target[3], errors='coerce') - 1) / dias
+                label_metric = txt["avg_noblings"]
+                sort_cols = ['val', 4]
+            elif metric != "points":
                 df_kill = data.fetch(f"kill_{mk}.txt")
                 if not df_kill.empty:
                     df_kill.columns = list(range(df_kill.shape[1]))

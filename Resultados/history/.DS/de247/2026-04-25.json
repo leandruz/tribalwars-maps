@@ -548,18 +548,18 @@
       "villages": 26718
     },
     {
-      "rank": 20158,
-      "name": 36,
-      "tag": "Flaggentauschclub",
-      "pts": 17,
-      "villages": 20158
-    },
-    {
       "rank": 52107,
       "name": 153,
       "tag": "Angry Farmers - N1",
       "pts": 6,
       "villages": 52107
+    },
+    {
+      "rank": 20158,
+      "name": 36,
+      "tag": "Flaggentauschclub",
+      "pts": 17,
+      "villages": 20158
     },
     {
       "rank": 37949,
@@ -583,13 +583,6 @@
       "villages": 59242
     },
     {
-      "rank": 32043,
-      "name": 651,
-      "tag": "NORICUM",
-      "pts": 16,
-      "villages": 32043
-    },
-    {
       "rank": 25246,
       "name": 338,
       "tag": "Angry Farmer Ost",
@@ -597,11 +590,11 @@
       "villages": 25246
     },
     {
-      "rank": 65657,
-      "name": 136,
-      "tag": "Die blutroten Adler",
-      "pts": 2,
-      "villages": 65657
+      "rank": 32043,
+      "name": 651,
+      "tag": "NORICUM",
+      "pts": 16,
+      "villages": 32043
     },
     {
       "rank": 23016,
@@ -611,11 +604,11 @@
       "villages": 23016
     },
     {
-      "rank": 51443,
-      "name": 1199,
-      "tag": "W31 Relikt",
-      "pts": 1,
-      "villages": 51443
+      "rank": 65657,
+      "name": 136,
+      "tag": "Die blutroten Adler",
+      "pts": 2,
+      "villages": 65657
     },
     {
       "rank": 17676,
@@ -639,11 +632,11 @@
       "villages": 20174
     },
     {
-      "rank": 25751,
-      "name": 88,
-      "tag": "Non Player Character",
-      "pts": 3,
-      "villages": 25751
+      "rank": 51443,
+      "name": 1199,
+      "tag": "W31 Relikt",
+      "pts": 1,
+      "villages": 51443
     },
     {
       "rank": 12182,
@@ -651,6 +644,13 @@
       "tag": "Pa1n",
       "pts": 9,
       "villages": 12182
+    },
+    {
+      "rank": 25751,
+      "name": 88,
+      "tag": "Non Player Character",
+      "pts": 3,
+      "villages": 25751
     }
   ]
 }
