@@ -296,6 +296,8 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
                 label_metric = txt["points"]
                 sort_cols = ['val']
             
+            # Filtra apenas quem tem saldo (maior que 0)
+            df_target = df_target[df_target['val'] > 0]
             top15 = df_target.sort_values(sort_cols, ascending=False).head(15)
             for i, row in enumerate(top15.itertuples()):
                 map_id_color[row[1]] = COLORS[i]
@@ -328,6 +330,8 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
             
             # Agrupar por família, somando OD e Pontos
             fams = df_target.groupby('family').agg({'val': 'sum', 'points': 'sum'}).reset_index()
+            # Filtra apenas quem tem saldo (maior que 0)
+            fams = fams[fams['val'] > 0]
             fams = fams.sort_values(sort_cols, ascending=False).head(15)
             
             for i, row in enumerate(fams.itertuples()):
@@ -455,11 +459,25 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
         label_metric = "Dinâmica de Noblagens"
 
     # --- DESENHO ARTÍSTICO ---
-    box_v = target_ids_for_map if mode not in ['combat_heatmap', 'dominance_k'] else df_village
+    box_v = target_ids_for_map if mode not in ['combat_heatmap', 'dominance_k', 'conquest_hotspot'] else df_village
     if box_v.empty: x_min, x_max, y_min, y_max = 0, 999, 0, 999
     else:
-        x_min, x_max = int(box_v[2].min()-30), int(box_v[2].max()+30)
-        y_min, y_max = int(box_v[3].min()-30), int(box_v[3].max()+30)
+        # Pega os limites das aldeias
+        x_min, x_max = int(box_v[2].min()), int(box_v[2].max())
+        y_min, y_max = int(box_v[3].min()), int(box_v[3].max())
+        
+        # Para mapas globais (Dominância/Hotspot), garante que o centro (500,500) não seja cortado
+        # e mantém uma área mínima de visão para dar contexto
+        if mode in ['dominance_k', 'conquest_hotspot']:
+            x_min = min(x_min, 400)
+            x_max = max(x_max, 600)
+            y_min = min(y_min, 400)
+            y_max = max(y_max, 600)
+
+        # Adiciona margem
+        x_min, x_max = x_min - 40, x_max + 40
+        y_min, y_max = y_min - 40, y_max + 40
+    
     x_min, y_min = max(0, x_min), max(0, y_min)
     x_max, y_max = min(999, x_max), min(999, y_max)
     w_dim, h_dim = x_max - x_min, y_max - y_min
