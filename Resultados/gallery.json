@@ -1,7 +1,58 @@
 {
-  "last_update": "25/04/2026 05:49:10",
+  "last_update": "25/04/2026 10:27:29",
   "servers": {
     ".BR": {
+      "br142": {
+        "name": "BR142",
+        "players": [
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.BR/br142/Players/mapa_top15_dominancia_jogadores_K_br142.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br142/Players/mapa_top15_jogadores_br142.png"
+          },
+          {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br142/Players/mapa_top15_oda_jogadores_br142.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br142/Players/mapa_top15_odd_jogadores_br142.png"
+          },
+          {
+            "title": "Média de Noblagens",
+            "path": "Resultados/.BR/br142/Players/mapa_top15_xgoal_jogadores_br142.png"
+          }
+        ],
+        "tribes": [
+          {
+            "title": "Análise Tática (Dinâmica)",
+            "path": "Resultados/.BR/br142/Tribes/mapa_conquest_hotspot_br142.png"
+          },
+          {
+            "title": "Conquistas (24h)",
+            "path": "Resultados/.BR/br142/Tribes/mapa_top15_conquistas_br142.png"
+          },
+          {
+            "title": "Dominância K",
+            "path": "Resultados/.BR/br142/Tribes/mapa_top15_dominancia_K_br142.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br142/Tribes/mapa_top15_familias_br142.png"
+          },
+          {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br142/Tribes/mapa_top15_oda_familias_br142.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br142/Tribes/mapa_top15_odd_familias_br142.png"
+          }
+        ]
+      },
       "br141": {
         "name": "BR141",
         "players": [
