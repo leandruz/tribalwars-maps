@@ -255,6 +255,10 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
     # Mapear IDs
     df_player.columns = list(range(df_player.shape[1]))
     df_village.columns = list(range(df_village.shape[1]))
+    
+    # FIX: Remove aldeias do K00 (bug de admin/outliers) de todos os mapas
+    df_village = df_village[~(((df_village[3] // 100) == 0) & ((df_village[2] // 100) == 0))]
+    
     if not df_ally.empty:
         df_ally.columns = list(range(df_ally.shape[1]))
     
