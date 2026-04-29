@@ -475,6 +475,12 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
         x_min, x_max = int(v_clean[2].min()), int(v_clean[2].max())
         y_min, y_max = int(v_clean[3].min()), int(v_clean[3].max())
         
+        # Ajusta para incluir o Continente (K) inteiro
+        x_min = (x_min // 100) * 100
+        x_max = (x_max // 100) * 100 + 100
+        y_min = (y_min // 100) * 100
+        y_max = (y_max // 100) * 100 + 100
+
         # Para mapas globais (Dominância/Hotspot), garante que o centro (500,500) não seja cortado
         # e mantém uma área mínima de visão para dar contexto
         if mode in ['dominance_k', 'conquest_hotspot']:
@@ -483,12 +489,8 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
             y_min = min(y_min, 400)
             y_max = max(y_max, 600)
 
-        # Adiciona margem
-        x_min, x_max = x_min - 40, x_max + 40
-        y_min, y_max = y_min - 40, y_max + 40
-    
     x_min, y_min = max(0, x_min), max(0, y_min)
-    x_max, y_max = min(999, x_max), min(999, y_max)
+    x_max, y_max = min(1000, x_max), min(1000, y_max)
     w_dim, h_dim = x_max - x_min, y_max - y_min
     escala = 1000 / max(w_dim, h_dim, 1)
     off_x, off_y = (1000 - w_dim * escala) / 2, (1000 - h_dim * escala) / 2
