@@ -31,6 +31,19 @@ MAP_TYPES = {
     "calor_combate": ("Tribes", "mapa_calor_combate_{mundo}.png", "Mapa de Calor (Combate)") # fallback / antigo
 }
 
+def format_mundo(servidor: str, mundo: str) -> str:
+    mundo = mundo.lower()
+    if mundo.isdigit():
+        prefix_map = {
+            ".BR": "br",
+            ".PT": "pt",
+            ".NET": "en",
+            ".DS": "de"
+        }
+        prefix = prefix_map.get(servidor, "")
+        return f"{prefix}{mundo}"
+    return mundo
+
 def load_config():
     if os.path.exists(CONFIG_FILE):
         with open(CONFIG_FILE, "r") as f:
@@ -119,8 +132,9 @@ async def setup_diario(interaction: discord.Interaction, servidor: app_commands.
         await interaction.response.send_message("Permissão de 'Administrador' ou 'Gerenciar Canais' necessária.", ephemeral=True)
         return
         
-    view = MapSetupView(servidor.value, mundo.lower())
-    await interaction.response.send_message(f"Configurando o mundo **{mundo.upper()}** ({servidor.value}). Selecione os mapas abaixo:", view=view, ephemeral=True)
+    mundo_formatado = format_mundo(servidor.value, mundo)
+    view = MapSetupView(servidor.value, mundo_formatado)
+    await interaction.response.send_message(f"Configurando o mundo **{mundo_formatado.upper()}** ({servidor.value}). Selecione os mapas abaixo:", view=view, ephemeral=True)
 
 async def _send_maps(channel_or_interaction, servidor, mundo, requested_maps):
     """Lógica unificada para baixar e enviar mapas para um canal ou interação"""
@@ -174,7 +188,8 @@ async def _send_maps(channel_or_interaction, servidor, mundo, requested_maps):
 ])
 @app_commands.choices(tipo_mapa=[app_commands.Choice(name=v[2], value=k) for k, v in list(MAP_TYPES.items())[:25]]) # Limite de 25 choices do Discord
 async def pedir_mapa(interaction: discord.Interaction, servidor: app_commands.Choice[str], mundo: str, tipo_mapa: app_commands.Choice[str]):
-    await _send_maps(interaction, servidor.value, mundo.lower(), [tipo_mapa.value])
+    mundo_formatado = format_mundo(servidor.value, mundo)
+    await _send_maps(interaction, servidor.value, mundo_formatado, [tipo_mapa.value])
 
 @bot.tree.command(name="todos_mapas", description="Pede todos os mapas disponíveis do mundo escolhido.")
 @app_commands.choices(servidor=[
@@ -184,7 +199,8 @@ async def pedir_mapa(interaction: discord.Interaction, servidor: app_commands.Ch
     app_commands.Choice(name="Alemanha (.DS)", value=".DS")
 ])
 async def todos_mapas(interaction: discord.Interaction, servidor: app_commands.Choice[str], mundo: str):
-    await _send_maps(interaction, servidor.value, mundo.lower(), list(MAP_TYPES.keys()))
+    mundo_formatado = format_mundo(servidor.value, mundo)
+    await _send_maps(interaction, servidor.value, mundo_formatado, list(MAP_TYPES.keys()))
 
 @bot.tree.command(name="force_update", description="Força a publicação imediata dos mapas diários configurados para este canal.")
 @app_commands.default_permissions(manage_channels=True)
