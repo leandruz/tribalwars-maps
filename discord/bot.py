@@ -107,6 +107,7 @@ async def on_message(message):
 # --- COMANDOS ---
 @bot.tree.command(name="setup_diario", description="Configura quais mapas receber diariamente neste canal.")
 @app_commands.describe(servidor="Servidor (Ex: .BR, .PT)", mundo="Mundo (Ex: br140)")
+@app_commands.default_permissions(manage_channels=True)
 @app_commands.choices(servidor=[
     app_commands.Choice(name="Brasil (.BR)", value=".BR"),
     app_commands.Choice(name="Portugal (.PT)", value=".PT"),
@@ -114,8 +115,8 @@ async def on_message(message):
     app_commands.Choice(name="Alemanha (.DS)", value=".DS")
 ])
 async def setup_diario(interaction: discord.Interaction, servidor: app_commands.Choice[str], mundo: str):
-    if not interaction.user.guild_permissions.administrator:
-        await interaction.response.send_message("Permissão de Administrador necessária.", ephemeral=True)
+    if interaction.user.guild_permissions and not (interaction.user.guild_permissions.administrator or interaction.user.guild_permissions.manage_channels):
+        await interaction.response.send_message("Permissão de 'Administrador' ou 'Gerenciar Canais' necessária.", ephemeral=True)
         return
         
     view = MapSetupView(servidor.value, mundo.lower())
@@ -186,8 +187,9 @@ async def todos_mapas(interaction: discord.Interaction, servidor: app_commands.C
     await _send_maps(interaction, servidor.value, mundo.lower(), list(MAP_TYPES.keys()))
 
 @bot.tree.command(name="force_update", description="Força a publicação imediata dos mapas diários configurados para este canal.")
+@app_commands.default_permissions(manage_channels=True)
 async def force_update(interaction: discord.Interaction):
-    if not interaction.user.guild_permissions.administrator:
+    if interaction.user.guild_permissions and not (interaction.user.guild_permissions.administrator or interaction.user.guild_permissions.manage_channels):
         await interaction.response.send_message("Permissão negada.", ephemeral=True)
         return
     
