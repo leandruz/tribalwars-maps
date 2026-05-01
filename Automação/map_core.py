@@ -316,7 +316,7 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
             df_target['family'] = df_target[2].apply(normalize_tag)
             df_target['points'] = pd.to_numeric(df_target[6], errors='coerce').fillna(0) # Pontos totais
             
-            metric_map = {"oda": "att", "odd": "def", "ods": "sup"}
+            metric_map = {"oda": "att", "odd": "def"}
             mk = metric_map.get(metric, metric)
             
             if metric != "points":
