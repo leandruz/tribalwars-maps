@@ -20,12 +20,12 @@ def process_world(server, mundo):
     try:
         print(f"\n>>>> [Início] {server} {mundo.upper()}")
         
-        # 1. Mapas de Tribo (Points, ODA, ODD)
-        for metric in ["points", "oda", "odd"]:
+        # 1. Mapas de Tribo (Points, ODA, ODD, ODS)
+        for metric in ["points", "oda", "odd", "ods"]:
             generate_map(mundo, server, PASTA_RAIZ, mode='ranking', entity='tribe', metric=metric)
 
-        # 2. Mapas de Player (Points, ODA, ODD, xGoal)
-        for metric in ["points", "oda", "odd", "xgoal"]:
+        # 2. Mapas de Player (Points, ODA, ODD, ODS, xGoal)
+        for metric in ["points", "oda", "odd", "ods", "xgoal"]:
             generate_map(mundo, server, PASTA_RAIZ, mode='ranking', entity='player', metric=metric)
 
         # 3. Dominância e Conquistas
