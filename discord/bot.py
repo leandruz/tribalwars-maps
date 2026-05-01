@@ -63,9 +63,10 @@ async def fetch_image(session, url):
 
 # --- UI VIEWS ---
 class MapSelect(discord.ui.Select):
-    def __init__(self, server, mundo):
+    def __init__(self, server, mundo, cargo_id=None):
         self.server_escolhido = server
         self.mundo_escolhido = mundo
+        self.cargo_id = cargo_id
         
         options = []
         for key, value in MAP_TYPES.items():
@@ -80,7 +81,8 @@ class MapSelect(discord.ui.Select):
         config[channel_id] = {
             "servidor": self.server_escolhido,
             "mundo": self.mundo_escolhido,
-            "mapas": self.values
+            "mapas": self.values,
+            "cargo_id": self.cargo_id
         }
         save_config(config)
         
@@ -89,9 +91,9 @@ class MapSelect(discord.ui.Select):
         await interaction.response.edit_message(content=f"✅ Configuração salva para o mundo **{self.mundo_escolhido.upper()}** ({self.server_escolhido})!\nMapas selecionados:\n- " + "\n- ".join(nomes), view=None)
 
 class MapSetupView(discord.ui.View):
-    def __init__(self, server, mundo):
+    def __init__(self, server, mundo, cargo_id=None):
         super().__init__()
-        self.add_item(MapSelect(server, mundo))
+        self.add_item(MapSelect(server, mundo, cargo_id))
 
 # --- EVENTOS ---
 @bot.event
@@ -119,7 +121,7 @@ async def on_message(message):
 
 # --- COMANDOS ---
 @bot.tree.command(name="setup_diario", description="Configura quais mapas receber diariamente neste canal.")
-@app_commands.describe(servidor="Servidor (Ex: .BR, .PT)", mundo="Mundo (Ex: br140)")
+@app_commands.describe(servidor="Servidor (Ex: .BR, .PT)", mundo="Mundo (Ex: br140)", cargo_notificacao="Cargo para mencionar (Opcional)")
 @app_commands.default_permissions(manage_channels=True)
 @app_commands.choices(servidor=[
     app_commands.Choice(name="Brasil (.BR)", value=".BR"),
@@ -127,16 +129,17 @@ async def on_message(message):
     app_commands.Choice(name="Internacional (.NET)", value=".NET"),
     app_commands.Choice(name="Alemanha (.DS)", value=".DS")
 ])
-async def setup_diario(interaction: discord.Interaction, servidor: app_commands.Choice[str], mundo: str):
+async def setup_diario(interaction: discord.Interaction, servidor: app_commands.Choice[str], mundo: str, cargo_notificacao: discord.Role = None):
     if interaction.user.guild_permissions and not (interaction.user.guild_permissions.administrator or interaction.user.guild_permissions.manage_channels):
         await interaction.response.send_message("Permissão de 'Administrador' ou 'Gerenciar Canais' necessária.", ephemeral=True)
         return
         
     mundo_formatado = format_mundo(servidor.value, mundo)
-    view = MapSetupView(servidor.value, mundo_formatado)
+    cargo_id = cargo_notificacao.id if cargo_notificacao else None
+    view = MapSetupView(servidor.value, mundo_formatado, cargo_id)
     await interaction.response.send_message(f"Configurando o mundo **{mundo_formatado.upper()}** ({servidor.value}). Selecione os mapas abaixo:", view=view, ephemeral=True)
 
-async def _send_maps(channel_or_interaction, servidor, mundo, requested_maps):
+async def _send_maps(channel_or_interaction, servidor, mundo, requested_maps, ping_role_id=None):
     """Lógica unificada para baixar e enviar mapas para um canal ou interação"""
     is_interaction = isinstance(channel_or_interaction, discord.Interaction)
     
@@ -161,7 +164,7 @@ async def _send_maps(channel_or_interaction, servidor, mundo, requested_maps):
                 print(f"[Aviso] Mapa não encontrado no Git: {url}")
 
     if not valid_files:
-        msg = f"⚠️ Nenhum dos mapas solicitados do mundo **{mundo.upper()}** ({servidor}) pôde ser baixado do GitHub. Talvez eles ainda não tenham sido gerados hoje."
+        msg = f"😅 Poxa, parece que os mapas de **{mundo.upper()}** ({servidor}) ainda não saíram do forno hoje! Tentarei enviá-los amanhã, ou você pode usar o comando `/force_update` mais tarde."
         if is_interaction:
             await channel_or_interaction.followup.send(msg)
         else:
@@ -174,10 +177,51 @@ async def _send_maps(channel_or_interaction, servidor, mundo, requested_maps):
         color=discord.Color.dark_theme()
     )
     
+    content_msg = f"<@&{ping_role_id}>" if ping_role_id else None
+    
     if is_interaction:
-        await channel_or_interaction.followup.send(embed=embed, files=valid_files)
+        await channel_or_interaction.followup.send(content=content_msg, embed=embed, files=valid_files)
     else:
-        await channel_or_interaction.send(embed=embed, files=valid_files)
+        await channel_or_interaction.send(content=content_msg, embed=embed, files=valid_files)
+
+class PainelView(discord.ui.View):
+    def __init__(self):
+        super().__init__()
+    
+    @discord.ui.button(label="Cancelar Envio Diário", style=discord.ButtonStyle.danger, emoji="🗑️")
+    async def cancelar_btn(self, interaction: discord.Interaction, button: discord.ui.Button):
+        config = load_config()
+        ch_id = str(interaction.channel_id)
+        if ch_id in config:
+            del config[ch_id]
+            save_config(config)
+            await interaction.response.send_message("✅ Envio diário cancelado com sucesso para este canal.", ephemeral=True)
+            button.disabled = True
+            await interaction.message.edit(view=self)
+        else:
+            await interaction.response.send_message("Nenhuma configuração ativa encontrada.", ephemeral=True)
+
+@bot.tree.command(name="painel", description="Mostra a configuração diária ativa neste canal e permite cancelá-la.")
+@app_commands.default_permissions(manage_channels=True)
+async def painel(interaction: discord.Interaction):
+    config = load_config()
+    ch_id = str(interaction.channel_id)
+    if ch_id not in config:
+        await interaction.response.send_message("Não há nenhum envio diário configurado para este canal. Use `/setup_diario` primeiro.", ephemeral=True)
+        return
+        
+    cfg = config[ch_id]
+    cargo_str = f"<@&{cfg['cargo_id']}>" if cfg.get("cargo_id") else "Nenhum"
+    mapas_nomes = [MAP_TYPES[m][2] for m in cfg['mapas'] if m in MAP_TYPES]
+    
+    embed = discord.Embed(title="⚙️ Painel de Configuração Diária", color=discord.Color.blue())
+    embed.add_field(name="Servidor / Mundo", value=f"{cfg['servidor']} / {cfg['mundo'].upper()}", inline=False)
+    embed.add_field(name="Cargo Notificado", value=cargo_str, inline=False)
+    embed.add_field(name="Mapas Diários", value="\n".join([f"• {m}" for m in mapas_nomes]), inline=False)
+    embed.add_field(name="Horário de Envio", value="Todos os dias às 10:00 (UTC)", inline=False)
+    
+    view = PainelView()
+    await interaction.response.send_message(embed=embed, view=view)
 
 @bot.tree.command(name="mapa", description="Pede um mapa específico do mundo escolhido.")
 @app_commands.choices(servidor=[
@@ -217,7 +261,7 @@ async def force_update(interaction: discord.Interaction):
         return
         
     cfg = config[channel_id]
-    await _send_maps(interaction, cfg["servidor"], cfg["mundo"], cfg["mapas"])
+    await _send_maps(interaction, cfg["servidor"], cfg["mundo"], cfg["mapas"], cfg.get("cargo_id"))
 
 
 # --- TASKS ---
@@ -232,7 +276,7 @@ async def daily_map_publisher():
                 channel_id = int(channel_id_str)
                 channel = bot.get_channel(channel_id)
                 if channel:
-                    await _send_maps(channel, cfg["servidor"], cfg["mundo"], cfg["mapas"])
+                    await _send_maps(channel, cfg["servidor"], cfg["mundo"], cfg["mapas"], cfg.get("cargo_id"))
             except Exception as e:
                 print(f"Erro ao enviar mapa para o canal {channel_id_str}: {e}")
 
