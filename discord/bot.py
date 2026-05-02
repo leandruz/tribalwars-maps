@@ -26,7 +26,7 @@ MAP_TYPES = {
     "top15_oda_jogadores": ("Players", "mapa_top15_oda_jogadores_{mundo}.png", "Top 15 ODA Jogadores"),
     "top15_odd_jogadores": ("Players", "mapa_top15_odd_jogadores_{mundo}.png", "Top 15 ODD Jogadores"),
     "top15_ods_jogadores": ("Players", "mapa_top15_ods_jogadores_{mundo}.png", "Top 15 ODS Jogadores"),
-    "top15_xgoal_jogadores": ("Players", "mapa_top15_xgoal_jogadores_{mundo}.png", "Top 15 Fast Nobles jogadores (xgoal)"),
+    "top15_xgoal_jogadores": ("Players", "mapa_top15_xgoal_jogadores_{mundo}.png", "Top 15 Fast Nobles jogadores"),
     
     # Tribes
     "hotspot": ("Tribes", "mapa_conquest_hotspot_{mundo}.png", "Conquest_Hotspot"),
@@ -185,11 +185,22 @@ async def _send_maps(channel_or_interaction, servidor, mundo, requested_maps, pi
     
     content_msg = f"<@&{ping_role_id}>" if ping_role_id else None
     
-    if is_interaction:
-        await channel_or_interaction.followup.send(content=content_msg, embed=embed, files=valid_files)
-    else:
-        await channel_or_interaction.send(content=content_msg, embed=embed, files=valid_files)
-
+    # Discord has a limit of 10 files per message. We need to split if there are more.
+    chunk_size = 10
+    file_chunks = [valid_files[i:i + chunk_size] for i in range(0, len(valid_files), chunk_size)]
+    
+    for idx, chunk in enumerate(file_chunks):
+        # Only send the content (ping) and embed on the first message
+        current_content = content_msg if idx == 0 else None
+        current_embed = embed if idx == 0 else None
+        
+        try:
+            if is_interaction:
+                await channel_or_interaction.followup.send(content=current_content, embed=current_embed, files=chunk)
+            else:
+                await channel_or_interaction.send(content=current_content, embed=current_embed, files=chunk)
+        except Exception as e:
+            print(f"Erro ao enviar mapas: {e}")
 class PainelView(discord.ui.View):
     def __init__(self):
         super().__init__()
