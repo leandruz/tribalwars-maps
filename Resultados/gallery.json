@@ -1,5 +1,5 @@
 {
-  "last_update": "01/05/2026 06:35:57",
+  "last_update": "01/05/2026 20:54:54",
   "servers": {
     ".BR": {
       "br142": {
@@ -20,6 +20,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.BR/br142/Players/mapa_top15_odd_jogadores_br142.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.BR/br142/Players/mapa_top15_ods_jogadores_br142.png"
           },
           {
             "title": "Média de Noblagens",
