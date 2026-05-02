@@ -20,15 +20,21 @@ GITHUB_BASE_URL = "https://raw.githubusercontent.com/Leandruz/TribalWars-Maps/ma
 
 # Mapa de nomes amigáveis para caminhos de arquivos relativos ao mundo
 MAP_TYPES = {
-    "dominancia_k": ("Tribes", "mapa_top15_dominancia_K_{mundo}.png", "Dominância de Continente"),
-    "hotspot": ("Tribes", "mapa_conquest_hotspot_{mundo}.png", "Hotspot de Conquistas"),
-    "top15_jogadores": ("Players", "mapa_top15_jogadores_{mundo}.png", "Top 15 Jogadores (Pontos)"),
+    # Players
+    "dominancia_k_jogadores": ("Players", "mapa_top15_dominancia_jogadores_K_{mundo}.png", "Top 15 Dominância por K (Jogadores)"),
+    "top15_jogadores": ("Players", "mapa_top15_jogadores_{mundo}.png", "Top 15 Jogadores"),
     "top15_oda_jogadores": ("Players", "mapa_top15_oda_jogadores_{mundo}.png", "Top 15 ODA Jogadores"),
-    "top15_ods_jogadores": ("Players", "mapa_top15_ods_jogadores_{mundo}.png", "Top 15 ODS Jogadores"),
     "top15_odd_jogadores": ("Players", "mapa_top15_odd_jogadores_{mundo}.png", "Top 15 ODD Jogadores"),
-    "top15_familias": ("Tribes", "mapa_top15_familias_{mundo}.png", "Top 15 Famílias (Pontos)"),
+    "top15_ods_jogadores": ("Players", "mapa_top15_ods_jogadores_{mundo}.png", "Top 15 ODS Jogadores"),
+    "top15_xgoal_jogadores": ("Players", "mapa_top15_xgoal_jogadores_{mundo}.png", "Top 15 Fast Nobles jogadores (xgoal)"),
+    
+    # Tribes
+    "hotspot": ("Tribes", "mapa_conquest_hotspot_{mundo}.png", "Conquest_Hotspot"),
+    "top15_conquistas": ("Tribes", "mapa_top15_conquistas_{mundo}.png", "Top 15 Conquistas"),
+    "dominancia_k": ("Tribes", "mapa_top15_dominancia_K_{mundo}.png", "Top 15 Dominância por K"),
+    "top15_familias": ("Tribes", "mapa_top15_familias_{mundo}.png", "Top 15 Famílias"),
     "top15_oda_familias": ("Tribes", "mapa_top15_oda_familias_{mundo}.png", "Top 15 ODA Famílias"),
-    "calor_combate": ("Tribes", "mapa_calor_combate_{mundo}.png", "Mapa de Calor (Combate)") # fallback / antigo
+    "top15_odd_familias": ("Tribes", "mapa_top15_odd_familias_{mundo}.png", "Top 15 ODD Famílias")
 }
 
 def format_mundo(servidor: str, mundo: str) -> str:
