@@ -1,5 +1,5 @@
 {
-  "last_update": "01/05/2026 20:54:54",
+  "last_update": "02/05/2026 06:05:25",
   "servers": {
     ".BR": {
       "br142": {
@@ -574,6 +574,10 @@
             "path": "Resultados/.DS/dec4/Players/mapa_top15_odd_jogadores_dec4.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/dec4/Players/mapa_top15_ods_jogadores_dec4.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.DS/dec4/Players/mapa_top15_xgoal_jogadores_dec4.png"
           }
@@ -623,6 +627,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de253/Players/mapa_top15_odd_jogadores_de253.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/de253/Players/mapa_top15_ods_jogadores_de253.png"
           },
           {
             "title": "Média de Noblagens",
@@ -676,6 +684,10 @@
             "path": "Resultados/.DS/de252/Players/mapa_top15_odd_jogadores_de252.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/de252/Players/mapa_top15_ods_jogadores_de252.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.DS/de252/Players/mapa_top15_xgoal_jogadores_de252.png"
           }
@@ -725,6 +737,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de251/Players/mapa_top15_odd_jogadores_de251.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/de251/Players/mapa_top15_ods_jogadores_de251.png"
           },
           {
             "title": "Média de Noblagens",
@@ -778,6 +794,10 @@
             "path": "Resultados/.DS/de250/Players/mapa_top15_odd_jogadores_de250.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/de250/Players/mapa_top15_ods_jogadores_de250.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.DS/de250/Players/mapa_top15_xgoal_jogadores_de250.png"
           }
@@ -827,6 +847,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de249/Players/mapa_top15_odd_jogadores_de249.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/de249/Players/mapa_top15_ods_jogadores_de249.png"
           },
           {
             "title": "Média de Noblagens",
@@ -880,6 +904,10 @@
             "path": "Resultados/.DS/de248/Players/mapa_top15_odd_jogadores_de248.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/de248/Players/mapa_top15_ods_jogadores_de248.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.DS/de248/Players/mapa_top15_xgoal_jogadores_de248.png"
           }
@@ -929,6 +957,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de247/Players/mapa_top15_odd_jogadores_de247.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/de247/Players/mapa_top15_ods_jogadores_de247.png"
           },
           {
             "title": "Média de Noblagens",
@@ -982,6 +1014,10 @@
             "path": "Resultados/.DS/de246/Players/mapa_top15_odd_jogadores_de246.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/de246/Players/mapa_top15_ods_jogadores_de246.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.DS/de246/Players/mapa_top15_xgoal_jogadores_de246.png"
           }
@@ -1031,6 +1067,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de245/Players/mapa_top15_odd_jogadores_de245.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/de245/Players/mapa_top15_ods_jogadores_de245.png"
           },
           {
             "title": "Média de Noblagens",
@@ -1084,6 +1124,10 @@
             "path": "Resultados/.DS/de244/Players/mapa_top15_odd_jogadores_de244.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/de244/Players/mapa_top15_ods_jogadores_de244.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.DS/de244/Players/mapa_top15_xgoal_jogadores_de244.png"
           }
@@ -1133,6 +1177,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de243/Players/mapa_top15_odd_jogadores_de243.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.DS/de243/Players/mapa_top15_ods_jogadores_de243.png"
           },
           {
             "title": "Média de Noblagens",
@@ -1188,6 +1236,10 @@
             "path": "Resultados/.NET/enc2/Players/mapa_top15_odd_jogadores_enc2.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.NET/enc2/Players/mapa_top15_ods_jogadores_enc2.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.NET/enc2/Players/mapa_top15_xgoal_jogadores_enc2.png"
           }
@@ -1237,6 +1289,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.NET/enc1/Players/mapa_top15_odd_jogadores_enc1.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.NET/enc1/Players/mapa_top15_ods_jogadores_enc1.png"
           },
           {
             "title": "Média de Noblagens",
@@ -1290,6 +1346,10 @@
             "path": "Resultados/.NET/en154/Players/mapa_top15_odd_jogadores_en154.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.NET/en154/Players/mapa_top15_ods_jogadores_en154.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.NET/en154/Players/mapa_top15_xgoal_jogadores_en154.png"
           }
@@ -1339,6 +1399,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.NET/en153/Players/mapa_top15_odd_jogadores_en153.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.NET/en153/Players/mapa_top15_ods_jogadores_en153.png"
           },
           {
             "title": "Média de Noblagens",
@@ -1392,6 +1456,10 @@
             "path": "Resultados/.NET/en152/Players/mapa_top15_odd_jogadores_en152.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.NET/en152/Players/mapa_top15_ods_jogadores_en152.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.NET/en152/Players/mapa_top15_xgoal_jogadores_en152.png"
           }
@@ -1441,6 +1509,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.NET/en151/Players/mapa_top15_odd_jogadores_en151.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.NET/en151/Players/mapa_top15_ods_jogadores_en151.png"
           },
           {
             "title": "Média de Noblagens",
@@ -1494,6 +1566,10 @@
             "path": "Resultados/.NET/en150/Players/mapa_top15_odd_jogadores_en150.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.NET/en150/Players/mapa_top15_ods_jogadores_en150.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.NET/en150/Players/mapa_top15_xgoal_jogadores_en150.png"
           }
@@ -1545,6 +1621,10 @@
             "path": "Resultados/.NET/en149/Players/mapa_top15_odd_jogadores_en149.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.NET/en149/Players/mapa_top15_ods_jogadores_en149.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.NET/en149/Players/mapa_top15_xgoal_jogadores_en149.png"
           }
@@ -1594,6 +1674,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.NET/en148/Players/mapa_top15_odd_jogadores_en148.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.NET/en148/Players/mapa_top15_ods_jogadores_en148.png"
           },
           {
             "title": "Média de Noblagens",
@@ -1649,6 +1733,10 @@
             "path": "Resultados/.PT/ptc1/Players/mapa_top15_odd_jogadores_ptc1.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.PT/ptc1/Players/mapa_top15_ods_jogadores_ptc1.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.PT/ptc1/Players/mapa_top15_xgoal_jogadores_ptc1.png"
           }
@@ -1698,6 +1786,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.PT/pt113/Players/mapa_top15_odd_jogadores_pt113.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.PT/pt113/Players/mapa_top15_ods_jogadores_pt113.png"
           },
           {
             "title": "Média de Noblagens",
@@ -1751,6 +1843,10 @@
             "path": "Resultados/.PT/pt112/Players/mapa_top15_odd_jogadores_pt112.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.PT/pt112/Players/mapa_top15_ods_jogadores_pt112.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.PT/pt112/Players/mapa_top15_xgoal_jogadores_pt112.png"
           }
@@ -1800,6 +1896,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.PT/pt111/Players/mapa_top15_odd_jogadores_pt111.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.PT/pt111/Players/mapa_top15_ods_jogadores_pt111.png"
           },
           {
             "title": "Média de Noblagens",
@@ -1853,6 +1953,10 @@
             "path": "Resultados/.PT/pt110/Players/mapa_top15_odd_jogadores_pt110.png"
           },
           {
+            "title": "Ranking ODS",
+            "path": "Resultados/.PT/pt110/Players/mapa_top15_ods_jogadores_pt110.png"
+          },
+          {
             "title": "Média de Noblagens",
             "path": "Resultados/.PT/pt110/Players/mapa_top15_xgoal_jogadores_pt110.png"
           }
@@ -1902,6 +2006,10 @@
           {
             "title": "Ranking ODD",
             "path": "Resultados/.PT/pt109/Players/mapa_top15_odd_jogadores_pt109.png"
+          },
+          {
+            "title": "Ranking ODS",
+            "path": "Resultados/.PT/pt109/Players/mapa_top15_ods_jogadores_pt109.png"
           },
           {
             "title": "Média de Noblagens",
