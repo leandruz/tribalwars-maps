@@ -236,6 +236,7 @@ async def painel(interaction: discord.Interaction):
     embed.add_field(name="Servidor / Mundo", value=f"{cfg['servidor']} / {cfg['mundo'].upper()}", inline=False)
     embed.add_field(name="Cargo Notificado", value=cargo_str, inline=False)
     embed.add_field(name="Mapas Diários", value="\n".join([f"• {m}" for m in mapas_nomes]), inline=False)
+    embed.add_field(name="Canal ID", value=f"`{ch_id}`", inline=False)
     embed.add_field(name="Horário de Envio", value="Todos os dias às 10:00 (UTC)", inline=False)
     
     view = PainelView()
@@ -316,7 +317,9 @@ async def daily_map_publisher():
                         continue
                 
                 if channel:
-                    print(f"Enviando mapas para {cfg['mundo']} no canal {channel_id_str}...")
+                    channel_name = channel.name if hasattr(channel, 'name') else "N/A"
+                    guild_name = channel.guild.name if hasattr(channel, 'guild') else "N/A"
+                    print(f"Enviando mapas para {cfg['mundo']} no canal #{channel_name} (Servidor: {guild_name})...")
                     await _send_maps(channel, cfg["servidor"], cfg["mundo"], cfg["mapas"], cfg.get("cargo_id"))
                 else:
                     print(f"Canal {channel_id_str} não encontrado.")
