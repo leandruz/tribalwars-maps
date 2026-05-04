@@ -5,7 +5,7 @@ import json
 import os
 import io
 import aiohttp
-from datetime import datetime
+from datetime import datetime, date
 from dotenv import load_dotenv
 
 # Carrega as variáveis do .env
@@ -108,6 +108,7 @@ async def on_ready():
     try:
         synced = await bot.tree.sync()
         print(f"Sincronizados {len(synced)} comando(s).")
+        print(f"Horário atual do bot: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}")
     except Exception as e:
         print(e)
     if not daily_map_publisher.is_running():
@@ -282,20 +283,48 @@ async def force_update(interaction: discord.Interaction):
 
 
 # --- TASKS ---
-@tasks.loop(hours=1)
+last_sent_date = None
+
+@tasks.loop(minutes=5)
 async def daily_map_publisher():
+    global last_sent_date
     now = datetime.now()
-    # Postar todos os dias às 10 da manhã (Ajuste conforme necessário)
-    if now.hour == 10:
+    
+    # Postar todos os dias a partir das 10 da manhã
+    # Se o bot cair e voltar às 11:00, ele ainda enviará os mapas que faltam de hoje.
+    if now.hour >= 10 and last_sent_date != now.date():
+        print(f"[{now.strftime('%Y-%m-%d %H:%M:%S')}] Iniciando tarefa de envio diário...")
         config = load_config()
+        if not config:
+            print("Nenhuma configuração encontrada em channels_config.json.")
+            last_sent_date = now.date() # Marca como feito para não repetir o log
+            return
+
         for channel_id_str, cfg in config.items():
             try:
                 channel_id = int(channel_id_str)
+                # Tenta pegar do cache
                 channel = bot.get_channel(channel_id)
+                
+                # Se não estiver no cache, tenta buscar na API (importante para após reinicializações)
+                if not channel:
+                    try:
+                        channel = await bot.fetch_channel(channel_id)
+                        print(f"Canal {channel_id} recuperado via API (fetch).")
+                    except Exception as e:
+                        print(f"Erro ao buscar canal {channel_id_str} via API: {e}")
+                        continue
+                
                 if channel:
+                    print(f"Enviando mapas para {cfg['mundo']} no canal {channel_id_str}...")
                     await _send_maps(channel, cfg["servidor"], cfg["mundo"], cfg["mapas"], cfg.get("cargo_id"))
+                else:
+                    print(f"Canal {channel_id_str} não encontrado.")
             except Exception as e:
-                print(f"Erro ao enviar mapa para o canal {channel_id_str}: {e}")
+                print(f"Erro ao processar canal {channel_id_str}: {e}")
+        
+        last_sent_date = now.date()
+        print(f"[{now.strftime('%Y-%m-%d %H:%M:%S')}] Tarefa de envio diário concluída.")
 
 if __name__ == "__main__":
     print("Iniciando Bot...")
