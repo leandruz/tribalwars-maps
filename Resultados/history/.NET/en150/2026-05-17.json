@@ -366,13 +366,6 @@
       "villages": 6741
     },
     {
-      "rank": 5100,
-      "name": 206,
-      "tag": "No Disband",
-      "pts": 2,
-      "villages": 5100
-    },
-    {
       "rank": 830,
       "name": 85,
       "tag": "Eternal Dawn",
@@ -380,25 +373,11 @@
       "villages": 830
     },
     {
-      "rank": 2110,
-      "name": 330,
-      "tag": "DARK WARRIORS",
-      "pts": 1,
-      "villages": 2110
-    },
-    {
-      "rank": 1353,
-      "name": 432,
-      "tag": "WATP",
-      "pts": 1,
-      "villages": 1353
-    },
-    {
-      "rank": 2532,
-      "name": 428,
-      "tag": "Odal Rampegutter",
-      "pts": 1,
-      "villages": 2532
+      "rank": 5100,
+      "name": 206,
+      "tag": "No Disband",
+      "pts": 2,
+      "villages": 5100
     },
     {
       "rank": 623,
@@ -408,11 +387,11 @@
       "villages": 623
     },
     {
-      "rank": 134,
-      "name": 426,
-      "tag": "s village",
+      "rank": 2532,
+      "name": 428,
+      "tag": "Odal Rampegutter",
       "pts": 1,
-      "villages": 134
+      "villages": 2532
     },
     {
       "rank": 983,
@@ -422,18 +401,67 @@
       "villages": 983
     },
     {
-      "rank": 4508,
-      "name": 81,
-      "tag": "Dactaro",
+      "rank": 134,
+      "name": 426,
+      "tag": "s village",
       "pts": 1,
-      "villages": 4508
+      "villages": 134
     },
     {
-      "rank": 5599,
-      "name": 63,
-      "tag": "Slayers",
+      "rank": 1353,
+      "name": 432,
+      "tag": "WATP",
       "pts": 1,
-      "villages": 5599
+      "villages": 1353
+    },
+    {
+      "rank": 2110,
+      "name": 330,
+      "tag": "DARK WARRIORS",
+      "pts": 1,
+      "villages": 2110
+    },
+    {
+      "rank": 683,
+      "name": 369,
+      "tag": "Scythian Allied Militia",
+      "pts": 1,
+      "villages": 683
+    },
+    {
+      "rank": 21,
+      "name": 385,
+      "tag": "Manesh Indian curry",
+      "pts": 1,
+      "villages": 21
+    },
+    {
+      "rank": 299,
+      "name": 401,
+      "tag": "Polska",
+      "pts": 1,
+      "villages": 299
+    },
+    {
+      "rank": 21,
+      "name": 415,
+      "tag": "zzzz",
+      "pts": 1,
+      "villages": 21
+    },
+    {
+      "rank": 21,
+      "name": 420,
+      "tag": "Cococo",
+      "pts": 1,
+      "villages": 21
+    },
+    {
+      "rank": 59,
+      "name": 423,
+      "tag": "drool on keyboard",
+      "pts": 1,
+      "villages": 59
     },
     {
       "rank": 7020,
@@ -450,18 +478,18 @@
       "villages": 986
     },
     {
-      "rank": 21,
-      "name": 385,
-      "tag": "Manesh Indian curry",
+      "rank": 4508,
+      "name": 81,
+      "tag": "Dactaro",
       "pts": 1,
-      "villages": 21
+      "villages": 4508
     },
     {
-      "rank": 683,
-      "name": 369,
-      "tag": "Scythian Allied Militia",
+      "rank": 5599,
+      "name": 63,
+      "tag": "Slayers",
       "pts": 1,
-      "villages": 683
+      "villages": 5599
     },
     {
       "rank": 1163,
@@ -469,34 +497,6 @@
       "tag": "Society",
       "pts": 1,
       "villages": 1163
-    },
-    {
-      "rank": 299,
-      "name": 401,
-      "tag": "Polska",
-      "pts": 1,
-      "villages": 299
-    },
-    {
-      "rank": 59,
-      "name": 423,
-      "tag": "drool on keyboard",
-      "pts": 1,
-      "villages": 59
-    },
-    {
-      "rank": 21,
-      "name": 415,
-      "tag": "zzzz",
-      "pts": 1,
-      "villages": 21
-    },
-    {
-      "rank": 21,
-      "name": 420,
-      "tag": "Cococo",
-      "pts": 1,
-      "villages": 21
     }
   ]
 }

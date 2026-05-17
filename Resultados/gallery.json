@@ -1,5 +1,5 @@
 {
-  "last_update": "17/05/2026 06:43:41",
+  "last_update": "17/05/2026 10:02:14",
   "servers": {
     ".BR": {
       "br142": {
@@ -44,7 +44,7 @@
             "path": "Resultados/.BR/br142/Tribes/mapa_top15_dominancia_K_br142.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_br142.png",
             "path": "Resultados/.BR/br142/Tribes/mapa_top15_familias_br142.png"
           },
           {
@@ -52,8 +52,20 @@
             "path": "Resultados/.BR/br142/Tribes/mapa_top15_oda_familias_br142.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br142/Tribes/mapa_top15_oda_tribos_br142.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.BR/br142/Tribes/mapa_top15_odd_familias_br142.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br142/Tribes/mapa_top15_odd_tribos_br142.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br142/Tribes/mapa_top15_tribos_br142.png"
           }
         ]
       },
@@ -99,7 +111,7 @@
             "path": "Resultados/.BR/br141/Tribes/mapa_top15_dominancia_K_br141.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_br141.png",
             "path": "Resultados/.BR/br141/Tribes/mapa_top15_familias_br141.png"
           },
           {
@@ -107,8 +119,20 @@
             "path": "Resultados/.BR/br141/Tribes/mapa_top15_oda_familias_br141.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br141/Tribes/mapa_top15_oda_tribos_br141.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.BR/br141/Tribes/mapa_top15_odd_familias_br141.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br141/Tribes/mapa_top15_odd_tribos_br141.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br141/Tribes/mapa_top15_tribos_br141.png"
           }
         ]
       },
@@ -154,7 +178,7 @@
             "path": "Resultados/.BR/br140/Tribes/mapa_top15_dominancia_K_br140.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_br140.png",
             "path": "Resultados/.BR/br140/Tribes/mapa_top15_familias_br140.png"
           },
           {
@@ -162,8 +186,20 @@
             "path": "Resultados/.BR/br140/Tribes/mapa_top15_oda_familias_br140.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br140/Tribes/mapa_top15_oda_tribos_br140.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.BR/br140/Tribes/mapa_top15_odd_familias_br140.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br140/Tribes/mapa_top15_odd_tribos_br140.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br140/Tribes/mapa_top15_tribos_br140.png"
           }
         ]
       },
@@ -209,7 +245,7 @@
             "path": "Resultados/.BR/br139/Tribes/mapa_top15_dominancia_K_br139.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_br139.png",
             "path": "Resultados/.BR/br139/Tribes/mapa_top15_familias_br139.png"
           },
           {
@@ -217,8 +253,20 @@
             "path": "Resultados/.BR/br139/Tribes/mapa_top15_oda_familias_br139.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br139/Tribes/mapa_top15_oda_tribos_br139.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.BR/br139/Tribes/mapa_top15_odd_familias_br139.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br139/Tribes/mapa_top15_odd_tribos_br139.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br139/Tribes/mapa_top15_tribos_br139.png"
           }
         ]
       },
@@ -264,7 +312,7 @@
             "path": "Resultados/.BR/br138/Tribes/mapa_top15_dominancia_K_br138.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_br138.png",
             "path": "Resultados/.BR/br138/Tribes/mapa_top15_familias_br138.png"
           },
           {
@@ -272,8 +320,20 @@
             "path": "Resultados/.BR/br138/Tribes/mapa_top15_oda_familias_br138.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br138/Tribes/mapa_top15_oda_tribos_br138.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.BR/br138/Tribes/mapa_top15_odd_familias_br138.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br138/Tribes/mapa_top15_odd_tribos_br138.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br138/Tribes/mapa_top15_tribos_br138.png"
           }
         ]
       },
@@ -319,7 +379,7 @@
             "path": "Resultados/.BR/br137/Tribes/mapa_top15_dominancia_K_br137.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_br137.png",
             "path": "Resultados/.BR/br137/Tribes/mapa_top15_familias_br137.png"
           },
           {
@@ -327,8 +387,20 @@
             "path": "Resultados/.BR/br137/Tribes/mapa_top15_oda_familias_br137.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br137/Tribes/mapa_top15_oda_tribos_br137.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.BR/br137/Tribes/mapa_top15_odd_familias_br137.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br137/Tribes/mapa_top15_odd_tribos_br137.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br137/Tribes/mapa_top15_tribos_br137.png"
           }
         ]
       },
@@ -374,7 +446,7 @@
             "path": "Resultados/.BR/br136/Tribes/mapa_top15_dominancia_K_br136.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_br136.png",
             "path": "Resultados/.BR/br136/Tribes/mapa_top15_familias_br136.png"
           },
           {
@@ -429,7 +501,7 @@
             "path": "Resultados/.BR/br135/Tribes/mapa_top15_dominancia_K_br135.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_br135.png",
             "path": "Resultados/.BR/br135/Tribes/mapa_top15_familias_br135.png"
           },
           {
@@ -437,8 +509,20 @@
             "path": "Resultados/.BR/br135/Tribes/mapa_top15_oda_familias_br135.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br135/Tribes/mapa_top15_oda_tribos_br135.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.BR/br135/Tribes/mapa_top15_odd_familias_br135.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br135/Tribes/mapa_top15_odd_tribos_br135.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br135/Tribes/mapa_top15_tribos_br135.png"
           }
         ]
       },
@@ -484,7 +568,7 @@
             "path": "Resultados/.BR/br134/Tribes/mapa_top15_dominancia_K_br134.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_br134.png",
             "path": "Resultados/.BR/br134/Tribes/mapa_top15_familias_br134.png"
           },
           {
@@ -492,8 +576,20 @@
             "path": "Resultados/.BR/br134/Tribes/mapa_top15_oda_familias_br134.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br134/Tribes/mapa_top15_oda_tribos_br134.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.BR/br134/Tribes/mapa_top15_odd_familias_br134.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br134/Tribes/mapa_top15_odd_tribos_br134.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br134/Tribes/mapa_top15_tribos_br134.png"
           }
         ]
       },
@@ -539,7 +635,7 @@
             "path": "Resultados/.BR/br132/Tribes/mapa_top15_dominancia_K_br132.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_br132.png",
             "path": "Resultados/.BR/br132/Tribes/mapa_top15_familias_br132.png"
           },
           {
@@ -547,8 +643,20 @@
             "path": "Resultados/.BR/br132/Tribes/mapa_top15_oda_familias_br132.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br132/Tribes/mapa_top15_oda_tribos_br132.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.BR/br132/Tribes/mapa_top15_odd_familias_br132.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br132/Tribes/mapa_top15_odd_tribos_br132.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br132/Tribes/mapa_top15_tribos_br132.png"
           }
         ]
       }
@@ -596,7 +704,7 @@
             "path": "Resultados/.DS/dec4/Tribes/mapa_top15_dominancia_K_dec4.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_dec4.png",
             "path": "Resultados/.DS/dec4/Tribes/mapa_top15_familias_dec4.png"
           },
           {
@@ -604,8 +712,20 @@
             "path": "Resultados/.DS/dec4/Tribes/mapa_top15_oda_familias_dec4.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.DS/dec4/Tribes/mapa_top15_oda_tribos_dec4.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/dec4/Tribes/mapa_top15_odd_familias_dec4.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.DS/dec4/Tribes/mapa_top15_odd_tribos_dec4.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/dec4/Tribes/mapa_top15_tribos_dec4.png"
           }
         ]
       },
@@ -651,7 +771,7 @@
             "path": "Resultados/.DS/de253/Tribes/mapa_top15_dominancia_K_de253.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_de253.png",
             "path": "Resultados/.DS/de253/Tribes/mapa_top15_familias_de253.png"
           },
           {
@@ -659,8 +779,20 @@
             "path": "Resultados/.DS/de253/Tribes/mapa_top15_oda_familias_de253.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.DS/de253/Tribes/mapa_top15_oda_tribos_de253.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de253/Tribes/mapa_top15_odd_familias_de253.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.DS/de253/Tribes/mapa_top15_odd_tribos_de253.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de253/Tribes/mapa_top15_tribos_de253.png"
           }
         ]
       },
@@ -706,7 +838,7 @@
             "path": "Resultados/.DS/de252/Tribes/mapa_top15_dominancia_K_de252.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_de252.png",
             "path": "Resultados/.DS/de252/Tribes/mapa_top15_familias_de252.png"
           },
           {
@@ -714,8 +846,20 @@
             "path": "Resultados/.DS/de252/Tribes/mapa_top15_oda_familias_de252.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.DS/de252/Tribes/mapa_top15_oda_tribos_de252.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de252/Tribes/mapa_top15_odd_familias_de252.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.DS/de252/Tribes/mapa_top15_odd_tribos_de252.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de252/Tribes/mapa_top15_tribos_de252.png"
           }
         ]
       },
@@ -761,7 +905,7 @@
             "path": "Resultados/.DS/de251/Tribes/mapa_top15_dominancia_K_de251.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_de251.png",
             "path": "Resultados/.DS/de251/Tribes/mapa_top15_familias_de251.png"
           },
           {
@@ -769,8 +913,20 @@
             "path": "Resultados/.DS/de251/Tribes/mapa_top15_oda_familias_de251.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.DS/de251/Tribes/mapa_top15_oda_tribos_de251.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de251/Tribes/mapa_top15_odd_familias_de251.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.DS/de251/Tribes/mapa_top15_odd_tribos_de251.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de251/Tribes/mapa_top15_tribos_de251.png"
           }
         ]
       },
@@ -816,7 +972,7 @@
             "path": "Resultados/.DS/de250/Tribes/mapa_top15_dominancia_K_de250.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_de250.png",
             "path": "Resultados/.DS/de250/Tribes/mapa_top15_familias_de250.png"
           },
           {
@@ -824,8 +980,20 @@
             "path": "Resultados/.DS/de250/Tribes/mapa_top15_oda_familias_de250.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.DS/de250/Tribes/mapa_top15_oda_tribos_de250.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de250/Tribes/mapa_top15_odd_familias_de250.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.DS/de250/Tribes/mapa_top15_odd_tribos_de250.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de250/Tribes/mapa_top15_tribos_de250.png"
           }
         ]
       },
@@ -871,7 +1039,7 @@
             "path": "Resultados/.DS/de249/Tribes/mapa_top15_dominancia_K_de249.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_de249.png",
             "path": "Resultados/.DS/de249/Tribes/mapa_top15_familias_de249.png"
           },
           {
@@ -879,8 +1047,20 @@
             "path": "Resultados/.DS/de249/Tribes/mapa_top15_oda_familias_de249.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.DS/de249/Tribes/mapa_top15_oda_tribos_de249.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de249/Tribes/mapa_top15_odd_familias_de249.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.DS/de249/Tribes/mapa_top15_odd_tribos_de249.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de249/Tribes/mapa_top15_tribos_de249.png"
           }
         ]
       },
@@ -926,7 +1106,7 @@
             "path": "Resultados/.DS/de248/Tribes/mapa_top15_dominancia_K_de248.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_de248.png",
             "path": "Resultados/.DS/de248/Tribes/mapa_top15_familias_de248.png"
           },
           {
@@ -934,8 +1114,20 @@
             "path": "Resultados/.DS/de248/Tribes/mapa_top15_oda_familias_de248.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.DS/de248/Tribes/mapa_top15_oda_tribos_de248.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de248/Tribes/mapa_top15_odd_familias_de248.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.DS/de248/Tribes/mapa_top15_odd_tribos_de248.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de248/Tribes/mapa_top15_tribos_de248.png"
           }
         ]
       },
@@ -981,7 +1173,7 @@
             "path": "Resultados/.DS/de247/Tribes/mapa_top15_dominancia_K_de247.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_de247.png",
             "path": "Resultados/.DS/de247/Tribes/mapa_top15_familias_de247.png"
           },
           {
@@ -1036,7 +1228,7 @@
             "path": "Resultados/.DS/de246/Tribes/mapa_top15_dominancia_K_de246.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_de246.png",
             "path": "Resultados/.DS/de246/Tribes/mapa_top15_familias_de246.png"
           },
           {
@@ -1044,8 +1236,20 @@
             "path": "Resultados/.DS/de246/Tribes/mapa_top15_oda_familias_de246.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.DS/de246/Tribes/mapa_top15_oda_tribos_de246.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de246/Tribes/mapa_top15_odd_familias_de246.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.DS/de246/Tribes/mapa_top15_odd_tribos_de246.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de246/Tribes/mapa_top15_tribos_de246.png"
           }
         ]
       },
@@ -1091,7 +1295,7 @@
             "path": "Resultados/.DS/de245/Tribes/mapa_top15_dominancia_K_de245.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_de245.png",
             "path": "Resultados/.DS/de245/Tribes/mapa_top15_familias_de245.png"
           },
           {
@@ -1146,7 +1350,7 @@
             "path": "Resultados/.DS/de244/Tribes/mapa_top15_dominancia_K_de244.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_de244.png",
             "path": "Resultados/.DS/de244/Tribes/mapa_top15_familias_de244.png"
           },
           {
@@ -1154,8 +1358,20 @@
             "path": "Resultados/.DS/de244/Tribes/mapa_top15_oda_familias_de244.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.DS/de244/Tribes/mapa_top15_oda_tribos_de244.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.DS/de244/Tribes/mapa_top15_odd_familias_de244.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.DS/de244/Tribes/mapa_top15_odd_tribos_de244.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.DS/de244/Tribes/mapa_top15_tribos_de244.png"
           }
         ]
       },
@@ -1201,7 +1417,7 @@
             "path": "Resultados/.DS/de243/Tribes/mapa_top15_dominancia_K_de243.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_de243.png",
             "path": "Resultados/.DS/de243/Tribes/mapa_top15_familias_de243.png"
           },
           {
@@ -1258,7 +1474,7 @@
             "path": "Resultados/.NET/enc2/Tribes/mapa_top15_dominancia_K_enc2.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_enc2.png",
             "path": "Resultados/.NET/enc2/Tribes/mapa_top15_familias_enc2.png"
           },
           {
@@ -1313,7 +1529,7 @@
             "path": "Resultados/.NET/enc1/Tribes/mapa_top15_dominancia_K_enc1.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_enc1.png",
             "path": "Resultados/.NET/enc1/Tribes/mapa_top15_familias_enc1.png"
           },
           {
@@ -1321,8 +1537,20 @@
             "path": "Resultados/.NET/enc1/Tribes/mapa_top15_oda_familias_enc1.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.NET/enc1/Tribes/mapa_top15_oda_tribos_enc1.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.NET/enc1/Tribes/mapa_top15_odd_familias_enc1.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.NET/enc1/Tribes/mapa_top15_odd_tribos_enc1.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/enc1/Tribes/mapa_top15_tribos_enc1.png"
           }
         ]
       },
@@ -1368,7 +1596,7 @@
             "path": "Resultados/.NET/en154/Tribes/mapa_top15_dominancia_K_en154.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_en154.png",
             "path": "Resultados/.NET/en154/Tribes/mapa_top15_familias_en154.png"
           },
           {
@@ -1376,8 +1604,20 @@
             "path": "Resultados/.NET/en154/Tribes/mapa_top15_oda_familias_en154.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.NET/en154/Tribes/mapa_top15_oda_tribos_en154.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.NET/en154/Tribes/mapa_top15_odd_familias_en154.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.NET/en154/Tribes/mapa_top15_odd_tribos_en154.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en154/Tribes/mapa_top15_tribos_en154.png"
           }
         ]
       },
@@ -1423,7 +1663,7 @@
             "path": "Resultados/.NET/en153/Tribes/mapa_top15_dominancia_K_en153.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_en153.png",
             "path": "Resultados/.NET/en153/Tribes/mapa_top15_familias_en153.png"
           },
           {
@@ -1431,8 +1671,20 @@
             "path": "Resultados/.NET/en153/Tribes/mapa_top15_oda_familias_en153.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.NET/en153/Tribes/mapa_top15_oda_tribos_en153.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.NET/en153/Tribes/mapa_top15_odd_familias_en153.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.NET/en153/Tribes/mapa_top15_odd_tribos_en153.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en153/Tribes/mapa_top15_tribos_en153.png"
           }
         ]
       },
@@ -1478,7 +1730,7 @@
             "path": "Resultados/.NET/en152/Tribes/mapa_top15_dominancia_K_en152.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_en152.png",
             "path": "Resultados/.NET/en152/Tribes/mapa_top15_familias_en152.png"
           },
           {
@@ -1486,8 +1738,20 @@
             "path": "Resultados/.NET/en152/Tribes/mapa_top15_oda_familias_en152.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.NET/en152/Tribes/mapa_top15_oda_tribos_en152.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.NET/en152/Tribes/mapa_top15_odd_familias_en152.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.NET/en152/Tribes/mapa_top15_odd_tribos_en152.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en152/Tribes/mapa_top15_tribos_en152.png"
           }
         ]
       },
@@ -1533,7 +1797,7 @@
             "path": "Resultados/.NET/en151/Tribes/mapa_top15_dominancia_K_en151.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_en151.png",
             "path": "Resultados/.NET/en151/Tribes/mapa_top15_familias_en151.png"
           },
           {
@@ -1541,8 +1805,20 @@
             "path": "Resultados/.NET/en151/Tribes/mapa_top15_oda_familias_en151.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.NET/en151/Tribes/mapa_top15_oda_tribos_en151.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.NET/en151/Tribes/mapa_top15_odd_familias_en151.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.NET/en151/Tribes/mapa_top15_odd_tribos_en151.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en151/Tribes/mapa_top15_tribos_en151.png"
           }
         ]
       },
@@ -1588,7 +1864,7 @@
             "path": "Resultados/.NET/en150/Tribes/mapa_top15_dominancia_K_en150.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_en150.png",
             "path": "Resultados/.NET/en150/Tribes/mapa_top15_familias_en150.png"
           },
           {
@@ -1596,8 +1872,20 @@
             "path": "Resultados/.NET/en150/Tribes/mapa_top15_oda_familias_en150.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.NET/en150/Tribes/mapa_top15_oda_tribos_en150.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.NET/en150/Tribes/mapa_top15_odd_familias_en150.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.NET/en150/Tribes/mapa_top15_odd_tribos_en150.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/en150/Tribes/mapa_top15_tribos_en150.png"
           }
         ]
       },
@@ -1643,7 +1931,7 @@
             "path": "Resultados/.NET/en149/Tribes/mapa_top15_dominancia_K_en149.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_en149.png",
             "path": "Resultados/.NET/en149/Tribes/mapa_top15_familias_en149.png"
           },
           {
@@ -1698,7 +1986,7 @@
             "path": "Resultados/.NET/en148/Tribes/mapa_top15_dominancia_K_en148.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_en148.png",
             "path": "Resultados/.NET/en148/Tribes/mapa_top15_familias_en148.png"
           },
           {
@@ -1755,7 +2043,7 @@
             "path": "Resultados/.PT/ptc1/Tribes/mapa_top15_dominancia_K_ptc1.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_ptc1.png",
             "path": "Resultados/.PT/ptc1/Tribes/mapa_top15_familias_ptc1.png"
           },
           {
@@ -1763,8 +2051,20 @@
             "path": "Resultados/.PT/ptc1/Tribes/mapa_top15_oda_familias_ptc1.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.PT/ptc1/Tribes/mapa_top15_oda_tribos_ptc1.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.PT/ptc1/Tribes/mapa_top15_odd_familias_ptc1.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.PT/ptc1/Tribes/mapa_top15_odd_tribos_ptc1.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/ptc1/Tribes/mapa_top15_tribos_ptc1.png"
           }
         ]
       },
@@ -1810,7 +2110,7 @@
             "path": "Resultados/.PT/pt113/Tribes/mapa_top15_dominancia_K_pt113.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_pt113.png",
             "path": "Resultados/.PT/pt113/Tribes/mapa_top15_familias_pt113.png"
           },
           {
@@ -1818,8 +2118,20 @@
             "path": "Resultados/.PT/pt113/Tribes/mapa_top15_oda_familias_pt113.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.PT/pt113/Tribes/mapa_top15_oda_tribos_pt113.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.PT/pt113/Tribes/mapa_top15_odd_familias_pt113.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.PT/pt113/Tribes/mapa_top15_odd_tribos_pt113.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt113/Tribes/mapa_top15_tribos_pt113.png"
           }
         ]
       },
@@ -1865,7 +2177,7 @@
             "path": "Resultados/.PT/pt112/Tribes/mapa_top15_dominancia_K_pt112.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_pt112.png",
             "path": "Resultados/.PT/pt112/Tribes/mapa_top15_familias_pt112.png"
           },
           {
@@ -1873,8 +2185,20 @@
             "path": "Resultados/.PT/pt112/Tribes/mapa_top15_oda_familias_pt112.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.PT/pt112/Tribes/mapa_top15_oda_tribos_pt112.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.PT/pt112/Tribes/mapa_top15_odd_familias_pt112.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.PT/pt112/Tribes/mapa_top15_odd_tribos_pt112.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt112/Tribes/mapa_top15_tribos_pt112.png"
           }
         ]
       },
@@ -1920,7 +2244,7 @@
             "path": "Resultados/.PT/pt111/Tribes/mapa_top15_dominancia_K_pt111.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_pt111.png",
             "path": "Resultados/.PT/pt111/Tribes/mapa_top15_familias_pt111.png"
           },
           {
@@ -1928,8 +2252,20 @@
             "path": "Resultados/.PT/pt111/Tribes/mapa_top15_oda_familias_pt111.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.PT/pt111/Tribes/mapa_top15_oda_tribos_pt111.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.PT/pt111/Tribes/mapa_top15_odd_familias_pt111.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.PT/pt111/Tribes/mapa_top15_odd_tribos_pt111.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt111/Tribes/mapa_top15_tribos_pt111.png"
           }
         ]
       },
@@ -1975,7 +2311,7 @@
             "path": "Resultados/.PT/pt110/Tribes/mapa_top15_dominancia_K_pt110.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_pt110.png",
             "path": "Resultados/.PT/pt110/Tribes/mapa_top15_familias_pt110.png"
           },
           {
@@ -1983,8 +2319,20 @@
             "path": "Resultados/.PT/pt110/Tribes/mapa_top15_oda_familias_pt110.png"
           },
           {
+            "title": "Ranking ODA",
+            "path": "Resultados/.PT/pt110/Tribes/mapa_top15_oda_tribos_pt110.png"
+          },
+          {
             "title": "Ranking ODD",
             "path": "Resultados/.PT/pt110/Tribes/mapa_top15_odd_familias_pt110.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.PT/pt110/Tribes/mapa_top15_odd_tribos_pt110.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.PT/pt110/Tribes/mapa_top15_tribos_pt110.png"
           }
         ]
       },
@@ -2030,7 +2378,7 @@
             "path": "Resultados/.PT/pt109/Tribes/mapa_top15_dominancia_K_pt109.png"
           },
           {
-            "title": "Ranking Pontos",
+            "title": "mapa_top15_familias_pt109.png",
             "path": "Resultados/.PT/pt109/Tribes/mapa_top15_familias_pt109.png"
           },
           {

@@ -408,13 +408,6 @@
       "villages": 6652
     },
     {
-      "rank": 108,
-      "name": 40,
-      "tag": "Fimb",
-      "pts": 1,
-      "villages": 108
-    },
-    {
       "rank": 940,
       "name": 266,
       "tag": "Lachesis muta do Norte",
@@ -429,11 +422,11 @@
       "villages": 426
     },
     {
-      "rank": 219,
-      "name": 1065,
-      "tag": "Evolution",
+      "rank": 108,
+      "name": 40,
+      "tag": "Fimb",
       "pts": 1,
-      "villages": 219
+      "villages": 108
     },
     {
       "rank": 2287,
@@ -443,11 +436,11 @@
       "villages": 2287
     },
     {
-      "rank": 4233,
-      "name": 1396,
-      "tag": "Liga dos Barões",
+      "rank": 219,
+      "name": 1065,
+      "tag": "Evolution",
       "pts": 1,
-      "villages": 4233
+      "villages": 219
     },
     {
       "rank": 1989,
@@ -455,6 +448,13 @@
       "tag": "Army Of Death",
       "pts": 1,
       "villages": 1989
+    },
+    {
+      "rank": 4233,
+      "name": 1396,
+      "tag": "Liga dos Barões",
+      "pts": 1,
+      "villages": 4233
     }
   ]
 }

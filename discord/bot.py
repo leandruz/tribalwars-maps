@@ -32,9 +32,9 @@ MAP_TYPES = {
     "hotspot": ("Tribes", "mapa_conquest_hotspot_{mundo}.png", "Conquest_Hotspot"),
     "top15_conquistas": ("Tribes", "mapa_top15_conquistas_{mundo}.png", "Top 15 Conquistas"),
     "dominancia_k": ("Tribes", "mapa_top15_dominancia_K_{mundo}.png", "Top 15 Dominância por K"),
-    "top15_familias": ("Tribes", "mapa_top15_familias_{mundo}.png", "Top 15 Famílias"),
-    "top15_oda_familias": ("Tribes", "mapa_top15_oda_familias_{mundo}.png", "Top 15 ODA Famílias"),
-    "top15_odd_familias": ("Tribes", "mapa_top15_odd_familias_{mundo}.png", "Top 15 ODD Famílias")
+    "top15_tribos": ("Tribes", "mapa_top15_tribos_{mundo}.png", "Top 15 Tribos"),
+    "top15_oda_tribos": ("Tribes", "mapa_top15_oda_tribos_{mundo}.png", "Top 15 ODA Tribos"),
+    "top15_odd_tribos": ("Tribes", "mapa_top15_odd_tribos_{mundo}.png", "Top 15 ODD Tribos")
 }
 
 def format_mundo(servidor: str, mundo: str) -> str:

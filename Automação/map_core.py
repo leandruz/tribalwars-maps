@@ -33,7 +33,7 @@ DOMAINS = {
 TEXTS = {
     "pt": {
         "ranking": "Ranking por {label}",
-        "tribe": "Famílias",
+        "tribe": "Tribos",
         "player": "Jogadores",
         "dominance_world": "Dominância do Mundo",
         "conquests_24h": "Conquistas (24h)",
@@ -167,12 +167,7 @@ def save_config_update(key, world, value):
         pass
 
 def normalize_tag(tag):
-    tag = str(tag).upper().strip()
-    tag = tag.replace('!', 'I').replace('1', 'I').replace('3', 'E').replace('4', 'A').replace('0', 'O')
-    tag = re.sub(r'[^A-Z0-9]', '', tag)
-    m = re.match(r'^([A-Z]+)\d*$', tag)
-    if m: tag = m.group(1)
-    return tag if tag else str(tag)
+    return str(tag).strip()
 
 def mute_color(color, amount=0.5):
     r, g, b = color
@@ -671,7 +666,7 @@ def generate_map(mundo, server_key, target_root, mode, entity="tribe", metric="p
     target_path = os.path.join(target_root, server_key, mundo, "Players" if entity == 'player' else "Tribes")
     os.makedirs(target_path, exist_ok=True)
     
-    ent = "jogadores" if entity == 'player' else "familias"
+    ent = "jogadores" if entity == 'player' else "tribos"
     if mode == 'ranking':
         if metric == 'points':
             f_name = f"mapa_top15_{ent}_{mundo}.png"

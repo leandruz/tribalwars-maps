@@ -436,13 +436,6 @@
       "villages": 156526
     },
     {
-      "rank": 29651,
-      "name": 657,
-      "tag": "VollmondStamm",
-      "pts": 12,
-      "villages": 29651
-    },
-    {
       "rank": 45876,
       "name": 852,
       "tag": "Stamm",
@@ -450,11 +443,11 @@
       "villages": 45876
     },
     {
-      "rank": 95692,
-      "name": 621,
-      "tag": "Heiliges Reich des Clashs",
-      "pts": 3,
-      "villages": 95692
+      "rank": 29651,
+      "name": 657,
+      "tag": "VollmondStamm",
+      "pts": 12,
+      "villages": 29651
     },
     {
       "rank": 96909,
@@ -464,11 +457,25 @@
       "villages": 96909
     },
     {
+      "rank": 95692,
+      "name": 621,
+      "tag": "Heiliges Reich des Clashs",
+      "pts": 3,
+      "villages": 95692
+    },
+    {
       "rank": 104455,
       "name": 344,
       "tag": "Tribe of Randoms",
       "pts": 3,
       "villages": 104455
+    },
+    {
+      "rank": 24789,
+      "name": 855,
+      "tag": "country people",
+      "pts": 3,
+      "villages": 24789
     },
     {
       "rank": 26271,
@@ -478,13 +485,6 @@
       "villages": 26271
     },
     {
-      "rank": 52732,
-      "name": 909,
-      "tag": "SSINR",
-      "pts": 1,
-      "villages": 52732
-    },
-    {
       "rank": 80599,
       "name": 316,
       "tag": "Biermeeting?",
@@ -492,11 +492,11 @@
       "villages": 80599
     },
     {
-      "rank": 24789,
-      "name": 855,
-      "tag": "country people",
-      "pts": 3,
-      "villages": 24789
+      "rank": 52732,
+      "name": 909,
+      "tag": "SSINR",
+      "pts": 1,
+      "villages": 52732
     },
     {
       "rank": 34267,
@@ -513,18 +513,18 @@
       "villages": 19467
     },
     {
-      "rank": 14319,
-      "name": 24,
-      "tag": "Last Men Standing",
-      "pts": 4,
-      "villages": 14319
-    },
-    {
       "rank": 16709,
       "name": 897,
       "tag": "Stamm ohne Namen",
       "pts": 1,
       "villages": 16709
+    },
+    {
+      "rank": 14319,
+      "name": 24,
+      "tag": "Last Men Standing",
+      "pts": 4,
+      "villages": 14319
     },
     {
       "rank": 8926,
@@ -534,6 +534,13 @@
       "villages": 8926
     },
     {
+      "rank": 19514,
+      "name": 462,
+      "tag": "Die Schabos",
+      "pts": 1,
+      "villages": 19514
+    },
+    {
       "rank": 3291,
       "name": 816,
       "tag": "Kenia",
@@ -541,11 +548,60 @@
       "villages": 3291
     },
     {
-      "rank": 19514,
-      "name": 462,
-      "tag": "Die Schabos",
+      "rank": 5502,
+      "name": 561,
+      "tag": "Erfolge Farmen",
+      "pts": 2,
+      "villages": 5502
+    },
+    {
+      "rank": 10558,
+      "name": 711,
+      "tag": "Sandburg mit 2 Türmen",
       "pts": 1,
-      "villages": 19514
+      "villages": 10558
+    },
+    {
+      "rank": 10311,
+      "name": 385,
+      "tag": "Arbeitszeitbetrug",
+      "pts": 1,
+      "villages": 10311
+    },
+    {
+      "rank": 3739,
+      "name": 236,
+      "tag": "Honorar für Tatze",
+      "pts": 1,
+      "villages": 3739
+    },
+    {
+      "rank": 1090,
+      "name": 618,
+      "tag": "Kavlanzia",
+      "pts": 2,
+      "villages": 1090
+    },
+    {
+      "rank": 4974,
+      "name": 233,
+      "tag": "Könige",
+      "pts": 1,
+      "villages": 4974
+    },
+    {
+      "rank": 4650,
+      "name": 460,
+      "tag": "Luca Goers",
+      "pts": 2,
+      "villages": 4650
+    },
+    {
+      "rank": 2154,
+      "name": 379,
+      "tag": "JOKER",
+      "pts": 1,
+      "villages": 2154
     },
     {
       "rank": 26,
@@ -562,11 +618,11 @@
       "villages": 638
     },
     {
-      "rank": 4974,
-      "name": 233,
-      "tag": "Könige",
+      "rank": 10141,
+      "name": 923,
+      "tag": "Oldschool",
       "pts": 1,
-      "villages": 4974
+      "villages": 10141
     },
     {
       "rank": 2389,
@@ -576,81 +632,25 @@
       "villages": 2389
     },
     {
-      "rank": 2154,
-      "name": 379,
-      "tag": "JOKER",
+      "rank": 352,
+      "name": 916,
+      "tag": "DS GmbH",
       "pts": 1,
-      "villages": 2154
+      "villages": 352
     },
     {
-      "rank": 3739,
-      "name": 236,
-      "tag": "Honorar für Tatze",
+      "rank": 338,
+      "name": 98,
+      "tag": "Tabula rasa",
       "pts": 1,
-      "villages": 3739
+      "villages": 338
     },
     {
-      "rank": 4650,
-      "name": 460,
-      "tag": "Luca Goers",
-      "pts": 2,
-      "villages": 4650
-    },
-    {
-      "rank": 10311,
-      "name": 385,
-      "tag": "Arbeitszeitbetrug",
+      "rank": 0,
+      "name": 620,
+      "tag": "Die Stifter",
       "pts": 1,
-      "villages": 10311
-    },
-    {
-      "rank": 10141,
-      "name": 923,
-      "tag": "Oldschool",
-      "pts": 1,
-      "villages": 10141
-    },
-    {
-      "rank": 5502,
-      "name": 561,
-      "tag": "Erfolge Farmen",
-      "pts": 2,
-      "villages": 5502
-    },
-    {
-      "rank": 1090,
-      "name": 618,
-      "tag": "Kavlanzia",
-      "pts": 2,
-      "villages": 1090
-    },
-    {
-      "rank": 10558,
-      "name": 711,
-      "tag": "Sandburg mit 2 Türmen",
-      "pts": 1,
-      "villages": 10558
-    },
-    {
-      "rank": 597,
-      "name": 426,
-      "tag": "Brotherhood",
-      "pts": 1,
-      "villages": 597
-    },
-    {
-      "rank": 334,
-      "name": 392,
-      "tag": "Kraft meiner Wassersuppe",
-      "pts": 1,
-      "villages": 334
-    },
-    {
-      "rank": 261,
-      "name": 85,
-      "tag": "Gleich Knallts",
-      "pts": 1,
-      "villages": 261
+      "villages": 0
     }
   ]
 }

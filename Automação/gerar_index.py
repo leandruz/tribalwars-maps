@@ -63,7 +63,7 @@ def parse_title(filename):
     if "dominancia" in f: return "Dominância K"
     if "conquistas" in f: return "Conquistas (24h)"
     if "conquest_hotspot" in f: return "Análise Tática (Dinâmica)"
-    if "points" in f or "jogadores" in f or "familias" in f:
+    if "points" in f or "jogadores" in f or "tribos" in f:
         return "Ranking Pontos"
     return filename
 

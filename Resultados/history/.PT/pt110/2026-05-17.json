@@ -260,15 +260,15 @@
     },
     {
       "rank": 394799,
-      "name": 848860606,
-      "pts": 42,
-      "villages": 45
-    },
-    {
-      "rank": 394799,
       "name": 849033587,
       "pts": 52,
       "villages": 644
+    },
+    {
+      "rank": 394799,
+      "name": 848860606,
+      "pts": 42,
+      "villages": 45
     },
     {
       "rank": 393912,
@@ -408,18 +408,18 @@
       "villages": 41412
     },
     {
-      "rank": 167767,
-      "name": 651,
-      "tag": "Sparta Micro Falcon",
-      "pts": 1,
-      "villages": 167767
-    },
-    {
       "rank": 75274,
       "name": 380,
       "tag": "-Pumpkin Head-",
       "pts": 2,
       "villages": 75274
+    },
+    {
+      "rank": 167767,
+      "name": 651,
+      "tag": "Sparta Micro Falcon",
+      "pts": 1,
+      "villages": 167767
     },
     {
       "rank": 66309,
@@ -485,13 +485,6 @@
       "villages": 19644
     },
     {
-      "rank": 30276,
-      "name": 68,
-      "tag": "ACTIVITY",
-      "pts": 3,
-      "villages": 30276
-    },
-    {
       "rank": 28393,
       "name": 641,
       "tag": "Templarios",
@@ -504,6 +497,13 @@
       "tag": "Ninho",
       "pts": 1,
       "villages": 9015
+    },
+    {
+      "rank": 30276,
+      "name": 68,
+      "tag": "ACTIVITY",
+      "pts": 3,
+      "villages": 30276
     },
     {
       "rank": 13030,
@@ -534,13 +534,6 @@
       "villages": 5514
     },
     {
-      "rank": 8866,
-      "name": 489,
-      "tag": "Be Afraid",
-      "pts": 1,
-      "villages": 8866
-    },
-    {
       "rank": 2899,
       "name": 263,
       "tag": "DOOM",
@@ -548,11 +541,11 @@
       "villages": 2899
     },
     {
-      "rank": 3239,
-      "name": 159,
-      "tag": "Amigos do Santificado",
+      "rank": 8866,
+      "name": 489,
+      "tag": "Be Afraid",
       "pts": 1,
-      "villages": 3239
+      "villages": 8866
     },
     {
       "rank": 149,
@@ -562,25 +555,25 @@
       "villages": 149
     },
     {
-      "rank": 668,
-      "name": 350,
-      "tag": "Independance Day",
+      "rank": 2778,
+      "name": 533,
+      "tag": "Wave of terror",
       "pts": 1,
-      "villages": 668
+      "villages": 2778
     },
     {
-      "rank": 7536,
-      "name": 109,
-      "tag": "Chocolate em pó",
+      "rank": 26,
+      "name": 649,
+      "tag": "dadawdad",
       "pts": 1,
-      "villages": 7536
+      "villages": 26
     },
     {
-      "rank": 1742,
-      "name": 97,
-      "tag": "Kekw",
+      "rank": 149,
+      "name": 645,
+      "tag": "Poent a Monte",
       "pts": 1,
-      "villages": 1742
+      "villages": 149
     },
     {
       "rank": 401,
@@ -597,6 +590,13 @@
       "villages": 5862
     },
     {
+      "rank": 3239,
+      "name": 159,
+      "tag": "Amigos do Santificado",
+      "pts": 1,
+      "villages": 3239
+    },
+    {
       "rank": 8672,
       "name": 636,
       "tag": "The Butcher",
@@ -604,11 +604,11 @@
       "villages": 8672
     },
     {
-      "rank": 6119,
-      "name": 611,
-      "tag": "Paradise Tribe",
+      "rank": 668,
+      "name": 350,
+      "tag": "Independance Day",
       "pts": 1,
-      "villages": 6119
+      "villages": 668
     },
     {
       "rank": 625,
@@ -618,6 +618,13 @@
       "villages": 625
     },
     {
+      "rank": 7536,
+      "name": 109,
+      "tag": "Chocolate em pó",
+      "pts": 1,
+      "villages": 7536
+    },
+    {
       "rank": 12371,
       "name": 388,
       "tag": "The Anacletos",
@@ -625,32 +632,25 @@
       "villages": 12371
     },
     {
+      "rank": 1742,
+      "name": 97,
+      "tag": "Kekw",
+      "pts": 1,
+      "villages": 1742
+    },
+    {
+      "rank": 6119,
+      "name": 611,
+      "tag": "Paradise Tribe",
+      "pts": 1,
+      "villages": 6119
+    },
+    {
       "rank": 639,
       "name": 517,
       "tag": "COMEBACK",
       "pts": 1,
       "villages": 639
-    },
-    {
-      "rank": 135,
-      "name": 532,
-      "tag": "Empire",
-      "pts": 1,
-      "villages": 135
-    },
-    {
-      "rank": 2778,
-      "name": 533,
-      "tag": "Wave of terror",
-      "pts": 1,
-      "villages": 2778
-    },
-    {
-      "rank": 1335,
-      "name": 575,
-      "tag": "Tribu",
-      "pts": 1,
-      "villages": 1335
     }
   ]
 }
