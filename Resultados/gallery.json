@@ -1,5 +1,5 @@
 {
-  "last_update": "19/05/2026 07:38:58",
+  "last_update": "20/05/2026 07:39:28",
   "servers": {
     ".BR": {
       "br142": {
@@ -1208,6 +1208,14 @@
           {
             "title": "Dominância K",
             "path": "Resultados/.NET/enc2/Tribes/mapa_top15_dominancia_K_enc2.png"
+          },
+          {
+            "title": "Ranking ODA",
+            "path": "Resultados/.NET/enc2/Tribes/mapa_top15_oda_tribos_enc2.png"
+          },
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.NET/enc2/Tribes/mapa_top15_tribos_enc2.png"
           }
         ]
       },
