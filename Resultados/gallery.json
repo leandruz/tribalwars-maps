@@ -1,5 +1,5 @@
 {
-  "last_update": "21/05/2026 07:43:53",
+  "last_update": "22/05/2026 07:38:43",
   "servers": {
     ".BR": {
       "br142": {
@@ -1212,6 +1212,10 @@
           {
             "title": "Ranking ODA",
             "path": "Resultados/.NET/enc2/Tribes/mapa_top15_oda_tribos_enc2.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.NET/enc2/Tribes/mapa_top15_odd_tribos_enc2.png"
           },
           {
             "title": "Ranking Pontos",
