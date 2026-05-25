@@ -1,0 +1,656 @@
+{
+  "players": [
+    {
+      "rank": 26657242,
+      "name": 919950827,
+      "pts": 2496,
+      "villages": 226
+    },
+    {
+      "rank": 18740752,
+      "name": 919287916,
+      "pts": 1730,
+      "villages": 196
+    },
+    {
+      "rank": 14589433,
+      "name": 919003690,
+      "pts": 1321,
+      "villages": 196
+    },
+    {
+      "rank": 14505588,
+      "name": 919937202,
+      "pts": 1221,
+      "villages": 226
+    },
+    {
+      "rank": 13108705,
+      "name": 919944345,
+      "pts": 1201,
+      "villages": 96
+    },
+    {
+      "rank": 11633593,
+      "name": 7603690,
+      "pts": 1108,
+      "villages": 226
+    },
+    {
+      "rank": 11616004,
+      "name": 919856771,
+      "pts": 1061,
+      "villages": 196
+    },
+    {
+      "rank": 10770976,
+      "name": 919948298,
+      "pts": 1073,
+      "villages": 96
+    },
+    {
+      "rank": 10671074,
+      "name": 919944995,
+      "pts": 927,
+      "villages": 96
+    },
+    {
+      "rank": 9368716,
+      "name": 919944562,
+      "pts": 862,
+      "villages": 196
+    },
+    {
+      "rank": 8457814,
+      "name": 919521365,
+      "pts": 756,
+      "villages": 96
+    },
+    {
+      "rank": 6901825,
+      "name": 919644381,
+      "pts": 673,
+      "villages": 96
+    },
+    {
+      "rank": 6764912,
+      "name": 919336898,
+      "pts": 601,
+      "villages": 96
+    },
+    {
+      "rank": 6405742,
+      "name": 919599130,
+      "pts": 582,
+      "villages": 96
+    },
+    {
+      "rank": 6235618,
+      "name": 919820044,
+      "pts": 530,
+      "villages": 96
+    },
+    {
+      "rank": 6123327,
+      "name": 919662459,
+      "pts": 529,
+      "villages": 226
+    },
+    {
+      "rank": 5814496,
+      "name": 919691493,
+      "pts": 525,
+      "villages": 226
+    },
+    {
+      "rank": 5724520,
+      "name": 6969648,
+      "pts": 507,
+      "villages": 602
+    },
+    {
+      "rank": 5632898,
+      "name": 919940581,
+      "pts": 559,
+      "villages": 226
+    },
+    {
+      "rank": 5508873,
+      "name": 919221372,
+      "pts": 567,
+      "villages": 200
+    },
+    {
+      "rank": 5487620,
+      "name": 6383840,
+      "pts": 530,
+      "villages": 196
+    },
+    {
+      "rank": 5428670,
+      "name": 7036707,
+      "pts": 502,
+      "villages": 96
+    },
+    {
+      "rank": 5402391,
+      "name": 1218856,
+      "pts": 522,
+      "villages": 96
+    },
+    {
+      "rank": 5398309,
+      "name": 919469581,
+      "pts": 493,
+      "villages": 96
+    },
+    {
+      "rank": 5339460,
+      "name": 919647552,
+      "pts": 470,
+      "villages": 196
+    },
+    {
+      "rank": 5307917,
+      "name": 919822491,
+      "pts": 538,
+      "villages": 96
+    },
+    {
+      "rank": 5263490,
+      "name": 2256803,
+      "pts": 483,
+      "villages": 96
+    },
+    {
+      "rank": 5254710,
+      "name": 2121372,
+      "pts": 481,
+      "villages": 96
+    },
+    {
+      "rank": 5233115,
+      "name": 919131119,
+      "pts": 512,
+      "villages": 196
+    },
+    {
+      "rank": 5176578,
+      "name": 918810854,
+      "pts": 553,
+      "villages": 196
+    },
+    {
+      "rank": 5146986,
+      "name": 1148552,
+      "pts": 460,
+      "villages": 460
+    },
+    {
+      "rank": 5007863,
+      "name": 919648121,
+      "pts": 478,
+      "villages": 323
+    },
+    {
+      "rank": 4972960,
+      "name": 8278304,
+      "pts": 447,
+      "villages": 96
+    },
+    {
+      "rank": 4961418,
+      "name": 7740325,
+      "pts": 440,
+      "villages": 226
+    },
+    {
+      "rank": 4950808,
+      "name": 919834323,
+      "pts": 513,
+      "villages": 96
+    },
+    {
+      "rank": 4950388,
+      "name": 919505778,
+      "pts": 512,
+      "villages": 460
+    },
+    {
+      "rank": 4916363,
+      "name": 919827461,
+      "pts": 417,
+      "villages": 196
+    },
+    {
+      "rank": 4816958,
+      "name": 919949118,
+      "pts": 496,
+      "villages": 602
+    },
+    {
+      "rank": 4761570,
+      "name": 919190970,
+      "pts": 444,
+      "villages": 96
+    },
+    {
+      "rank": 4704035,
+      "name": 919648101,
+      "pts": 489,
+      "villages": 323
+    },
+    {
+      "rank": 4564500,
+      "name": 919614145,
+      "pts": 439,
+      "villages": 226
+    },
+    {
+      "rank": 4549829,
+      "name": 919951015,
+      "pts": 453,
+      "villages": 602
+    },
+    {
+      "rank": 4488199,
+      "name": 919950175,
+      "pts": 463,
+      "villages": 96
+    },
+    {
+      "rank": 4435490,
+      "name": 919649264,
+      "pts": 441,
+      "villages": 226
+    },
+    {
+      "rank": 4425291,
+      "name": 7629348,
+      "pts": 426,
+      "villages": 196
+    },
+    {
+      "rank": 4386702,
+      "name": 919615173,
+      "pts": 450,
+      "villages": 226
+    },
+    {
+      "rank": 4299816,
+      "name": 919249262,
+      "pts": 420,
+      "villages": 150
+    },
+    {
+      "rank": 4186429,
+      "name": 8125103,
+      "pts": 429,
+      "villages": 96
+    },
+    {
+      "rank": 3900514,
+      "name": 919057264,
+      "pts": 392,
+      "villages": 226
+    },
+    {
+      "rank": 3851853,
+      "name": 919446380,
+      "pts": 401,
+      "villages": 196
+    }
+  ],
+  "tribes": [
+    {
+      "rank": 164244519,
+      "name": 96,
+      "tag": "Noxium",
+      "pts": 39,
+      "villages": 164244519
+    },
+    {
+      "rank": 134395210,
+      "name": 226,
+      "tag": "Ursinhos Carinhosos*",
+      "pts": 35,
+      "villages": 134395210
+    },
+    {
+      "rank": 130611365,
+      "name": 196,
+      "tag": "Ursinhos Carinhosos",
+      "pts": 34,
+      "villages": 130611365
+    },
+    {
+      "rank": 63296562,
+      "name": 460,
+      "tag": "The Old Squad",
+      "pts": 40,
+      "villages": 63296562
+    },
+    {
+      "rank": 47900557,
+      "name": 602,
+      "tag": "Ursinhos Carinhosos~",
+      "pts": 33,
+      "villages": 47900557
+    },
+    {
+      "rank": 48655318,
+      "name": 323,
+      "tag": "Ursinhos Carinhosos³",
+      "pts": 32,
+      "villages": 48655318
+    },
+    {
+      "rank": 34885176,
+      "name": 200,
+      "tag": "ONLY FUNS³",
+      "pts": 27,
+      "villages": 34885176
+    },
+    {
+      "rank": 26783869,
+      "name": 174,
+      "tag": "Noxium²",
+      "pts": 23,
+      "villages": 26783869
+    },
+    {
+      "rank": 11832657,
+      "name": 1010,
+      "tag": "La résistance",
+      "pts": 31,
+      "villages": 11832657
+    },
+    {
+      "rank": 9126950,
+      "name": 150,
+      "tag": "Only Funs",
+      "pts": 10,
+      "villages": 9126950
+    },
+    {
+      "rank": 6446218,
+      "name": 255,
+      "tag": "Ursinhos Carinhosos²",
+      "pts": 10,
+      "villages": 6446218
+    },
+    {
+      "rank": 5234029,
+      "name": 490,
+      "tag": "The Old Squad²",
+      "pts": 14,
+      "villages": 5234029
+    },
+    {
+      "rank": 4808550,
+      "name": 484,
+      "tag": "ONLY FUNS Back",
+      "pts": 12,
+      "villages": 4808550
+    },
+    {
+      "rank": 5011447,
+      "name": 14,
+      "tag": "ONLY FUNS²",
+      "pts": 7,
+      "villages": 5011447
+    },
+    {
+      "rank": 3078513,
+      "name": 191,
+      "tag": "Only Funs -",
+      "pts": 5,
+      "villages": 3078513
+    },
+    {
+      "rank": 3087132,
+      "name": 168,
+      "tag": "Bonde da Noxium",
+      "pts": 5,
+      "villages": 3087132
+    },
+    {
+      "rank": 1842257,
+      "name": 553,
+      "tag": "Daichigakure",
+      "pts": 7,
+      "villages": 1842257
+    },
+    {
+      "rank": 1420123,
+      "name": 609,
+      "tag": "NOXXIUM",
+      "pts": 40,
+      "villages": 1420123
+    },
+    {
+      "rank": 1329995,
+      "name": 1329,
+      "tag": "AAAAaAAA",
+      "pts": 4,
+      "villages": 1329995
+    },
+    {
+      "rank": 860956,
+      "name": 362,
+      "tag": "ROMA",
+      "pts": 5,
+      "villages": 860956
+    },
+    {
+      "rank": 1089155,
+      "name": 1304,
+      "tag": "I'm Only",
+      "pts": 11,
+      "villages": 1089155
+    },
+    {
+      "rank": 371037,
+      "name": 1022,
+      "tag": "Noxxium²0",
+      "pts": 39,
+      "villages": 371037
+    },
+    {
+      "rank": 376315,
+      "name": 212,
+      "tag": "Ursinhos Carinhosos_",
+      "pts": 2,
+      "villages": 376315
+    },
+    {
+      "rank": 503549,
+      "name": 180,
+      "tag": "Wingardium Leviosa",
+      "pts": 1,
+      "villages": 503549
+    },
+    {
+      "rank": 404667,
+      "name": 1137,
+      "tag": "Academia de Magia Beauxbatons",
+      "pts": 1,
+      "villages": 404667
+    },
+    {
+      "rank": 471776,
+      "name": 1110,
+      "tag": "VEM NO X1",
+      "pts": 1,
+      "villages": 471776
+    },
+    {
+      "rank": 420213,
+      "name": 1323,
+      "tag": "-SS-",
+      "pts": 1,
+      "villages": 420213
+    },
+    {
+      "rank": 60519,
+      "name": 992,
+      "tag": "NOXXIUM8",
+      "pts": 40,
+      "villages": 60519
+    },
+    {
+      "rank": 67970,
+      "name": 1045,
+      "tag": "Enox",
+      "pts": 40,
+      "villages": 67970
+    },
+    {
+      "rank": 179406,
+      "name": 343,
+      "tag": "R E M A N E S C E N T E S",
+      "pts": 8,
+      "villages": 179406
+    },
+    {
+      "rank": 171539,
+      "name": 616,
+      "tag": "killer1",
+      "pts": 36,
+      "villages": 171539
+    },
+    {
+      "rank": 139578,
+      "name": 15,
+      "tag": "White Wolves Farmers",
+      "pts": 2,
+      "villages": 139578
+    },
+    {
+      "rank": 180216,
+      "name": 304,
+      "tag": "LOBOS'",
+      "pts": 2,
+      "villages": 180216
+    },
+    {
+      "rank": 76162,
+      "name": 55,
+      "tag": "Armada Dos Sales",
+      "pts": 3,
+      "villages": 76162
+    },
+    {
+      "rank": 102506,
+      "name": 1217,
+      "tag": "EXILADOS",
+      "pts": 4,
+      "villages": 102506
+    },
+    {
+      "rank": 65894,
+      "name": 19,
+      "tag": "SPQR Elite",
+      "pts": 3,
+      "villages": 65894
+    },
+    {
+      "rank": 132935,
+      "name": 392,
+      "tag": "FAZENDO PPS",
+      "pts": 1,
+      "villages": 132935
+    },
+    {
+      "rank": 89414,
+      "name": 135,
+      "tag": "BUNKER",
+      "pts": 2,
+      "villages": 89414
+    },
+    {
+      "rank": 112353,
+      "name": 1184,
+      "tag": "Drakaris",
+      "pts": 1,
+      "villages": 112353
+    },
+    {
+      "rank": 29339,
+      "name": 1286,
+      "tag": "Noxiumnn",
+      "pts": 18,
+      "villages": 29339
+    },
+    {
+      "rank": 96557,
+      "name": 87,
+      "tag": "Hogsmead",
+      "pts": 1,
+      "villages": 96557
+    },
+    {
+      "rank": 25257,
+      "name": 1287,
+      "tag": "NOX7",
+      "pts": 15,
+      "villages": 25257
+    },
+    {
+      "rank": 45139,
+      "name": 840,
+      "tag": "Coração Tribal",
+      "pts": 2,
+      "villages": 45139
+    },
+    {
+      "rank": 27596,
+      "name": 594,
+      "tag": "Ragnarok [RKG] / 1",
+      "pts": 4,
+      "villages": 27596
+    },
+    {
+      "rank": 53577,
+      "name": 1331,
+      "tag": "CAMELOT",
+      "pts": 1,
+      "villages": 53577
+    },
+    {
+      "rank": 22136,
+      "name": 726,
+      "tag": "Caneta Azul",
+      "pts": 1,
+      "villages": 22136
+    },
+    {
+      "rank": 98488,
+      "name": 263,
+      "tag": "PRIME",
+      "pts": 1,
+      "villages": 98488
+    },
+    {
+      "rank": 82279,
+      "name": 1310,
+      "tag": "qwer",
+      "pts": 2,
+      "villages": 82279
+    },
+    {
+      "rank": 20751,
+      "name": 1130,
+      "tag": "Varannus",
+      "pts": 1,
+      "villages": 20751
+    },
+    {
+      "rank": 24991,
+      "name": 1301,
+      "tag": "wars-4",
+      "pts": 1,
+      "villages": 24991
+    }
+  ]
+}
