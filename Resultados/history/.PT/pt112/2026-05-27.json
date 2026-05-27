@@ -1,0 +1,656 @@
+{
+  "players": [
+    {
+      "rank": 8607300,
+      "name": 2012146,
+      "pts": 951,
+      "villages": 60
+    },
+    {
+      "rank": 6895135,
+      "name": 1787562,
+      "pts": 687,
+      "villages": 60
+    },
+    {
+      "rank": 6569114,
+      "name": 2814569,
+      "pts": 772,
+      "villages": 226
+    },
+    {
+      "rank": 6544448,
+      "name": 3059601,
+      "pts": 645,
+      "villages": 60
+    },
+    {
+      "rank": 6067395,
+      "name": 2603125,
+      "pts": 594,
+      "villages": 62
+    },
+    {
+      "rank": 5617036,
+      "name": 848964262,
+      "pts": 556,
+      "villages": 62
+    },
+    {
+      "rank": 5415749,
+      "name": 849038080,
+      "pts": 546,
+      "villages": 62
+    },
+    {
+      "rank": 5242742,
+      "name": 849038540,
+      "pts": 648,
+      "villages": 60
+    },
+    {
+      "rank": 5222091,
+      "name": 2182808,
+      "pts": 660,
+      "villages": 60
+    },
+    {
+      "rank": 4765347,
+      "name": 3172280,
+      "pts": 459,
+      "villages": 62
+    },
+    {
+      "rank": 4447868,
+      "name": 2655694,
+      "pts": 453,
+      "villages": 12
+    },
+    {
+      "rank": 4265788,
+      "name": 848974729,
+      "pts": 426,
+      "villages": 62
+    },
+    {
+      "rank": 4167385,
+      "name": 1322660,
+      "pts": 453,
+      "villages": 60
+    },
+    {
+      "rank": 3970092,
+      "name": 848988198,
+      "pts": 405,
+      "villages": 62
+    },
+    {
+      "rank": 3703405,
+      "name": 2589668,
+      "pts": 376,
+      "villages": 226
+    },
+    {
+      "rank": 3703193,
+      "name": 2321963,
+      "pts": 403,
+      "villages": 226
+    },
+    {
+      "rank": 3617609,
+      "name": 3109971,
+      "pts": 379,
+      "villages": 226
+    },
+    {
+      "rank": 3430708,
+      "name": 2507075,
+      "pts": 404,
+      "villages": 226
+    },
+    {
+      "rank": 3407537,
+      "name": 623667,
+      "pts": 362,
+      "villages": 226
+    },
+    {
+      "rank": 3294786,
+      "name": 848986239,
+      "pts": 346,
+      "villages": 60
+    },
+    {
+      "rank": 3276820,
+      "name": 3109436,
+      "pts": 356,
+      "villages": 62
+    },
+    {
+      "rank": 3273843,
+      "name": 4292,
+      "pts": 402,
+      "villages": 12
+    },
+    {
+      "rank": 3133636,
+      "name": 2790000,
+      "pts": 311,
+      "villages": 62
+    },
+    {
+      "rank": 3086927,
+      "name": 1663823,
+      "pts": 371,
+      "villages": 12
+    },
+    {
+      "rank": 3074830,
+      "name": 848985130,
+      "pts": 311,
+      "villages": 28
+    },
+    {
+      "rank": 3041185,
+      "name": 848867354,
+      "pts": 399,
+      "villages": 60
+    },
+    {
+      "rank": 3001253,
+      "name": 760201,
+      "pts": 307,
+      "villages": 28
+    },
+    {
+      "rank": 2985398,
+      "name": 849033591,
+      "pts": 299,
+      "villages": 62
+    },
+    {
+      "rank": 2876404,
+      "name": 2283577,
+      "pts": 293,
+      "villages": 62
+    },
+    {
+      "rank": 2813477,
+      "name": 430974,
+      "pts": 355,
+      "villages": 226
+    },
+    {
+      "rank": 2792618,
+      "name": 848877364,
+      "pts": 267,
+      "villages": 60
+    },
+    {
+      "rank": 2755277,
+      "name": 2522812,
+      "pts": 289,
+      "villages": 60
+    },
+    {
+      "rank": 2630532,
+      "name": 848900691,
+      "pts": 253,
+      "villages": 60
+    },
+    {
+      "rank": 2613957,
+      "name": 3074505,
+      "pts": 314,
+      "villages": 226
+    },
+    {
+      "rank": 2594565,
+      "name": 2263361,
+      "pts": 262,
+      "villages": 60
+    },
+    {
+      "rank": 2587830,
+      "name": 848961976,
+      "pts": 303,
+      "villages": 226
+    },
+    {
+      "rank": 2500680,
+      "name": 3013824,
+      "pts": 302,
+      "villages": 62
+    },
+    {
+      "rank": 2492833,
+      "name": 848993558,
+      "pts": 266,
+      "villages": 226
+    },
+    {
+      "rank": 2460177,
+      "name": 437634,
+      "pts": 241,
+      "villages": 62
+    },
+    {
+      "rank": 2451205,
+      "name": 2980677,
+      "pts": 265,
+      "villages": 28
+    },
+    {
+      "rank": 2423135,
+      "name": 2355566,
+      "pts": 254,
+      "villages": 226
+    },
+    {
+      "rank": 2402974,
+      "name": 848985993,
+      "pts": 284,
+      "villages": 12
+    },
+    {
+      "rank": 2383316,
+      "name": 848983907,
+      "pts": 278,
+      "villages": 62
+    },
+    {
+      "rank": 2351987,
+      "name": 2789015,
+      "pts": 272,
+      "villages": 226
+    },
+    {
+      "rank": 2312357,
+      "name": 2322172,
+      "pts": 371,
+      "villages": 60
+    },
+    {
+      "rank": 2302226,
+      "name": 454401,
+      "pts": 246,
+      "villages": 28
+    },
+    {
+      "rank": 2283897,
+      "name": 485091,
+      "pts": 260,
+      "villages": 226
+    },
+    {
+      "rank": 2226934,
+      "name": 1968377,
+      "pts": 251,
+      "villages": 28
+    },
+    {
+      "rank": 2219815,
+      "name": 579911,
+      "pts": 237,
+      "villages": 12
+    },
+    {
+      "rank": 2116098,
+      "name": 848943526,
+      "pts": 224,
+      "villages": 12
+    }
+  ],
+  "tribes": [
+    {
+      "rank": 95592172,
+      "name": 60,
+      "tag": "Maionese na francesinha",
+      "pts": 39,
+      "villages": 95592172
+    },
+    {
+      "rank": 75983680,
+      "name": 62,
+      "tag": "Tí Nó Ni",
+      "pts": 39,
+      "villages": 75983680
+    },
+    {
+      "rank": 65430183,
+      "name": 226,
+      "tag": "~Falcões Negros~",
+      "pts": 35,
+      "villages": 65430183
+    },
+    {
+      "rank": 48011245,
+      "name": 12,
+      "tag": "Falcões Negros",
+      "pts": 39,
+      "villages": 48011245
+    },
+    {
+      "rank": 43189540,
+      "name": 28,
+      "tag": "FATE",
+      "pts": 39,
+      "villages": 43189540
+    },
+    {
+      "rank": 10882926,
+      "name": 63,
+      "tag": "NORTH",
+      "pts": 27,
+      "villages": 10882926
+    },
+    {
+      "rank": 3129329,
+      "name": 159,
+      "tag": "Casota",
+      "pts": 24,
+      "villages": 3129329
+    },
+    {
+      "rank": 1795188,
+      "name": 17,
+      "tag": "Império Tuga",
+      "pts": 26,
+      "villages": 1795188
+    },
+    {
+      "rank": 1620866,
+      "name": 363,
+      "tag": "Bárbaros de Elite",
+      "pts": 31,
+      "villages": 1620866
+    },
+    {
+      "rank": 2701987,
+      "name": 500,
+      "tag": "FATE II",
+      "pts": 13,
+      "villages": 2701987
+    },
+    {
+      "rank": 2485535,
+      "name": 122,
+      "tag": "-Falcões Negros-",
+      "pts": 16,
+      "villages": 2485535
+    },
+    {
+      "rank": 1440197,
+      "name": 664,
+      "tag": "FLAG",
+      "pts": 1,
+      "villages": 1440197
+    },
+    {
+      "rank": 591515,
+      "name": 585,
+      "tag": "CHEGA",
+      "pts": 2,
+      "villages": 591515
+    },
+    {
+      "rank": 498715,
+      "name": 520,
+      "tag": "Calmo",
+      "pts": 22,
+      "villages": 498715
+    },
+    {
+      "rank": 415332,
+      "name": 562,
+      "tag": "Castanhos Rapados",
+      "pts": 10,
+      "villages": 415332
+    },
+    {
+      "rank": 235114,
+      "name": 572,
+      "tag": "Quim da Sirene",
+      "pts": 5,
+      "villages": 235114
+    },
+    {
+      "rank": 111491,
+      "name": 336,
+      "tag": "SOUTH",
+      "pts": 10,
+      "villages": 111491
+    },
+    {
+      "rank": 121395,
+      "name": 75,
+      "tag": "ALCATEIA",
+      "pts": 20,
+      "villages": 121395
+    },
+    {
+      "rank": 129517,
+      "name": 535,
+      "tag": "Não Mexer",
+      "pts": 35,
+      "villages": 129517
+    },
+    {
+      "rank": 85926,
+      "name": 665,
+      "tag": "RAIA",
+      "pts": 3,
+      "villages": 85926
+    },
+    {
+      "rank": 44033,
+      "name": 160,
+      "tag": "Vingança Eterna",
+      "pts": 8,
+      "villages": 44033
+    },
+    {
+      "rank": 57695,
+      "name": 653,
+      "tag": "Modo Automatico",
+      "pts": 1,
+      "villages": 57695
+    },
+    {
+      "rank": 40134,
+      "name": 491,
+      "tag": "TheNorthRemembers",
+      "pts": 8,
+      "villages": 40134
+    },
+    {
+      "rank": 80240,
+      "name": 304,
+      "tag": "Fight Club",
+      "pts": 4,
+      "villages": 80240
+    },
+    {
+      "rank": 91516,
+      "name": 631,
+      "tag": "DIVERTIMENTO",
+      "pts": 2,
+      "villages": 91516
+    },
+    {
+      "rank": 36637,
+      "name": 33,
+      "tag": "INEM",
+      "pts": 6,
+      "villages": 36637
+    },
+    {
+      "rank": 9341,
+      "name": 651,
+      "tag": "....",
+      "pts": 6,
+      "villages": 9341
+    },
+    {
+      "rank": 27623,
+      "name": 547,
+      "tag": "Nova Ordem Nundial",
+      "pts": 1,
+      "villages": 27623
+    },
+    {
+      "rank": 43671,
+      "name": 618,
+      "tag": "Lost93",
+      "pts": 1,
+      "villages": 43671
+    },
+    {
+      "rank": 55622,
+      "name": 262,
+      "tag": "-ASombradaCouve-",
+      "pts": 4,
+      "villages": 55622
+    },
+    {
+      "rank": 21698,
+      "name": 410,
+      "tag": "Idependance Day",
+      "pts": 8,
+      "villages": 21698
+    },
+    {
+      "rank": 16860,
+      "name": 602,
+      "tag": "Quinta Do Zé",
+      "pts": 9,
+      "villages": 16860
+    },
+    {
+      "rank": 14272,
+      "name": 53,
+      "tag": "Survivors",
+      "pts": 8,
+      "villages": 14272
+    },
+    {
+      "rank": 25291,
+      "name": 637,
+      "tag": "The boys",
+      "pts": 1,
+      "villages": 25291
+    },
+    {
+      "rank": 35765,
+      "name": 643,
+      "tag": "RAMBO",
+      "pts": 1,
+      "villages": 35765
+    },
+    {
+      "rank": 22142,
+      "name": 548,
+      "tag": "ÉDER",
+      "pts": 12,
+      "villages": 22142
+    },
+    {
+      "rank": 10965,
+      "name": 538,
+      "tag": ".Mete ~ Nojo*",
+      "pts": 2,
+      "villages": 10965
+    },
+    {
+      "rank": 62970,
+      "name": 616,
+      "tag": "Zés dos PPS",
+      "pts": 6,
+      "villages": 62970
+    },
+    {
+      "rank": 33643,
+      "name": 268,
+      "tag": "Poder e Glória",
+      "pts": 4,
+      "villages": 33643
+    },
+    {
+      "rank": 11418,
+      "name": 638,
+      "tag": "Apenas um rapaz",
+      "pts": 1,
+      "villages": 11418
+    },
+    {
+      "rank": 19775,
+      "name": 666,
+      "tag": "FACIL",
+      "pts": 5,
+      "villages": 19775
+    },
+    {
+      "rank": 6133,
+      "name": 662,
+      "tag": "Filhos da Ruína",
+      "pts": 2,
+      "villages": 6133
+    },
+    {
+      "rank": 18944,
+      "name": 131,
+      "tag": "Pps e bandeiras",
+      "pts": 1,
+      "villages": 18944
+    },
+    {
+      "rank": 14082,
+      "name": 629,
+      "tag": "Bairro Da Lata",
+      "pts": 1,
+      "villages": 14082
+    },
+    {
+      "rank": 7311,
+      "name": 20,
+      "tag": "Kiroma112",
+      "pts": 3,
+      "villages": 7311
+    },
+    {
+      "rank": 14294,
+      "name": 613,
+      "tag": "Alc2065",
+      "pts": 2,
+      "villages": 14294
+    },
+    {
+      "rank": 2202,
+      "name": 243,
+      "tag": "Os Filhos de Serjão",
+      "pts": 1,
+      "villages": 2202
+    },
+    {
+      "rank": 1962,
+      "name": 503,
+      "tag": "Reborn",
+      "pts": 2,
+      "villages": 1962
+    },
+    {
+      "rank": 1694,
+      "name": 412,
+      "tag": "rijo",
+      "pts": 4,
+      "villages": 1694
+    },
+    {
+      "rank": 16264,
+      "name": 644,
+      "tag": "pps!",
+      "pts": 3,
+      "villages": 16264
+    }
+  ]
+}
