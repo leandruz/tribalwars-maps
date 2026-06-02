@@ -1,0 +1,565 @@
+{
+  "players": [
+    {
+      "rank": 28597069,
+      "name": 1577453232,
+      "pts": 2430,
+      "villages": 98
+    },
+    {
+      "rank": 26736922,
+      "name": 1576874427,
+      "pts": 2317,
+      "villages": 6
+    },
+    {
+      "rank": 26246399,
+      "name": 1576980085,
+      "pts": 2391,
+      "villages": 6
+    },
+    {
+      "rank": 26036419,
+      "name": 8524758,
+      "pts": 2359,
+      "villages": 6
+    },
+    {
+      "rank": 24638491,
+      "name": 1577455788,
+      "pts": 2055,
+      "villages": 6
+    },
+    {
+      "rank": 23999006,
+      "name": 1576079866,
+      "pts": 1986,
+      "villages": 69
+    },
+    {
+      "rank": 20840411,
+      "name": 1577054379,
+      "pts": 1730,
+      "villages": 69
+    },
+    {
+      "rank": 19978391,
+      "name": 1577398196,
+      "pts": 1676,
+      "villages": 59
+    },
+    {
+      "rank": 19223918,
+      "name": 1577450506,
+      "pts": 1831,
+      "villages": 98
+    },
+    {
+      "rank": 19090484,
+      "name": 7830267,
+      "pts": 1955,
+      "villages": 59
+    },
+    {
+      "rank": 19017315,
+      "name": 1577325837,
+      "pts": 1600,
+      "villages": 98
+    },
+    {
+      "rank": 18833624,
+      "name": 1576049067,
+      "pts": 1818,
+      "villages": 6
+    },
+    {
+      "rank": 17124908,
+      "name": 1576801083,
+      "pts": 1713,
+      "villages": 6
+    },
+    {
+      "rank": 14322732,
+      "name": 8942925,
+      "pts": 1427,
+      "villages": 6
+    },
+    {
+      "rank": 12359565,
+      "name": 1577443818,
+      "pts": 1215,
+      "villages": 6
+    },
+    {
+      "rank": 11230215,
+      "name": 1577264481,
+      "pts": 929,
+      "villages": 6
+    },
+    {
+      "rank": 10460047,
+      "name": 1577488292,
+      "pts": 1048,
+      "villages": 6
+    },
+    {
+      "rank": 7563455,
+      "name": 1577052967,
+      "pts": 756,
+      "villages": 6
+    },
+    {
+      "rank": 7557034,
+      "name": 1577495370,
+      "pts": 722,
+      "villages": 291
+    },
+    {
+      "rank": 7244672,
+      "name": 1946985,
+      "pts": 723,
+      "villages": 6
+    },
+    {
+      "rank": 6727170,
+      "name": 9174595,
+      "pts": 628,
+      "villages": 6
+    },
+    {
+      "rank": 5780963,
+      "name": 1577467141,
+      "pts": 577,
+      "villages": 6
+    },
+    {
+      "rank": 5453681,
+      "name": 1577512884,
+      "pts": 548,
+      "villages": 0
+    },
+    {
+      "rank": 4087413,
+      "name": 1577510030,
+      "pts": 457,
+      "villages": 0
+    },
+    {
+      "rank": 4078921,
+      "name": 1577399104,
+      "pts": 433,
+      "villages": 0
+    },
+    {
+      "rank": 3521615,
+      "name": 1096027,
+      "pts": 352,
+      "villages": 88
+    },
+    {
+      "rank": 3382943,
+      "name": 1577442311,
+      "pts": 373,
+      "villages": 114
+    },
+    {
+      "rank": 3263210,
+      "name": 1577437654,
+      "pts": 297,
+      "villages": 69
+    },
+    {
+      "rank": 3257742,
+      "name": 901151,
+      "pts": 401,
+      "villages": 0
+    },
+    {
+      "rank": 2494267,
+      "name": 1577465024,
+      "pts": 238,
+      "villages": 98
+    },
+    {
+      "rank": 1951836,
+      "name": 1577500897,
+      "pts": 309,
+      "villages": 0
+    },
+    {
+      "rank": 1571885,
+      "name": 2483877,
+      "pts": 163,
+      "villages": 59
+    },
+    {
+      "rank": 1408853,
+      "name": 8286107,
+      "pts": 125,
+      "villages": 0
+    },
+    {
+      "rank": 1378335,
+      "name": 1575986581,
+      "pts": 145,
+      "villages": 68
+    },
+    {
+      "rank": 1228349,
+      "name": 1577449399,
+      "pts": 161,
+      "villages": 272
+    },
+    {
+      "rank": 1190510,
+      "name": 9256749,
+      "pts": 136,
+      "villages": 309
+    },
+    {
+      "rank": 1183697,
+      "name": 9831448,
+      "pts": 129,
+      "villages": 0
+    },
+    {
+      "rank": 1133488,
+      "name": 1577518634,
+      "pts": 98,
+      "villages": 0
+    },
+    {
+      "rank": 1106875,
+      "name": 1577514644,
+      "pts": 126,
+      "villages": 0
+    },
+    {
+      "rank": 1088945,
+      "name": 1577499206,
+      "pts": 148,
+      "villages": 0
+    },
+    {
+      "rank": 1042239,
+      "name": 1577520644,
+      "pts": 164,
+      "villages": 0
+    },
+    {
+      "rank": 1036342,
+      "name": 1577247597,
+      "pts": 141,
+      "villages": 0
+    },
+    {
+      "rank": 940586,
+      "name": 9558516,
+      "pts": 127,
+      "villages": 0
+    },
+    {
+      "rank": 813810,
+      "name": 1576526030,
+      "pts": 107,
+      "villages": 0
+    },
+    {
+      "rank": 793495,
+      "name": 1577122431,
+      "pts": 81,
+      "villages": 0
+    },
+    {
+      "rank": 766497,
+      "name": 1576620519,
+      "pts": 118,
+      "villages": 73
+    },
+    {
+      "rank": 632167,
+      "name": 8593822,
+      "pts": 98,
+      "villages": 0
+    },
+    {
+      "rank": 628835,
+      "name": 1577246994,
+      "pts": 74,
+      "villages": 0
+    },
+    {
+      "rank": 617788,
+      "name": 1577524379,
+      "pts": 87,
+      "villages": 0
+    },
+    {
+      "rank": 521986,
+      "name": 1577522363,
+      "pts": 98,
+      "villages": 0
+    }
+  ],
+  "tribes": [
+    {
+      "rank": 215364531,
+      "name": 6,
+      "tag": "Pony!",
+      "pts": 14,
+      "villages": 215364531
+    },
+    {
+      "rank": 69384128,
+      "name": 98,
+      "tag": "Die unheiligen Minions",
+      "pts": 4,
+      "villages": 69384128
+    },
+    {
+      "rank": 48537811,
+      "name": 69,
+      "tag": "Die unheiligen Minions²",
+      "pts": 4,
+      "villages": 48537811
+    },
+    {
+      "rank": 40642192,
+      "name": 59,
+      "tag": "maximale winner",
+      "pts": 3,
+      "villages": 40642192
+    },
+    {
+      "rank": 7557232,
+      "name": 291,
+      "tag": "Get Down Mister Minion",
+      "pts": 1,
+      "villages": 7557232
+    },
+    {
+      "rank": 3417416,
+      "name": 114,
+      "tag": "NachtWache",
+      "pts": 2,
+      "villages": 3417416
+    },
+    {
+      "rank": 3521615,
+      "name": 88,
+      "tag": "Eintagsfliegen",
+      "pts": 1,
+      "villages": 3521615
+    },
+    {
+      "rank": 1228454,
+      "name": 272,
+      "tag": "Destiny",
+      "pts": 1,
+      "villages": 1228454
+    },
+    {
+      "rank": 1378408,
+      "name": 68,
+      "tag": "All4OneOne4All",
+      "pts": 1,
+      "villages": 1378408
+    },
+    {
+      "rank": 881970,
+      "name": 149,
+      "tag": "PP farmer",
+      "pts": 3,
+      "villages": 881970
+    },
+    {
+      "rank": 1191092,
+      "name": 309,
+      "tag": "FuLL-Effect-Crew",
+      "pts": 1,
+      "villages": 1191092
+    },
+    {
+      "rank": 766453,
+      "name": 73,
+      "tag": "Stamm ohne Namen",
+      "pts": 2,
+      "villages": 766453
+    },
+    {
+      "rank": 69108,
+      "name": 53,
+      "tag": "VollmondStamm",
+      "pts": 1,
+      "villages": 69108
+    },
+    {
+      "rank": 133470,
+      "name": 286,
+      "tag": "Cascata",
+      "pts": 2,
+      "villages": 133470
+    },
+    {
+      "rank": 34990,
+      "name": 18,
+      "tag": "Liebe Ist Für Alle Da 3",
+      "pts": 1,
+      "villages": 34990
+    },
+    {
+      "rank": 15835,
+      "name": 10,
+      "tag": "Sommerspaß",
+      "pts": 1,
+      "villages": 15835
+    },
+    {
+      "rank": 18884,
+      "name": 48,
+      "tag": "Bauzz",
+      "pts": 1,
+      "villages": 18884
+    },
+    {
+      "rank": 58615,
+      "name": 292,
+      "tag": "B@sh for Life",
+      "pts": 1,
+      "villages": 58615
+    },
+    {
+      "rank": 3087,
+      "name": 159,
+      "tag": "GUMMIBÄR",
+      "pts": 3,
+      "villages": 3087
+    },
+    {
+      "rank": 8009,
+      "name": 100,
+      "tag": "Molkerei",
+      "pts": 1,
+      "villages": 8009
+    },
+    {
+      "rank": 5424,
+      "name": 122,
+      "tag": "Wolfsrudel extrem",
+      "pts": 2,
+      "villages": 5424
+    },
+    {
+      "rank": 9712,
+      "name": 29,
+      "tag": "Knocked Out",
+      "pts": 1,
+      "villages": 9712
+    },
+    {
+      "rank": 1188,
+      "name": 4,
+      "tag": "Love",
+      "pts": 1,
+      "villages": 1188
+    },
+    {
+      "rank": 9807,
+      "name": 223,
+      "tag": "Allianz Spandau",
+      "pts": 2,
+      "villages": 9807
+    },
+    {
+      "rank": 282,
+      "name": 169,
+      "tag": "Kraft meiner Wassersuppe",
+      "pts": 1,
+      "villages": 282
+    },
+    {
+      "rank": 26,
+      "name": 129,
+      "tag": "Scotch",
+      "pts": 1,
+      "villages": 26
+    },
+    {
+      "rank": 10312,
+      "name": 274,
+      "tag": "Ursus",
+      "pts": 1,
+      "villages": 10312
+    },
+    {
+      "rank": 356,
+      "name": 103,
+      "tag": "One Man Army",
+      "pts": 1,
+      "villages": 356
+    },
+    {
+      "rank": 5159,
+      "name": 33,
+      "tag": "Wave from Heaven",
+      "pts": 1,
+      "villages": 5159
+    },
+    {
+      "rank": 664,
+      "name": 144,
+      "tag": "Runde Sache",
+      "pts": 1,
+      "villages": 664
+    },
+    {
+      "rank": 4254,
+      "name": 134,
+      "tag": "Chakrams Zorn",
+      "pts": 1,
+      "villages": 4254
+    },
+    {
+      "rank": 14045,
+      "name": 171,
+      "tag": "Der stamm",
+      "pts": 1,
+      "villages": 14045
+    },
+    {
+      "rank": 5605,
+      "name": 168,
+      "tag": "The Next Step",
+      "pts": 1,
+      "villages": 5605
+    },
+    {
+      "rank": 595,
+      "name": 224,
+      "tag": "Federal Trade Club",
+      "pts": 1,
+      "villages": 595
+    },
+    {
+      "rank": 4837,
+      "name": 217,
+      "tag": "Die Gallier",
+      "pts": 1,
+      "villages": 4837
+    },
+    {
+      "rank": 5195,
+      "name": 243,
+      "tag": "Raubkatzen",
+      "pts": 1,
+      "villages": 5195
+    },
+    {
+      "rank": 52,
+      "name": 308,
+      "tag": "Deffen",
+      "pts": 1,
+      "villages": 52
+    }
+  ]
+}
