@@ -1,0 +1,656 @@
+{
+  "players": [
+    {
+      "rank": 833731,
+      "name": 621977,
+      "pts": 106,
+      "villages": 125
+    },
+    {
+      "rank": 759456,
+      "name": 8704584,
+      "pts": 91,
+      "villages": 259
+    },
+    {
+      "rank": 711567,
+      "name": 7931088,
+      "pts": 82,
+      "villages": 125
+    },
+    {
+      "rank": 695609,
+      "name": 168411,
+      "pts": 80,
+      "villages": 125
+    },
+    {
+      "rank": 607375,
+      "name": 9100033,
+      "pts": 68,
+      "villages": 259
+    },
+    {
+      "rank": 598967,
+      "name": 1577521932,
+      "pts": 77,
+      "villages": 241
+    },
+    {
+      "rank": 585954,
+      "name": 1577452046,
+      "pts": 72,
+      "villages": 125
+    },
+    {
+      "rank": 555304,
+      "name": 8767399,
+      "pts": 76,
+      "villages": 349
+    },
+    {
+      "rank": 536778,
+      "name": 1577388120,
+      "pts": 65,
+      "villages": 259
+    },
+    {
+      "rank": 520233,
+      "name": 1576941423,
+      "pts": 61,
+      "villages": 48
+    },
+    {
+      "rank": 500428,
+      "name": 8684190,
+      "pts": 67,
+      "villages": 349
+    },
+    {
+      "rank": 492431,
+      "name": 1577521738,
+      "pts": 61,
+      "villages": 259
+    },
+    {
+      "rank": 486102,
+      "name": 1577181814,
+      "pts": 59,
+      "villages": 238
+    },
+    {
+      "rank": 477505,
+      "name": 1577521563,
+      "pts": 55,
+      "villages": 125
+    },
+    {
+      "rank": 461443,
+      "name": 1577390319,
+      "pts": 62,
+      "villages": 125
+    },
+    {
+      "rank": 448061,
+      "name": 1577217738,
+      "pts": 61,
+      "villages": 349
+    },
+    {
+      "rank": 439329,
+      "name": 1577383853,
+      "pts": 60,
+      "villages": 238
+    },
+    {
+      "rank": 414157,
+      "name": 8312700,
+      "pts": 54,
+      "villages": 259
+    },
+    {
+      "rank": 413630,
+      "name": 1576422792,
+      "pts": 59,
+      "villages": 238
+    },
+    {
+      "rank": 405085,
+      "name": 10114831,
+      "pts": 56,
+      "villages": 125
+    },
+    {
+      "rank": 401696,
+      "name": 1576379222,
+      "pts": 53,
+      "villages": 349
+    },
+    {
+      "rank": 398161,
+      "name": 1577521384,
+      "pts": 48,
+      "villages": 48
+    },
+    {
+      "rank": 394558,
+      "name": 1576381081,
+      "pts": 43,
+      "villages": 125
+    },
+    {
+      "rank": 382486,
+      "name": 1577457915,
+      "pts": 53,
+      "villages": 238
+    },
+    {
+      "rank": 377135,
+      "name": 9955541,
+      "pts": 49,
+      "villages": 241
+    },
+    {
+      "rank": 366750,
+      "name": 1577515761,
+      "pts": 43,
+      "villages": 48
+    },
+    {
+      "rank": 356551,
+      "name": 1577516061,
+      "pts": 37,
+      "villages": 48
+    },
+    {
+      "rank": 355578,
+      "name": 4822548,
+      "pts": 46,
+      "villages": 211
+    },
+    {
+      "rank": 351180,
+      "name": 1948491,
+      "pts": 48,
+      "villages": 48
+    },
+    {
+      "rank": 336976,
+      "name": 1577150084,
+      "pts": 38,
+      "villages": 349
+    },
+    {
+      "rank": 336583,
+      "name": 1577515469,
+      "pts": 39,
+      "villages": 48
+    },
+    {
+      "rank": 336282,
+      "name": 1577355163,
+      "pts": 48,
+      "villages": 241
+    },
+    {
+      "rank": 334610,
+      "name": 1577451556,
+      "pts": 48,
+      "villages": 125
+    },
+    {
+      "rank": 329556,
+      "name": 1577517705,
+      "pts": 40,
+      "villages": 11
+    },
+    {
+      "rank": 324575,
+      "name": 1576531854,
+      "pts": 41,
+      "villages": 211
+    },
+    {
+      "rank": 316764,
+      "name": 1577353663,
+      "pts": 49,
+      "villages": 238
+    },
+    {
+      "rank": 310940,
+      "name": 1577448397,
+      "pts": 34,
+      "villages": 211
+    },
+    {
+      "rank": 310457,
+      "name": 1577106789,
+      "pts": 41,
+      "villages": 125
+    },
+    {
+      "rank": 305452,
+      "name": 7901216,
+      "pts": 39,
+      "villages": 125
+    },
+    {
+      "rank": 305085,
+      "name": 1577522941,
+      "pts": 33,
+      "villages": 259
+    },
+    {
+      "rank": 303848,
+      "name": 1577490514,
+      "pts": 40,
+      "villages": 125
+    },
+    {
+      "rank": 299232,
+      "name": 1577489891,
+      "pts": 39,
+      "villages": 349
+    },
+    {
+      "rank": 287478,
+      "name": 1577448714,
+      "pts": 38,
+      "villages": 48
+    },
+    {
+      "rank": 286886,
+      "name": 1575857946,
+      "pts": 35,
+      "villages": 48
+    },
+    {
+      "rank": 283854,
+      "name": 1577513229,
+      "pts": 41,
+      "villages": 125
+    },
+    {
+      "rank": 282731,
+      "name": 1577321334,
+      "pts": 31,
+      "villages": 259
+    },
+    {
+      "rank": 272008,
+      "name": 1577005450,
+      "pts": 38,
+      "villages": 125
+    },
+    {
+      "rank": 262013,
+      "name": 1577010730,
+      "pts": 33,
+      "villages": 259
+    },
+    {
+      "rank": 259768,
+      "name": 9707878,
+      "pts": 29,
+      "villages": 241
+    },
+    {
+      "rank": 259764,
+      "name": 1577523947,
+      "pts": 38,
+      "villages": 48
+    }
+  ],
+  "tribes": [
+    {
+      "rank": 7631452,
+      "name": 125,
+      "tag": "GHOST",
+      "pts": 20,
+      "villages": 7631452
+    },
+    {
+      "rank": 5226937,
+      "name": 259,
+      "tag": "was lustiges",
+      "pts": 18,
+      "villages": 5226937
+    },
+    {
+      "rank": 4274068,
+      "name": 238,
+      "tag": "Disneys Große Pause",
+      "pts": 20,
+      "villages": 4274068
+    },
+    {
+      "rank": 4916067,
+      "name": 48,
+      "tag": "High Voltage",
+      "pts": 17,
+      "villages": 4916067
+    },
+    {
+      "rank": 4027670,
+      "name": 349,
+      "tag": "Hai-Woll-Tisch",
+      "pts": 18,
+      "villages": 4027670
+    },
+    {
+      "rank": 3492160,
+      "name": 211,
+      "tag": "Tatze gegen Honorar",
+      "pts": 20,
+      "villages": 3492160
+    },
+    {
+      "rank": 2886706,
+      "name": 241,
+      "tag": "Disneys Kleine Pause",
+      "pts": 17,
+      "villages": 2886706
+    },
+    {
+      "rank": 1502697,
+      "name": 11,
+      "tag": "Unprotected Sexytime Association",
+      "pts": 10,
+      "villages": 1502697
+    },
+    {
+      "rank": 852509,
+      "name": 213,
+      "tag": "Honorar gegen Tatze",
+      "pts": 20,
+      "villages": 852509
+    },
+    {
+      "rank": 831270,
+      "name": 341,
+      "tag": "Kartenrand Rebellen",
+      "pts": 12,
+      "villages": 831270
+    },
+    {
+      "rank": 819389,
+      "name": 245,
+      "tag": "Gastro ist Geil",
+      "pts": 19,
+      "villages": 819389
+    },
+    {
+      "rank": 806496,
+      "name": 308,
+      "tag": "GHOST²",
+      "pts": 18,
+      "villages": 806496
+    },
+    {
+      "rank": 531741,
+      "name": 203,
+      "tag": "Haus Harkonnen",
+      "pts": 14,
+      "villages": 531741
+    },
+    {
+      "rank": 676728,
+      "name": 512,
+      "tag": "was lustiges2",
+      "pts": 8,
+      "villages": 676728
+    },
+    {
+      "rank": 371432,
+      "name": 493,
+      "tag": "wolke7",
+      "pts": 10,
+      "villages": 371432
+    },
+    {
+      "rank": 253564,
+      "name": 502,
+      "tag": "Destroyers",
+      "pts": 16,
+      "villages": 253564
+    },
+    {
+      "rank": 392212,
+      "name": 61,
+      "tag": "UncontrolledSexytimeAssociation",
+      "pts": 11,
+      "villages": 392212
+    },
+    {
+      "rank": 259514,
+      "name": 499,
+      "tag": "WD-40",
+      "pts": 11,
+      "villages": 259514
+    },
+    {
+      "rank": 303225,
+      "name": 286,
+      "tag": "One Man Army",
+      "pts": 18,
+      "villages": 303225
+    },
+    {
+      "rank": 363289,
+      "name": 494,
+      "tag": "DerLetzteWiderstand",
+      "pts": 9,
+      "villages": 363289
+    },
+    {
+      "rank": 193471,
+      "name": 385,
+      "tag": "Gangstas Paradise",
+      "pts": 12,
+      "villages": 193471
+    },
+    {
+      "rank": 207091,
+      "name": 661,
+      "tag": "was kleines lustiges",
+      "pts": 9,
+      "villages": 207091
+    },
+    {
+      "rank": 95511,
+      "name": 485,
+      "tag": "Gondors Armee",
+      "pts": 15,
+      "villages": 95511
+    },
+    {
+      "rank": 124607,
+      "name": 618,
+      "tag": "24 SMILEY",
+      "pts": 20,
+      "villages": 124607
+    },
+    {
+      "rank": 79318,
+      "name": 41,
+      "tag": "Kreuzritter",
+      "pts": 15,
+      "villages": 79318
+    },
+    {
+      "rank": 102975,
+      "name": 619,
+      "tag": "One Woman Army",
+      "pts": 5,
+      "villages": 102975
+    },
+    {
+      "rank": 93468,
+      "name": 457,
+      "tag": "Farmsimulator",
+      "pts": 8,
+      "villages": 93468
+    },
+    {
+      "rank": 52539,
+      "name": 547,
+      "tag": "Säule ist Geil",
+      "pts": 10,
+      "villages": 52539
+    },
+    {
+      "rank": 136949,
+      "name": 249,
+      "tag": "Dodo ist Geil",
+      "pts": 11,
+      "villages": 136949
+    },
+    {
+      "rank": 72066,
+      "name": 589,
+      "tag": "Kartenrand",
+      "pts": 16,
+      "villages": 72066
+    },
+    {
+      "rank": 57871,
+      "name": 162,
+      "tag": "Disneys letzte Pause",
+      "pts": 7,
+      "villages": 57871
+    },
+    {
+      "rank": 132938,
+      "name": 646,
+      "tag": "Muss ja",
+      "pts": 2,
+      "villages": 132938
+    },
+    {
+      "rank": 45582,
+      "name": 625,
+      "tag": "Unluko Maluko",
+      "pts": 20,
+      "villages": 45582
+    },
+    {
+      "rank": 44152,
+      "name": 77,
+      "tag": "Alone in the Dark",
+      "pts": 13,
+      "villages": 44152
+    },
+    {
+      "rank": 64129,
+      "name": 645,
+      "tag": "Might of Gamer",
+      "pts": 5,
+      "villages": 64129
+    },
+    {
+      "rank": 85420,
+      "name": 601,
+      "tag": "Die rechte und die linke Hand",
+      "pts": 2,
+      "villages": 85420
+    },
+    {
+      "rank": 89485,
+      "name": 527,
+      "tag": "Kartenrand Rebellen²",
+      "pts": 9,
+      "villages": 89485
+    },
+    {
+      "rank": 121445,
+      "name": 635,
+      "tag": "Ultimative Nichtskönner",
+      "pts": 20,
+      "villages": 121445
+    },
+    {
+      "rank": 82644,
+      "name": 27,
+      "tag": "Band of Mieez",
+      "pts": 9,
+      "villages": 82644
+    },
+    {
+      "rank": 80350,
+      "name": 290,
+      "tag": "GermanVeterans",
+      "pts": 8,
+      "villages": 80350
+    },
+    {
+      "rank": 58274,
+      "name": 261,
+      "tag": "Sommer genießen",
+      "pts": 17,
+      "villages": 58274
+    },
+    {
+      "rank": 90004,
+      "name": 406,
+      "tag": "Mongos mit Bongos",
+      "pts": 15,
+      "villages": 90004
+    },
+    {
+      "rank": 35126,
+      "name": 563,
+      "tag": "Fruit Loops!",
+      "pts": 15,
+      "villages": 35126
+    },
+    {
+      "rank": 39004,
+      "name": 562,
+      "tag": "LIDL ist besser als ALDI",
+      "pts": 17,
+      "villages": 39004
+    },
+    {
+      "rank": 75435,
+      "name": 161,
+      "tag": "Angels of Death",
+      "pts": 5,
+      "villages": 75435
+    },
+    {
+      "rank": 94226,
+      "name": 461,
+      "tag": "Methylethylketon",
+      "pts": 12,
+      "villages": 94226
+    },
+    {
+      "rank": 48345,
+      "name": 565,
+      "tag": "DiAk",
+      "pts": 6,
+      "villages": 48345
+    },
+    {
+      "rank": 99828,
+      "name": 533,
+      "tag": "ROLLOFANTEN",
+      "pts": 14,
+      "villages": 99828
+    },
+    {
+      "rank": 60331,
+      "name": 34,
+      "tag": "Die Dark-Bauaufsicht",
+      "pts": 5,
+      "villages": 60331
+    },
+    {
+      "rank": 67254,
+      "name": 300,
+      "tag": "Laternenträger",
+      "pts": 3,
+      "villages": 67254
+    }
+  ]
+}
