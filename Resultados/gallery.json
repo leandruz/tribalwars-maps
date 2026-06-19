@@ -1,10 +1,15 @@
 {
-  "last_update": "18/06/2026 08:32:54",
+  "last_update": "19/06/2026 09:00:47",
   "servers": {
     ".BR": {
       "br143": {
         "name": "BR143",
-        "players": [],
+        "players": [
+          {
+            "title": "Ranking Pontos",
+            "path": "Resultados/.BR/br143/Players/mapa_top15_jogadores_br143.png"
+          }
+        ],
         "tribes": [
           {
             "title": "Ranking Pontos",
