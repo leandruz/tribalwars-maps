@@ -1,5 +1,5 @@
 {
-  "last_update": "19/06/2026 09:00:47",
+  "last_update": "20/06/2026 07:45:04",
   "servers": {
     ".BR": {
       "br143": {
@@ -11,6 +11,10 @@
           }
         ],
         "tribes": [
+          {
+            "title": "Análise Tática (Dinâmica)",
+            "path": "Resultados/.BR/br143/Tribes/mapa_conquest_hotspot_br143.png"
+          },
           {
             "title": "Ranking Pontos",
             "path": "Resultados/.BR/br143/Tribes/mapa_top15_tribos_br143.png"
