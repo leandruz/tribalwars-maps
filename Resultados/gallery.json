@@ -1,5 +1,5 @@
 {
-  "last_update": "20/06/2026 07:45:04",
+  "last_update": "21/06/2026 08:23:10",
   "servers": {
     ".BR": {
       "br143": {
@@ -8,12 +8,28 @@
           {
             "title": "Ranking Pontos",
             "path": "Resultados/.BR/br143/Players/mapa_top15_jogadores_br143.png"
+          },
+          {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br143/Players/mapa_top15_oda_jogadores_br143.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br143/Players/mapa_top15_odd_jogadores_br143.png"
           }
         ],
         "tribes": [
           {
             "title": "Análise Tática (Dinâmica)",
             "path": "Resultados/.BR/br143/Tribes/mapa_conquest_hotspot_br143.png"
+          },
+          {
+            "title": "Ranking ODA",
+            "path": "Resultados/.BR/br143/Tribes/mapa_top15_oda_tribos_br143.png"
+          },
+          {
+            "title": "Ranking ODD",
+            "path": "Resultados/.BR/br143/Tribes/mapa_top15_odd_tribos_br143.png"
           },
           {
             "title": "Ranking Pontos",
