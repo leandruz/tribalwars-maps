@@ -1,0 +1,656 @@
+{
+  "players": [
+    {
+      "rank": 7390089,
+      "name": 1577114060,
+      "pts": 752,
+      "villages": 324
+    },
+    {
+      "rank": 6628801,
+      "name": 1576589861,
+      "pts": 642,
+      "villages": 259
+    },
+    {
+      "rank": 6527286,
+      "name": 1577235971,
+      "pts": 635,
+      "villages": 324
+    },
+    {
+      "rank": 6091207,
+      "name": 1576727948,
+      "pts": 595,
+      "villages": 255
+    },
+    {
+      "rank": 5715105,
+      "name": 1577216716,
+      "pts": 551,
+      "villages": 259
+    },
+    {
+      "rank": 5454926,
+      "name": 1576931999,
+      "pts": 511,
+      "villages": 259
+    },
+    {
+      "rank": 5419631,
+      "name": 1577497501,
+      "pts": 542,
+      "villages": 255
+    },
+    {
+      "rank": 5331088,
+      "name": 1186708,
+      "pts": 457,
+      "villages": 259
+    },
+    {
+      "rank": 5261271,
+      "name": 1577509400,
+      "pts": 523,
+      "villages": 255
+    },
+    {
+      "rank": 5108157,
+      "name": 1575887251,
+      "pts": 496,
+      "villages": 264
+    },
+    {
+      "rank": 4825780,
+      "name": 9727559,
+      "pts": 473,
+      "villages": 259
+    },
+    {
+      "rank": 4817177,
+      "name": 1575860894,
+      "pts": 467,
+      "villages": 255
+    },
+    {
+      "rank": 4682064,
+      "name": 1577114774,
+      "pts": 459,
+      "villages": 259
+    },
+    {
+      "rank": 4630625,
+      "name": 9390152,
+      "pts": 461,
+      "villages": 264
+    },
+    {
+      "rank": 4549789,
+      "name": 1577506846,
+      "pts": 447,
+      "villages": 259
+    },
+    {
+      "rank": 4510852,
+      "name": 3467530,
+      "pts": 458,
+      "villages": 324
+    },
+    {
+      "rank": 4457239,
+      "name": 9693465,
+      "pts": 444,
+      "villages": 259
+    },
+    {
+      "rank": 4316249,
+      "name": 1577316477,
+      "pts": 427,
+      "villages": 259
+    },
+    {
+      "rank": 4293959,
+      "name": 1577019813,
+      "pts": 422,
+      "villages": 255
+    },
+    {
+      "rank": 4256433,
+      "name": 1577313023,
+      "pts": 421,
+      "villages": 324
+    },
+    {
+      "rank": 4215618,
+      "name": 1577006487,
+      "pts": 409,
+      "villages": 259
+    },
+    {
+      "rank": 4208840,
+      "name": 1577139362,
+      "pts": 413,
+      "villages": 264
+    },
+    {
+      "rank": 4110897,
+      "name": 9894810,
+      "pts": 432,
+      "villages": 325
+    },
+    {
+      "rank": 4098067,
+      "name": 9055044,
+      "pts": 414,
+      "villages": 255
+    },
+    {
+      "rank": 3958037,
+      "name": 1577303476,
+      "pts": 395,
+      "villages": 324
+    },
+    {
+      "rank": 3887250,
+      "name": 1577353503,
+      "pts": 344,
+      "villages": 255
+    },
+    {
+      "rank": 3868403,
+      "name": 1577518444,
+      "pts": 391,
+      "villages": 243
+    },
+    {
+      "rank": 3823312,
+      "name": 1576086539,
+      "pts": 400,
+      "villages": 255
+    },
+    {
+      "rank": 3519408,
+      "name": 1577441533,
+      "pts": 372,
+      "villages": 255
+    },
+    {
+      "rank": 3474912,
+      "name": 1577348621,
+      "pts": 346,
+      "villages": 259
+    },
+    {
+      "rank": 3469545,
+      "name": 1577515807,
+      "pts": 347,
+      "villages": 255
+    },
+    {
+      "rank": 3439503,
+      "name": 1577223465,
+      "pts": 346,
+      "villages": 123
+    },
+    {
+      "rank": 3428998,
+      "name": 1577287233,
+      "pts": 360,
+      "villages": 255
+    },
+    {
+      "rank": 3274764,
+      "name": 1576985240,
+      "pts": 327,
+      "villages": 259
+    },
+    {
+      "rank": 3114939,
+      "name": 1577224684,
+      "pts": 289,
+      "villages": 264
+    },
+    {
+      "rank": 2977376,
+      "name": 455448,
+      "pts": 316,
+      "villages": 259
+    },
+    {
+      "rank": 2947584,
+      "name": 1577448245,
+      "pts": 288,
+      "villages": 259
+    },
+    {
+      "rank": 2918462,
+      "name": 1577002498,
+      "pts": 281,
+      "villages": 259
+    },
+    {
+      "rank": 2811763,
+      "name": 1577514249,
+      "pts": 275,
+      "villages": 264
+    },
+    {
+      "rank": 2771691,
+      "name": 1577489980,
+      "pts": 265,
+      "villages": 324
+    },
+    {
+      "rank": 2704623,
+      "name": 1577230023,
+      "pts": 281,
+      "villages": 259
+    },
+    {
+      "rank": 2559087,
+      "name": 1577514854,
+      "pts": 258,
+      "villages": 324
+    },
+    {
+      "rank": 2530706,
+      "name": 1577503279,
+      "pts": 307,
+      "villages": 325
+    },
+    {
+      "rank": 2431670,
+      "name": 1577508028,
+      "pts": 279,
+      "villages": 259
+    },
+    {
+      "rank": 2430662,
+      "name": 1576959764,
+      "pts": 237,
+      "villages": 264
+    },
+    {
+      "rank": 2328782,
+      "name": 1577367743,
+      "pts": 241,
+      "villages": 324
+    },
+    {
+      "rank": 2250816,
+      "name": 1577509955,
+      "pts": 219,
+      "villages": 324
+    },
+    {
+      "rank": 2080015,
+      "name": 1576998273,
+      "pts": 203,
+      "villages": 259
+    },
+    {
+      "rank": 2025019,
+      "name": 1577175513,
+      "pts": 197,
+      "villages": 264
+    },
+    {
+      "rank": 1982809,
+      "name": 1577344226,
+      "pts": 209,
+      "villages": 324
+    }
+  ],
+  "tribes": [
+    {
+      "rank": 75101456,
+      "name": 259,
+      "tag": "Keine Gnade!",
+      "pts": 20,
+      "villages": 75101456
+    },
+    {
+      "rank": 51968606,
+      "name": 255,
+      "tag": "Ready or Not ?!",
+      "pts": 14,
+      "villages": 51968606
+    },
+    {
+      "rank": 49523033,
+      "name": 324,
+      "tag": "Rito Kopfviertel",
+      "pts": 20,
+      "villages": 49523033
+    },
+    {
+      "rank": 30748377,
+      "name": 264,
+      "tag": "Multi Fight Tactics",
+      "pts": 15,
+      "villages": 30748377
+    },
+    {
+      "rank": 14921935,
+      "name": 325,
+      "tag": "Kartenrand Fight Tactics",
+      "pts": 18,
+      "villages": 14921935
+    },
+    {
+      "rank": 6983539,
+      "name": 243,
+      "tag": "Herpes",
+      "pts": 14,
+      "villages": 6983539
+    },
+    {
+      "rank": 5905989,
+      "name": 460,
+      "tag": "Skalden Fight Tactics",
+      "pts": 18,
+      "villages": 5905989
+    },
+    {
+      "rank": 5008968,
+      "name": 254,
+      "tag": "Radiergummi Fight Tactics",
+      "pts": 13,
+      "villages": 5008968
+    },
+    {
+      "rank": 5006140,
+      "name": 123,
+      "tag": "Trust Admin",
+      "pts": 4,
+      "villages": 5006140
+    },
+    {
+      "rank": 3790930,
+      "name": 775,
+      "tag": "Das Tool",
+      "pts": 9,
+      "villages": 3790930
+    },
+    {
+      "rank": 2310770,
+      "name": 881,
+      "tag": "Die Randdynastie",
+      "pts": 14,
+      "villages": 2310770
+    },
+    {
+      "rank": 2422932,
+      "name": 326,
+      "tag": "Kartenrand Chiller",
+      "pts": 7,
+      "villages": 2422932
+    },
+    {
+      "rank": 2219166,
+      "name": 448,
+      "tag": "Zweite Garde Fight Tactics",
+      "pts": 16,
+      "villages": 2219166
+    },
+    {
+      "rank": 521095,
+      "name": 256,
+      "tag": "Plata o Plomo.",
+      "pts": 3,
+      "villages": 521095
+    },
+    {
+      "rank": 398393,
+      "name": 117,
+      "tag": "Trust Community",
+      "pts": 6,
+      "villages": 398393
+    },
+    {
+      "rank": 541884,
+      "name": 2,
+      "tag": "Die Strohhut Bande",
+      "pts": 1,
+      "villages": 541884
+    },
+    {
+      "rank": 118928,
+      "name": 714,
+      "tag": "KRAKEN",
+      "pts": 6,
+      "villages": 118928
+    },
+    {
+      "rank": 74964,
+      "name": 617,
+      "tag": "SteuerFreiMoney",
+      "pts": 15,
+      "villages": 74964
+    },
+    {
+      "rank": 206468,
+      "name": 347,
+      "tag": "Gunters Terror-Pinguine",
+      "pts": 1,
+      "villages": 206468
+    },
+    {
+      "rank": 54587,
+      "name": 725,
+      "tag": "Triforce",
+      "pts": 7,
+      "villages": 54587
+    },
+    {
+      "rank": 167058,
+      "name": 283,
+      "tag": "Legion mit Schlagkraft",
+      "pts": 3,
+      "villages": 167058
+    },
+    {
+      "rank": 73529,
+      "name": 622,
+      "tag": "Wölfe Des Nordens",
+      "pts": 2,
+      "villages": 73529
+    },
+    {
+      "rank": 77748,
+      "name": 878,
+      "tag": "Hansa",
+      "pts": 1,
+      "villages": 77748
+    },
+    {
+      "rank": 39119,
+      "name": 766,
+      "tag": "Legio Germania",
+      "pts": 1,
+      "villages": 39119
+    },
+    {
+      "rank": 16055,
+      "name": 726,
+      "tag": "Brüdis",
+      "pts": 9,
+      "villages": 16055
+    },
+    {
+      "rank": 29625,
+      "name": 713,
+      "tag": "Alone in the Dark",
+      "pts": 8,
+      "villages": 29625
+    },
+    {
+      "rank": 73562,
+      "name": 381,
+      "tag": "Zwangsenteignung",
+      "pts": 1,
+      "villages": 73562
+    },
+    {
+      "rank": 54969,
+      "name": 571,
+      "tag": "Wolfsschatten",
+      "pts": 3,
+      "villages": 54969
+    },
+    {
+      "rank": 20468,
+      "name": 778,
+      "tag": "Die Gummienten",
+      "pts": 4,
+      "villages": 20468
+    },
+    {
+      "rank": 39101,
+      "name": 209,
+      "tag": "HYRULERECAP",
+      "pts": 1,
+      "villages": 39101
+    },
+    {
+      "rank": 9123,
+      "name": 724,
+      "tag": "Bund der Legionäre und Freunde",
+      "pts": 8,
+      "villages": 9123
+    },
+    {
+      "rank": 18935,
+      "name": 821,
+      "tag": "Zum Zweiten",
+      "pts": 1,
+      "villages": 18935
+    },
+    {
+      "rank": 14736,
+      "name": 859,
+      "tag": "Der Weltenrand",
+      "pts": 2,
+      "villages": 14736
+    },
+    {
+      "rank": 2873,
+      "name": 786,
+      "tag": "GERMANY",
+      "pts": 6,
+      "villages": 2873
+    },
+    {
+      "rank": 34222,
+      "name": 79,
+      "tag": "Eiserner Schwur",
+      "pts": 2,
+      "villages": 34222
+    },
+    {
+      "rank": 9461,
+      "name": 467,
+      "tag": "Blubb",
+      "pts": 2,
+      "villages": 9461
+    },
+    {
+      "rank": 26741,
+      "name": 294,
+      "tag": "Depressive Brote",
+      "pts": 2,
+      "villages": 26741
+    },
+    {
+      "rank": 3959,
+      "name": 819,
+      "tag": "die Allgäuer Bergbauern",
+      "pts": 1,
+      "villages": 3959
+    },
+    {
+      "rank": 775,
+      "name": 29,
+      "tag": "LonelyFersagers!3",
+      "pts": 4,
+      "villages": 775
+    },
+    {
+      "rank": 7445,
+      "name": 112,
+      "tag": "Die Ritter der Sesamstraße",
+      "pts": 1,
+      "villages": 7445
+    },
+    {
+      "rank": 9311,
+      "name": 735,
+      "tag": "SonsofAnarchy",
+      "pts": 1,
+      "villages": 9311
+    },
+    {
+      "rank": 4130,
+      "name": 883,
+      "tag": "M3thOpfer",
+      "pts": 2,
+      "villages": 4130
+    },
+    {
+      "rank": 1019,
+      "name": 409,
+      "tag": "Kraft meiner Wassersuppe",
+      "pts": 3,
+      "villages": 1019
+    },
+    {
+      "rank": 868,
+      "name": 376,
+      "tag": "Phönix a.d Asche",
+      "pts": 2,
+      "villages": 868
+    },
+    {
+      "rank": 671,
+      "name": 658,
+      "tag": "Kein Proxy-Stamm",
+      "pts": 2,
+      "villages": 671
+    },
+    {
+      "rank": 3286,
+      "name": 734,
+      "tag": "Krieger des Werktages",
+      "pts": 1,
+      "villages": 3286
+    },
+    {
+      "rank": 490,
+      "name": 886,
+      "tag": "chaoscar",
+      "pts": 1,
+      "villages": 490
+    },
+    {
+      "rank": 4318,
+      "name": 127,
+      "tag": "Die Homies",
+      "pts": 1,
+      "villages": 4318
+    },
+    {
+      "rank": 569,
+      "name": 303,
+      "tag": "Die Pfandplünderer",
+      "pts": 1,
+      "villages": 569
+    },
+    {
+      "rank": 4356,
+      "name": 230,
+      "tag": "Ziegenstall",
+      "pts": 1,
+      "villages": 4356
+    }
+  ]
+}
